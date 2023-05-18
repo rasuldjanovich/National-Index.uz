@@ -22,8 +22,6 @@
 
 <body data-sidebar="dark" data-layout-mode="light">
 
-    <!-- <body data-layout="horizontal" data-topbar="dark"> -->
-
     <!-- Begin page -->
     <div id="layout-wrapper">
 
@@ -332,7 +330,8 @@
                                 <li><a href="rating-table.html">Список рейтингов</a></li>
                                 <li><a href="new-rating.html">Добавить новый рейтинг</a></li>
                             </ul>
-                        </li>
+
+
 
                         <li>
                             <a href="javascript: void(0);" class="has-arrow waves-effect">
@@ -374,7 +373,6 @@
                                 <li><a href="crypto-exchange.html" key="t-exchange">Настройки электронной почты</a></li>
                             </ul>
                         </li>
-
                     </ul>
                 </div>
                 <!-- Sidebar -->
@@ -395,373 +393,433 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                                <h4 class="mb-sm-0 font-size-18">Dashboard</h4>
+                                <h4 class="mb-sm-3 font-size-18">Добавить новый рейтинг</h4>
                             </div>
                         </div>
                     </div>
                     <!-- end page title -->
 
-                    <div class="row">
-                        <div class="col-xl-12">
-                            <div class="row">
-                                <div class="col-md-3">
-                                    <div class="card mini-stats-wid">
-                                        <div class="card-body">
-                                            <div class="d-flex">
-                                                <div class="flex-grow-1">
-                                                    <p class="text-muted fw-medium">Lorem ipsum dolor.</p>
-                                                    <h4 class="mb-0">100,000,000</h4>
-                                                </div>
+                    <div class="card">
+                        <div class="card-body">
 
-                                                <div class="flex-shrink-0 align-self-center">
-                                                    <div class="mini-stat-icon avatar-sm rounded-circle bg-primary">
-                                                        <span class="avatar-title">
-                                                            <i class='bx bx-dollar'></i>
-                                                        </span>
-                                                    </div>
+                            <!-- Nav tabs -->
+                            <ul class="nav nav-pills nav-justified" role="tablist">
+                                <li class="nav-item waves-effect waves-light">
+                                    <a class="nav-link active p-3" data-bs-toggle="tab" href="#home-1" role="tab">
+                                        <span class="d-block d-sm-none"><i class="fas fa-home"></i></span>
+                                        <span class="d-none d-sm-block">Общий</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item waves-effect waves-light">
+                                    <a class="nav-link p-3" data-bs-toggle="tab" href="#profile-1" role="tab">
+                                        <span class="d-block d-sm-none"><i class="far fa-user"></i></span>
+                                        <span class="d-none d-sm-block">Члены-эксперты</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item waves-effect waves-light">
+                                    <a class="nav-link p-3" data-bs-toggle="tab" href="#settings-1" role="tab">
+                                        <span class="d-block d-sm-none"><i class="fas fa-cog"></i></span>
+                                        <span class="d-none d-sm-block">Список индикаторов</span>
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <!-- Tab panes -->
+                            <div class="tab-content p-3 text-muted">
+                                <div class="tab-pane active mt-2" id="home-1" role="tabpanel">
+
+                                    <form>
+                                        <div class="form-floating mb-3">
+                                            <input type="text" class="form-control" id="floatingnameInput" placeholder="Наименование
+                                                раздела">
+                                            <label for="floatingnameInput">Название рейтинга</label>
+                                        </div>
+                                        <div class="form-floating mb-3">
+                                            <textarea class="form-control" name="" id="" cols="240"
+                                                rows="10"></textarea>
+                                            <label for="floatingnameInput">Описание рейтинга</label>
+                                        </div>
+                                        <div class="form-floating mb-3">
+                                            <input type="text" class="form-control" id="floatingnameInput" placeholder="Примечания
+                                                раздела">
+                                            <label for="floatingnameInput">Примечания
+                                                раздела</label>
+                                        </div>
+                                        <div class="form-floating mb-3">
+                                            <input type="text" class="form-control" id="floatingnameInput" placeholder="Плановые
+                                                показатели">
+                                            <label for="floatingnameInput">Плановые
+                                                показатели</label>
+                                        </div>
+                                        <div class="form-floating mb-3">
+                                            <input type="text" class="form-control" id="floatingnameInput"
+                                                placeholder="Основание рейтинга">
+                                            <label for="floatingnameInput">Основание рейтинга</label>
+                                        </div>
+                                        <div class="form-floating mb-3">
+                                            <select class="form-select" id="floatingSelectGrid"
+                                                aria-label="Floating label select example">
+                                                <option selected>Супер администратор</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                            </select>
+                                            <label for="floatingSelectGrid">Эксперт
+                                                раздела</label>
+                                        </div>
+                                        <div class="form-floating mb-3">
+                                            <select class="form-select" id="floatingSelectGrid"
+                                                aria-label="Floating label select example">
+                                                <option selected>Супер администратор</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                            </select>
+                                            <label for="floatingSelectGrid">Координатор рейтинга</label>
+                                        </div>
+                                        <div class="form-floating mb-3">
+                                            <select class="form-select" id="floatingSelectGrid"
+                                                aria-label="Floating label select example">
+                                                <option selected>Супер администратор</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                            </select>
+                                            <label for="floatingSelectGrid">Тип рейтинга</label>
+                                        </div>
+                                        <div class="form-floating mb-3">
+                                            <select class="form-select" id="floatingSelectGrid"
+                                                aria-label="Floating label select example">
+                                                <option selected>Месяц</option>
+                                                <option value="1">Квартал</option>
+                                                <option value="2">Год</option>
+                                            </select>
+                                            <label for="floatingSelectGrid">Учетный год</label>
+                                        </div>
+                                        <div class="form-floating mb-3">
+                                            <input class="form-control" type="date" id="example-date-input">
+                                            <label for="example-date-input" class="col-md-2 col-form-label">Дата
+                                                публикации (немедленная публикация / выбрать дату)</label>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-floating mb-3">
+                                                    <input class="form-control" type="date" id="example-date-input">
+                                                    <label for="example-date-input" class="col-md-2 col-form-label">Дата
+                                                        открытия приема показателей индикаторов</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-floating mb-3">
+                                                    <input class="form-control" type="date" id="example-date-input">
+                                                    <label for="example-date-input" class="col-md-2 col-form-label">Дата
+                                                        закрытия приема показателей</label>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="card mini-stats-wid">
-                                        <div class="card-body">
-                                            <div class="d-flex">
-                                                <div class="flex-grow-1">
-                                                    <p class="text-muted fw-medium">Lorem ipsum dolor.</p>
-                                                    <h4 class="mb-0">100,000,000</h4>
-                                                </div>
 
-                                                <div class="flex-shrink-0 align-self-center">
-                                                    <div class="mini-stat-icon avatar-sm rounded-circle bg-primary">
-                                                        <span class="avatar-title">
-                                                            <i class='bx bx-dollar'></i>
-                                                        </span>
-                                                    </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-floating mb-3">
+                                                    <input class="form-control" type="date" id="example-date-input">
+                                                    <label for="example-date-input" class="col-md-2 col-form-label">Дата
+                                                        начало оценки</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-floating mb-3">
+                                                    <input class="form-control" type="date" id="example-date-input">
+                                                    <label for="example-date-input" class="col-md-2 col-form-label">Дата
+                                                        завершения оценки</label>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="card mini-stats-wid">
-                                        <div class="card-body">
-                                            <div class="d-flex">
-                                                <div class="flex-grow-1">
-                                                    <p class="text-muted fw-medium">Lorem ipsum dolor.</p>
-                                                    <h4 class="mb-0">100,000,000</h4>
-                                                </div>
 
-                                                <div class="flex-shrink-0 align-self-center">
-                                                    <div class="mini-stat-icon avatar-sm rounded-circle bg-primary">
-                                                        <span class="avatar-title">
-                                                            <i class='bx bx-dollar'></i>
-                                                        </span>
-                                                    </div>
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <div class="form-floating mb-3">
+                                                    <input class="form-control" type="date" id="example-date-input">
+                                                    <label for="example-date-input" class="col-md-2 col-form-label">Дата
+                                                        рассмотрение результатов</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="form-floating mb-3">
+                                                    <input class="form-control" type="date" id="example-date-input">
+                                                    <label for="example-date-input" class="col-md-2 col-form-label">Дата
+                                                        объявления результатов</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="form-floating mb-3">
+                                                    <input class="form-control" type="date" id="example-date-input">
+                                                    <label for="example-date-input" class="col-md-2 col-form-label">Дата
+                                                        предоставления итогов</label>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
+                                    </form>
                                 </div>
-                                <div class="col-md-3">
-                                    <div class="card mini-stats-wid">
-                                        <div class="card-body">
-                                            <div class="d-flex">
-                                                <div class="flex-grow-1">
-                                                    <p class="text-muted fw-medium">Lorem ipsum dolor.</p>
-                                                    <h4 class="mb-0">100,000,000</h4>
-                                                </div>
 
-                                                <div class="flex-shrink-0 align-self-center">
-                                                    <div class="mini-stat-icon avatar-sm rounded-circle bg-primary">
-                                                        <span class="avatar-title">
-                                                            <i class='bx bx-dollar'></i>
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                            </div>
+
+                                <div class="tab-pane mt-2" id="profile-1" role="tabpanel">
+                                    <form>
+                                        <div class="form-floating mb-3">
+                                            <input type="text" class="form-control" id="floatingnameInput" placeholder="Наименование
+                                                раздела">
+                                            <label for="floatingnameInput">Наименование
+                                                раздела</label>
                                         </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- end row -->
-
-                            <div class="card">
-                                <div class="card-body">
-                                    <div class="d-sm-flex flex-wrap">
-                                        <h4 class="card-title mb-4">Email Sent</h4>
-                                        <div class="ms-auto">
-                                            <ul class="nav nav-pills">
-                                                <li class="nav-item">
-                                                    <a class="nav-link" href="#">Week</a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a class="nav-link" href="#">Month</a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a class="nav-link active" href="#">Year</a>
-                                                </li>
-                                            </ul>
+                                        <div class="form-floating mb-3">
+                                            <input type="text" class="form-control" id="floatingnameInput" placeholder="Примечания
+                                                раздела">
+                                            <label for="floatingnameInput">Примечания
+                                                раздела</label>
                                         </div>
-                                    </div>
-
-                                    <div id="stacked-column-chart" class="apex-charts"
-                                        data-colors='["--bs-primary", "--bs-warning", "--bs-success"]' dir="ltr"></div>
+                                        <div class="form-floating mb-3">
+                                            <input type="text" class="form-control" id="floatingnameInput" placeholder="Плановые
+                                                показатели">
+                                            <label for="floatingnameInput">Плановые
+                                                показатели</label>
+                                        </div>
+                                        <div class="form-floating mb-3">
+                                            <select class="form-select" id="floatingSelectGrid"
+                                                aria-label="Floating label select example">
+                                                <option selected>Супер администратор</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                            </select>
+                                            <label for="floatingSelectGrid">Эксперт
+                                                раздела</label>
+                                        </div>
+                                    </form>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- end row -->
 
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="card">
-                                <div class="card-body">
-                                    <h4 class="card-title mb-4">Latest Transaction</h4>
-                                    <div class="table-responsive">
-                                        <table class="table align-middle table-nowrap mb-0">
-                                            <thead class="table-light">
-                                                <tr>
-                                                    <th style="width: 20px;">
-                                                        <div class="form-check font-size-16 align-middle">
-                                                            <input class="form-check-input" type="checkbox"
-                                                                id="transactionCheck01">
-                                                            <label class="form-check-label"
-                                                                for="transactionCheck01"></label>
+                                <div class="tab-pane mt-3" id="settings-1" role="tabpanel">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="bootstrap-modal">
+                                                <!-- Large modal -->
+                                                <button type="button" class="btn btn-success mb-4 btn-sub"
+                                                    data-bs-toggle="modal" data-bs-target=".bd-example-modal-lg">Cоздать
+                                                    новый рейтинг</button>
+                                                <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog"
+                                                    aria-hidden="true">
+                                                    <div class="modal-dialog modal-lg">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header">
+                                                                <h5 class="modal-title">Добавить индикатор</h5>
+                                                                <button type="button" class="btn-close"
+                                                                    data-bs-dismiss="modal">
+                                                                </button>
+                                                            </div>
+                                                            <form>
+                                                                <div class="mb-3 row mx-5 mt-3">
+                                                                    <label class="col-lg-4 col-form-label"
+                                                                        for="validationCustom01">Наименование индикатор
+                                                                    </label>
+                                                                    <div class="col-lg-8">
+                                                                        <input type="text" class="form-control"
+                                                                            id="validationCustom01"
+                                                                            placeholder="Введите наименование индикатора"
+                                                                            required>
+                                                                        <div class="invalid-feedback">
+                                                                            Please enter a username.
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="mb-3 row mx-5 mt-3">
+                                                                    <label for="example-text-input"
+                                                                        class="col-md-4 col-form-label">Тип
+                                                                        индикатор</label>
+                                                                    <div class="col-md-8">
+                                                                        <select class="form-select"
+                                                                            id="formrow-inputState">
+                                                                            <option selected>Super admin</option>
+                                                                            <option>1</option>
+                                                                            <option>2</option>
+                                                                            <option>3</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="mb-3 row mx-5 mt-3">
+                                                                    <label for="example-text-input"
+                                                                        class="col-md-4 col-form-label">Настройка
+                                                                        уведомлений для оповещения пользователей</label>
+                                                                    <div class="col-md-8">
+                                                                        <select class="form-select"
+                                                                            id="formrow-inputState">
+                                                                            <option selected>Super admin</option>
+                                                                            <option>1</option>
+                                                                            <option>2</option>
+                                                                            <option>3</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                            </form>
+                                                            <div class="modal-footer">
+                                                                <button type="button" class="btn btn-danger light"
+                                                                    data-bs-dismiss="modal">Закрывать</button>
+                                                                <button type="button"
+                                                                    class="btn btn-primary">Добавить</button>
+                                                            </div>
                                                         </div>
-                                                    </th>
-                                                    <th class="align-middle">Order ID</th>
-                                                    <th class="align-middle">Billing Name</th>
-                                                    <th class="align-middle">Date</th>
-                                                    <th class="align-middle">Total</th>
-                                                    <th class="align-middle">Payment Status</th>
-                                                    <th class="align-middle">Payment Method</th>
-                                                    <th class="align-middle">View Details</th>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="table-responsive">
+                                        <table class="table align-middle table-nowrap">
+                                            <thead>
+                                                <tr class="text-center">
+                                                    <th>Но</th>
+                                                    <th>Наименование индикатора</th>
+                                                    <th>Тип индикатора</th>
+                                                    <th>Подмножество подтверждающей информации</th>
+                                                    <th>Действие</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
-                                                <tr>
+                                                <tr class="text-center">
                                                     <td>
-                                                        <div class="form-check font-size-16">
-                                                            <input class="form-check-input" type="checkbox"
-                                                                id="transactionCheck02">
-                                                            <label class="form-check-label"
-                                                                for="transactionCheck02"></label>
-                                                        </div>
+                                                        1
                                                     </td>
-                                                    <td><a href="javascript: void(0);"
-                                                            class="text-body fw-bold">#SK2540</a> </td>
-                                                    <td>Neal Matthews</td>
-                                                    <td>
-                                                        07 Oct, 2019
-                                                    </td>
-                                                    <td>
-                                                        $400
-                                                    </td>
-                                                    <td>
-                                                        <span
-                                                            class="badge badge-pill badge-soft-success font-size-11">Paid</span>
-                                                    </td>
-                                                    <td>
-                                                        <i class="fab fa-cc-mastercard me-1"></i> Mastercard
-                                                    </td>
-                                                    <td>
-                                                        <!-- Button trigger modal -->
-                                                        <button type="button"
-                                                            class="btn btn-primary btn-sm btn-rounded waves-effect waves-light"
-                                                            data-bs-toggle="modal"
-                                                            data-bs-target=".transaction-detailModal">
-                                                            View Details
-                                                        </button>
-                                                    </td>
-                                                </tr>
+                                                    <td>Илмий ташкилотлар ва олий таълим муассасаларининг
+                                                        илмий-инновацион фаолиятини баҳолаш 2021</td>
+                                                    <td>Например</td>
+                                                    <td>Например</td>
 
-                                                <tr>
                                                     <td>
-                                                        <div class="form-check font-size-16">
-                                                            <input class="form-check-input" type="checkbox"
-                                                                id="transactionCheck03">
-                                                            <label class="form-check-label"
-                                                                for="transactionCheck03"></label>
+                                                        <div class="dropdown">
+                                                            <a href="#" class="dropdown-toggle card-drop"
+                                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                                <i class="mdi mdi-dots-horizontal font-size-18"></i>
+                                                            </a>
+                                                            <ul class="dropdown-menu dropdown-menu-end">
+                                                                <li><a href="#" class="dropdown-item"><i
+                                                                            class="mdi mdi-pencil font-size-16 text-success me-1"></i>
+                                                                        Редактировать</a></li>
+                                                                <li><a href="#" class="dropdown-item"><i
+                                                                            class="mdi mdi-trash-can font-size-16 text-danger me-1"></i>
+                                                                        Удалить</a></li>
+                                                            </ul>
                                                         </div>
                                                     </td>
-                                                    <td><a href="javascript: void(0);"
-                                                            class="text-body fw-bold">#SK2541</a> </td>
-                                                    <td>Jamal Burnett</td>
-                                                    <td>
-                                                        07 Oct, 2019
-                                                    </td>
-                                                    <td>
-                                                        $380
-                                                    </td>
-                                                    <td>
-                                                        <span
-                                                            class="badge badge-pill badge-soft-danger font-size-11">Chargeback</span>
-                                                    </td>
-                                                    <td>
-                                                        <i class="fab fa-cc-visa me-1"></i> Visa
-                                                    </td>
-                                                    <td>
-                                                        <!-- Button trigger modal -->
-                                                        <button type="button"
-                                                            class="btn btn-primary btn-sm btn-rounded waves-effect waves-light"
-                                                            data-bs-toggle="modal"
-                                                            data-bs-target=".transaction-detailModal">
-                                                            View Details
-                                                        </button>
-                                                    </td>
                                                 </tr>
+                                                <tr class="text-center">
+                                                    <td>
+                                                        2
+                                                    </td>
+                                                    <td>Илмий-тадқиқот фаолиятининг самарадорлигини синаш ва ишлаб
+                                                        чиқаришга жорий этиш бўйича ташкил этилган инфратузилма</td>
+                                                    <td>Например</td>
+                                                    <td>Например</td>
 
-                                                <tr>
                                                     <td>
-                                                        <div class="form-check font-size-16">
-                                                            <input class="form-check-input" type="checkbox"
-                                                                id="transactionCheck04">
-                                                            <label class="form-check-label"
-                                                                for="transactionCheck04"></label>
+                                                        <div class="dropdown">
+                                                            <a href="#" class="dropdown-toggle card-drop"
+                                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                                <i class="mdi mdi-dots-horizontal font-size-18"></i>
+                                                            </a>
+                                                            <ul class="dropdown-menu dropdown-menu-end">
+                                                                <li><a href="#" class="dropdown-item"><i
+                                                                            class="mdi mdi-pencil font-size-16 text-success me-1"></i>
+                                                                        Редактировать</a></li>
+                                                                <li><a href="#" class="dropdown-item"><i
+                                                                            class="mdi mdi-trash-can font-size-16 text-danger me-1"></i>
+                                                                        Удалить</a></li>
+                                                            </ul>
                                                         </div>
-                                                    </td>
-                                                    <td><a href="javascript: void(0);"
-                                                            class="text-body fw-bold">#SK2542</a> </td>
-                                                    <td>Juan Mitchell</td>
-                                                    <td>
-                                                        06 Oct, 2019
-                                                    </td>
-                                                    <td>
-                                                        $384
-                                                    </td>
-                                                    <td>
-                                                        <span
-                                                            class="badge badge-pill badge-soft-success font-size-11">Paid</span>
-                                                    </td>
-                                                    <td>
-                                                        <i class="fab fa-cc-paypal me-1"></i> Paypal
-                                                    </td>
-                                                    <td>
-                                                        <!-- Button trigger modal -->
-                                                        <button type="button"
-                                                            class="btn btn-primary btn-sm btn-rounded waves-effect waves-light"
-                                                            data-bs-toggle="modal"
-                                                            data-bs-target=".transaction-detailModal">
-                                                            View Details
-                                                        </button>
                                                     </td>
                                                 </tr>
-                                                <tr>
+                                                <tr class="text-center">
                                                     <td>
-                                                        <div class="form-check font-size-16">
-                                                            <input class="form-check-input" type="checkbox"
-                                                                id="transactionCheck05">
-                                                            <label class="form-check-label"
-                                                                for="transactionCheck05"></label>
+                                                        3
+                                                    </td>
+                                                    <td>Илмий ташкилотлар ва олий таълим муассасаларининг
+                                                        илмий-инновацион фаолиятини баҳолаш 2021</td>
+                                                    <td>Например</td>
+                                                    <td>Например</td>
+
+                                                    <td>
+                                                        <div class="dropdown">
+                                                            <a href="#" class="dropdown-toggle card-drop"
+                                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                                <i class="mdi mdi-dots-horizontal font-size-18"></i>
+                                                            </a>
+                                                            <ul class="dropdown-menu dropdown-menu-end">
+                                                                <li><a href="#" class="dropdown-item"><i
+                                                                            class="mdi mdi-pencil font-size-16 text-success me-1"></i>
+                                                                        Редактировать</a></li>
+                                                                <li><a href="#" class="dropdown-item"><i
+                                                                            class="mdi mdi-trash-can font-size-16 text-danger me-1"></i>
+                                                                        Удалить</a></li>
+                                                            </ul>
                                                         </div>
-                                                    </td>
-                                                    <td><a href="javascript: void(0);"
-                                                            class="text-body fw-bold">#SK2543</a> </td>
-                                                    <td>Barry Dick</td>
-                                                    <td>
-                                                        05 Oct, 2019
-                                                    </td>
-                                                    <td>
-                                                        $412
-                                                    </td>
-                                                    <td>
-                                                        <span
-                                                            class="badge badge-pill badge-soft-success font-size-11">Paid</span>
-                                                    </td>
-                                                    <td>
-                                                        <i class="fab fa-cc-mastercard me-1"></i> Mastercard
-                                                    </td>
-                                                    <td>
-                                                        <!-- Button trigger modal -->
-                                                        <button type="button"
-                                                            class="btn btn-primary btn-sm btn-rounded waves-effect waves-light"
-                                                            data-bs-toggle="modal"
-                                                            data-bs-target=".transaction-detailModal">
-                                                            View Details
-                                                        </button>
                                                     </td>
                                                 </tr>
-                                                <tr>
+                                                <tr class="text-center">
                                                     <td>
-                                                        <div class="form-check font-size-16">
-                                                            <input class="form-check-input" type="checkbox"
-                                                                id="transactionCheck06">
-                                                            <label class="form-check-label"
-                                                                for="transactionCheck06"></label>
+                                                        4
+                                                    </td>
+                                                    <td>Илмий-тадқиқот фаолиятининг самарадорлигини синаш ва ишлаб
+                                                        чиқаришга жорий этиш бўйича ташкил этилган инфратузилма</td>
+                                                    <td>Например</td>
+                                                    <td>Например</td>
+
+                                                    <td>
+                                                        <div class="dropdown">
+                                                            <a href="#" class="dropdown-toggle card-drop"
+                                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                                <i class="mdi mdi-dots-horizontal font-size-18"></i>
+                                                            </a>
+                                                            <ul class="dropdown-menu dropdown-menu-end">
+                                                                <li><a href="#" class="dropdown-item"><i
+                                                                            class="mdi mdi-pencil font-size-16 text-success me-1"></i>
+                                                                        Редактировать</a></li>
+                                                                <li><a href="#" class="dropdown-item"><i
+                                                                            class="mdi mdi-trash-can font-size-16 text-danger me-1"></i>
+                                                                        Удалить</a></li>
+                                                            </ul>
                                                         </div>
-                                                    </td>
-                                                    <td><a href="javascript: void(0);"
-                                                            class="text-body fw-bold">#SK2544</a> </td>
-                                                    <td>Ronald Taylor</td>
-                                                    <td>
-                                                        04 Oct, 2019
-                                                    </td>
-                                                    <td>
-                                                        $404
-                                                    </td>
-                                                    <td>
-                                                        <span
-                                                            class="badge badge-pill badge-soft-warning font-size-11">Refund</span>
-                                                    </td>
-                                                    <td>
-                                                        <i class="fab fa-cc-visa me-1"></i> Visa
-                                                    </td>
-                                                    <td>
-                                                        <!-- Button trigger modal -->
-                                                        <button type="button"
-                                                            class="btn btn-primary btn-sm btn-rounded waves-effect waves-light"
-                                                            data-bs-toggle="modal"
-                                                            data-bs-target=".transaction-detailModal">
-                                                            View Details
-                                                        </button>
                                                     </td>
                                                 </tr>
-                                                <tr>
+                                                <tr class="text-center">
                                                     <td>
-                                                        <div class="form-check font-size-16">
-                                                            <input class="form-check-input" type="checkbox"
-                                                                id="transactionCheck07">
-                                                            <label class="form-check-label"
-                                                                for="transactionCheck07"></label>
+                                                        5
+                                                    </td>
+                                                    <td>Илмий ташкилотлар ва олий таълим муассасаларининг
+                                                        илмий-инновацион фаолиятини баҳолаш 2021</td>
+                                                    <td>Например</td>
+                                                    <td>Например</td>
+
+                                                    <td>
+                                                        <div class="dropdown">
+                                                            <a href="#" class="dropdown-toggle card-drop"
+                                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                                <i class="mdi mdi-dots-horizontal font-size-18"></i>
+                                                            </a>
+                                                            <ul class="dropdown-menu dropdown-menu-end">
+                                                                <li><a href="#" class="dropdown-item"><i
+                                                                            class="mdi mdi-pencil font-size-16 text-success me-1"></i>
+                                                                        Редактировать</a></li>
+                                                                <li><a href="#" class="dropdown-item"><i
+                                                                            class="mdi mdi-trash-can font-size-16 text-danger me-1"></i>
+                                                                        Удалить</a></li>
+                                                            </ul>
                                                         </div>
-                                                    </td>
-                                                    <td><a href="javascript: void(0);"
-                                                            class="text-body fw-bold">#SK2545</a> </td>
-                                                    <td>Jacob Hunter</td>
-                                                    <td>
-                                                        04 Oct, 2019
-                                                    </td>
-                                                    <td>
-                                                        $392
-                                                    </td>
-                                                    <td>
-                                                        <span
-                                                            class="badge badge-pill badge-soft-success font-size-11">Paid</span>
-                                                    </td>
-                                                    <td>
-                                                        <i class="fab fa-cc-paypal me-1"></i> Paypal
-                                                    </td>
-                                                    <td>
-                                                        <!-- Button trigger modal -->
-                                                        <button type="button"
-                                                            class="btn btn-primary btn-sm btn-rounded waves-effect waves-light"
-                                                            data-bs-toggle="modal"
-                                                            data-bs-target=".transaction-detailModal">
-                                                            View Details
-                                                        </button>
                                                     </td>
                                                 </tr>
                                             </tbody>
                                         </table>
                                     </div>
-                                    <!-- end table-responsive -->
                                 </div>
                             </div>
+
                         </div>
                     </div>
-                    <!-- end row -->
                 </div>
                 <!-- container-fluid -->
             </div>
@@ -853,7 +911,6 @@
                     </div>
                 </div>
             </div>
-            <!-- end modal -->
 
             <footer class="footer">
                 <div class="container-fluid">

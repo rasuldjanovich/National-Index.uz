@@ -425,9 +425,9 @@ body[data-layout=horizontal] .page-content {
     }
 }
 
-.page-title-box {
+/* .page-title-box {
     padding-bottom: 24px
-}
+} */
 
 .page-title-box .breadcrumb {
     background-color: transparent;
@@ -5677,6 +5677,139 @@ table.dataTable.dtr-inline.collapsed>tbody>tr>td.dtr-control:before {
     margin-left: auto;
     margin-right: auto;
     min-width: 500px;
+}
+
+.logo-text {
+    color: rgb(85, 110, 230);
+}
+
+.activee {
+  padding: 0.4rem 0.2rem;
+  margin: 0 0 0 5px;
+}
+
+input.checkbox-toggle {
+  position: absolute;
+  left: -9999px;
+  opacity: 0;
+}
+
+.checkbox-toggle + label {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  user-select: none;
+  font-family: 'helvetica';
+  font-size: 16px;
+}
+
+input.checkbox-toggle:checked + label:before {
+  text-align: center;
+  content: attr(data-on);
+  padding: 3px 30px 0 0;
+}
+
+input.checkbox-toggle:not(:checked) + label:before {
+  text-align: center;
+  content: attr(data-off);
+  padding: 3px 0 0 30px;
+}
+
+input.checkbox-toggle-round + label {
+  padding: 2px;
+  width: 165px;
+  height: 35px;
+  background-color: #dddddd;
+  border-radius: 35px;
+}
+
+input.checkbox-toggle-round + label:before,
+input.checkbox-toggle-round + label:after {
+  display: block;
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  bottom: 1px;
+  content: '';
+}
+
+input.checkbox-toggle-round + label:before {
+  right: 1px;
+  border-radius: 35px;
+  transition: background 0.4s;
+}
+
+input.checkbox-toggle-round + label:after {
+  width: 37px;
+  background-color: #fff;
+  border-radius: 100%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  transition: margin 0.4s;
+}
+
+input.checkbox-toggle-round:checked + label:after {
+  margin-left: 130px
+}
+
+input.checkbox-toggle-round:checked + label:before {
+  background-color: #4DB346;
+  color: white;
+}
+
+input.checkbox-toggle-round:not(:checked) + label:before {
+  background-color: #ccc;
+  color: black;
+}
+
+input.checkbox-toggle-round-flat + label {
+  padding: 2px;
+  width: 90px;
+  height: 35px;
+  background-color: #dddddd;
+  border-radius: 35px;
+  transition: background 0.4s;
+}
+
+input.checkbox-toggle-round-flat + label:before,
+input.checkbox-toggle-round-flat + label:after {
+  display: block;
+  position: absolute;
+  content: "";
+}
+
+input.checkbox-toggle-round-flat + label:before {
+  top: 2px;
+  left: 2px;
+  bottom: 2px;
+  right: 2px;
+  background-color: #fff;
+  border-radius: 35px;
+  transition: background 0.4s;
+}
+
+input.checkbox-toggle-round-flat + label:after {
+  top: 4px;
+  left: 4px;
+  bottom: 4px;
+  width: 32px;
+  background-color: #bbb;
+  border-radius: 35px;
+  transition: margin 0.4s, background 0.4s;
+}
+
+input.checkbox-toggle-round-flat:checked + label {
+  background-color: #8ce196;
+}
+
+input.checkbox-toggle-round-flat:checked + label:after {
+  margin-left: 48px;
+  background-color: #8ce196;
+}
+
+
+.btn-sub {
+    float: right;
 }
 
 /*# sourceMappingURL=app.min.css.map */
