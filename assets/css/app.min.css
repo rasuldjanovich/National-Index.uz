@@ -5681,6 +5681,7 @@ table.dataTable.dtr-inline.collapsed>tbody>tr>td.dtr-control:before {
 
 .logo-text {
     color: rgb(85, 110, 230);
+    display: none;
 }
 
 .activee {
@@ -5810,6 +5811,10 @@ input.checkbox-toggle-round-flat:checked + label:after {
 
 .btn-sub {
     float: right;
+}
+
+.display-none {
+    display: none;
 }
 
 /*# sourceMappingURL=app.min.css.map */
