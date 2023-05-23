@@ -1,24 +1,35 @@
 <!doctype html>
 <html lang="en">
 
-    <head>
+<head>
 
-        <meta charset="utf-8" />
-        <title>National Index</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
-        <meta content="Themesbrand" name="author" />
-        <!-- App favicon -->
-        <link rel="shortcut icon" href="assets/images/minin.png">
-    
-        <!-- Bootstrap Css -->
-        <link href="assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
-        <!-- Icons Css -->
-        <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
-        <!-- App Css-->
-        <link href="assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
-    
-    </head>
+    <meta charset="utf-8" />
+    <title>National Index</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
+    <meta content="Themesbrand" name="author" />
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="assets/images/minin.png">
+
+    <!-- Bootstrap Css -->
+    <link href="assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
+    <!-- Icons Css -->
+    <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+    <!-- App Css-->
+    <link href="assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
+
+    <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+
+    <script>
+        tinymce.init({
+            selector: '#mytextarea'
+        });
+
+    </script>
+
+
+
+</head>
 
 <body data-sidebar="dark" data-layout-mode="light">
 
@@ -44,9 +55,9 @@
                             <span class="logo-sm">
                                 <img src="assets/images/minin.png" alt="" height="32">
                             </span>
-                            <span class="d-flex justify-content-center align-items-center logo-lg mt-4">
+                            <span class=" justify-content-center align-items-center logo-lg mt-4">
                                 <img src="assets//images/minin.png" alt="" height="30">
-                                <h4 class="align-items-center mt-2 px-2 logo-text">National index</h4>
+                                <!-- <h4 class="align-items-center mt-2 px-2">National index</h4> -->
                             </span>
                         </a>
                     </div>
@@ -406,64 +417,69 @@
                     <div class="card">
                         <div class="card-body">
 
-                            <!-- Nav tabs -->
-                            <ul class="nav nav-pills nav-justified" role="tablist">
-                                <li class="waves-effect waves-light">
-                                    <a class="nav-link active p-3 px-5 mx-3" data-bs-toggle="tab" href="#home-1"
-                                        role="tab">
-                                        <span class="d-block d-sm-none"><i class="fas fa-home"></i></span>
-                                        <span class="d-none d-sm-block">Uzb</span>
-                                    </a>
-                                </li>
-                                <li class="waves-effect waves-light">
-                                    <a class="nav-link p-3 px-5 mx-3" data-bs-toggle="tab" href="#profile-1" role="tab">
-                                        <span class="d-block d-sm-none"><i class="far fa-user"></i></span>
-                                        <span class="d-none d-sm-block">Ру</span>
-                                    </a>
-                                </li>
-                                <li class="waves-effect waves-light">
-                                    <a class="nav-link p-3 px-5 mx-3" data-bs-toggle="tab" href="#settings-1"
-                                        role="tab">
-                                        <span class="d-block d-sm-none"><i class="fas fa-cog"></i></span>
-                                        <span class="d-none d-sm-block">Eng</span>
-                                    </a>
-                                </li>
-                            </ul>
+                            <form action="">
+                                <!-- Nav tabs -->
+                                <ul class="nav nav-pills nav-justified" role="tablist">
+                                    <li class="waves-effect waves-light">
+                                        <a class="nav-link active p-3 px-5 mx-3" data-bs-toggle="tab" href="#home-1"
+                                            role="tab">
+                                            <span class="d-block d-sm-none"><i class="fas fa-home"></i></span>
+                                            <span class="d-none d-sm-block">Uzb</span>
+                                        </a>
+                                    </li>
+                                    <li class="waves-effect waves-light">
+                                        <a class="nav-link p-3 px-5 mx-3" data-bs-toggle="tab" href="#profile-1"
+                                            role="tab">
+                                            <span class="d-block d-sm-none"><i class="far fa-user"></i></span>
+                                            <span class="d-none d-sm-block">Ру</span>
+                                        </a>
+                                    </li>
+                                    <li class="waves-effect waves-light">
+                                        <a class="nav-link p-3 px-5 mx-3" data-bs-toggle="tab" href="#settings-1"
+                                            role="tab">
+                                            <span class="d-block d-sm-none"><i class="fas fa-cog"></i></span>
+                                            <span class="d-none d-sm-block">Eng</span>
+                                        </a>
+                                    </li>
+                                </ul>
 
-                            <!-- Tab panes -->
-                            <div class="tab-content p-3 text-muted">
-                                <div class="tab-pane active mt-2" id="home-1" role="tabpanel">
+                                <!-- Tab panes -->
+                                <div class="tab-content p-3 text-muted">
+                                    <div class="tab-pane active mt-2" id="home-1" role="tabpanel">
 
-                                    <form>
+
                                         <div class="form-floating mb-3">
                                             <input type="text" class="form-control" id="floatingnameInput"
                                                 placeholder="Title">
                                             <label for="floatingnameInput">Title</label>
                                         </div>
 
-                                        <div class="form-floating mb-3">
-                                            <select class="form-select" id="floatingSelectGrid"
-                                                aria-label="Floating label select example">
-                                                <option selected>Select</option>
-                                                <option value="1">1</option>
-                                            </select>
-                                            <label for="floatingSelectGrid">Category</label>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-floating mb-3">
+                                                    <select class="form-select" id="floatingSelectGrid"
+                                                        aria-label="Floating label select example">
+                                                        <option selected>Select</option>
+                                                        <option value="1">1</option>
+                                                    </select>
+                                                    <label for="floatingSelectGrid">Category</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="input-group py-2">
+                                                    <input type="file" class="form-control" id="inputGroupFile02">
+                                                    <label class="input-group-text"
+                                                        for="inputGroupFile02">Upload</label>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="input-group mb-3">
-                                            <input type="file" class="form-control" id="inputGroupFile02">
-                                            <label class="input-group-text" for="inputGroupFile02">Upload</label>
-                                        </div>
-                                        <div class="form-floating mb-3">
-                                            <textarea class="form-control" name="" id="" cols="240"
-                                                rows="10"></textarea>
-                                            <label for="floatingnameInput">Descriptions</label>
-                                        </div>
-                                    </form>
-                                </div>
+                                        <textarea id="mytextarea"></textarea>
+
+                                    </div>
 
 
-                                <div class="tab-pane mt-2" id="profile-1" role="tabpanel">
-                                    <form>
+                                    <div class="tab-pane mt-2" id="profile-1" role="tabpanel">
+
                                         <div class="form-floating mb-3">
                                             <input type="text" class="form-control" id="floatingnameInput"
                                                 placeholder="Title">
@@ -471,27 +487,15 @@
                                         </div>
 
                                         <div class="form-floating mb-3">
-                                            <select class="form-select" id="floatingSelectGrid"
-                                                aria-label="Floating label select example">
-                                                <option selected>Select</option>
-                                                <option value="1">1</option>
-                                            </select>
-                                            <label for="floatingSelectGrid">Категория</label>
-                                        </div>
-                                        <div class="input-group mb-3">
-                                            <input type="file" class="form-control" id="inputGroupFile02">
-                                            <label class="input-group-text" for="inputGroupFile02">Upload</label>
-                                        </div>
-                                        <div class="form-floating mb-3">
                                             <textarea class="form-control" name="" id="" cols="240"
                                                 rows="10"></textarea>
-                                            <label for="floatingnameInput">Описания</label>
+                                            <label for="floatingnameInput">Descriptions</label>
                                         </div>
-                                    </form>
-                                </div>
 
-                                <div class="tab-pane mt-3" id="settings-1" role="tabpanel">
-                                    <form>
+                                    </div>
+
+                                    <div class="tab-pane mt-3" id="settings-1" role="tabpanel">
+
                                         <div class="form-floating mb-3">
                                             <input type="text" class="form-control" id="floatingnameInput"
                                                 placeholder="Title">
@@ -499,27 +503,18 @@
                                         </div>
 
                                         <div class="form-floating mb-3">
-                                            <select class="form-select" id="floatingSelectGrid"
-                                                aria-label="Floating label select example">
-                                                <option selected>Select</option>
-                                                <option value="1">1</option>
-                                            </select>
-                                            <label for="floatingSelectGrid">Category</label>
-                                        </div>
-                                        <div class="input-group mb-3">
-                                            <input type="file" class="form-control" id="inputGroupFile02">
-                                            <label class="input-group-text" for="inputGroupFile02">Upload</label>
-                                        </div>
-                                        <div class="form-floating mb-3">
                                             <textarea class="form-control" name="" id="" cols="240"
                                                 rows="10"></textarea>
                                             <label for="floatingnameInput">Descriptions</label>
                                         </div>
-                                    </form>
+
+                                    </div>
+
                                 </div>
-                            </div>
+                            </form>
                         </div>
                     </div>
+                    <button class="btn btn-success mb-3 ">Сохранять</button>
                 </div>
                 <!-- container-fluid -->
             </div>

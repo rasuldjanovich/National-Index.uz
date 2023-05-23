@@ -1,24 +1,24 @@
 <!doctype html>
 <html lang="en">
 
-    <head>
+<head>
 
-        <meta charset="utf-8" />
-        <title>National Index</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
-        <meta content="Themesbrand" name="author" />
-        <!-- App favicon -->
-        <link rel="shortcut icon" href="assets/images/minin.png">
-    
-        <!-- Bootstrap Css -->
-        <link href="assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
-        <!-- Icons Css -->
-        <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
-        <!-- App Css-->
-        <link href="assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
-    
-    </head>
+    <meta charset="utf-8" />
+    <title>National Index</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
+    <meta content="Themesbrand" name="author" />
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="assets/images/minin.png">
+
+    <!-- Bootstrap Css -->
+    <link href="assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
+    <!-- Icons Css -->
+    <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+    <!-- App Css-->
+    <link href="assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
+
+</head>
 
 <body data-sidebar="dark" data-layout-mode="light">
 
@@ -44,9 +44,9 @@
                             <span class="logo-sm">
                                 <img src="assets/images/minin.png" alt="" height="32">
                             </span>
-                            <span class="d-flex justify-content-center align-items-center logo-lg mt-4">
+                            <span class=" justify-content-center align-items-center logo-lg mt-4">
                                 <img src="assets//images/minin.png" alt="" height="30">
-                                <h4 class="align-items-center mt-2 px-2 logo-text">National index</h4>
+                                <!-- <h4 class="align-items-center mt-2 px-2">National index</h4> -->
                             </span>
                         </a>
                     </div>
@@ -336,7 +336,7 @@
                                 <li><a href="news-table-2.html">Список новости</a></li>
                             </ul>
                         </li>
-                        
+
                         <li>
                             <a href="javascript: void(0);" class="has-arrow waves-effect">
                                 <i class="bx bx-calendar"></i>
@@ -406,33 +406,34 @@
                     <div class="card">
                         <div class="card-body">
 
-                            <!-- Nav tabs -->
-                            <ul class="nav nav-pills nav-justified" role="tablist">
-                                <li class="nav-item waves-effect waves-light">
-                                    <a class="nav-link active p-3" data-bs-toggle="tab" href="#home-1" role="tab">
-                                        <span class="d-block d-sm-none"><i class="fas fa-home"></i></span>
-                                        <span class="d-none d-sm-block">Общий</span>
-                                    </a>
-                                </li>
-                                <li class="nav-item waves-effect waves-light">
-                                    <a class="nav-link p-3" data-bs-toggle="tab" href="#profile-1" role="tab">
-                                        <span class="d-block d-sm-none"><i class="far fa-user"></i></span>
-                                        <span class="d-none d-sm-block">Члены-эксперты</span>
-                                    </a>
-                                </li>
-                                <li class="nav-item waves-effect waves-light">
-                                    <a class="nav-link p-3" data-bs-toggle="tab" href="#settings-1" role="tab">
-                                        <span class="d-block d-sm-none"><i class="fas fa-cog"></i></span>
-                                        <span class="d-none d-sm-block">Список индикаторов</span>
-                                    </a>
-                                </li>
-                            </ul>
+                            <form action="">
+                                <!-- Nav tabs -->
+                                <ul class="nav nav-pills nav-justified" role="tablist">
+                                    <li class="waves-effect waves-light">
+                                        <a class="nav-link active p-3" data-bs-toggle="tab" href="#home-1" role="tab">
+                                            <span class="d-block d-sm-none"><i class="fas fa-home"></i></span>
+                                            <span class="d-none d-sm-block">Общий</span>
+                                        </a>
+                                    </li>
+                                    <li class="waves-effect waves-light">
+                                        <a class="nav-link p-3" data-bs-toggle="tab" href="#profile-1" role="tab">
+                                            <span class="d-block d-sm-none"><i class="far fa-user"></i></span>
+                                            <span class="d-none d-sm-block">Члены-эксперты</span>
+                                        </a>
+                                    </li>
+                                    <li class="waves-effect waves-light">
+                                        <a class="nav-link p-3" data-bs-toggle="tab" href="#settings-1" role="tab">
+                                            <span class="d-block d-sm-none"><i class="fas fa-cog"></i></span>
+                                            <span class="d-none d-sm-block">Список индикаторов</span>
+                                        </a>
+                                    </li>
+                                </ul>
 
-                            <!-- Tab panes -->
-                            <div class="tab-content p-3 text-muted">
-                                <div class="tab-pane active mt-2" id="home-1" role="tabpanel">
+                                <!-- Tab panes -->
+                                <div class="tab-content p-3 text-muted">
+                                    <div class="tab-pane active mt-2" id="home-1" role="tabpanel">
 
-                                    <form>
+
                                         <div class="form-floating mb-3">
                                             <input type="text" class="form-control" id="floatingnameInput" placeholder="Наименование
                                                 раздела">
@@ -562,12 +563,12 @@
                                                 </div>
                                             </div>
                                         </div>
-                                    </form>
-                                </div>
+
+                                    </div>
 
 
-                                <div class="tab-pane mt-2" id="profile-1" role="tabpanel">
-                                    <form>
+                                    <div class="tab-pane mt-2" id="profile-1" role="tabpanel">
+
                                         <div class="form-floating mb-3">
                                             <input type="text" class="form-control" id="floatingnameInput" placeholder="Наименование
                                                 раздела">
@@ -597,279 +598,247 @@
                                             <label for="floatingSelectGrid">Эксперт
                                                 раздела</label>
                                         </div>
-                                    </form>
-                                </div>
 
-                                <div class="tab-pane mt-3" id="settings-1" role="tabpanel">
-                                    <div class="row">
-                                        <div class="col-12">
-                                            <div class="bootstrap-modal">
-                                                <!-- Large modal -->
-                                                <button type="button" class="btn btn-success mb-4 btn-sub"
-                                                    data-bs-toggle="modal" data-bs-target=".bd-example-modal-lg">Cоздать
-                                                    новый рейтинг</button>
-                                                <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog"
-                                                    aria-hidden="true">
-                                                    <div class="modal-dialog modal-lg">
-                                                        <div class="modal-content">
-                                                            <div class="modal-header">
-                                                                <h5 class="modal-title">Добавить индикатор</h5>
-                                                                <button type="button" class="btn-close"
-                                                                    data-bs-dismiss="modal">
-                                                                </button>
-                                                            </div>
-                                                            <form>
-                                                                <div class="mb-3 row mx-5 mt-3">
-                                                                    <label class="col-lg-4 col-form-label"
-                                                                        for="validationCustom01">Наименование индикатор
-                                                                    </label>
-                                                                    <div class="col-lg-8">
-                                                                        <input type="text" class="form-control"
-                                                                            id="validationCustom01"
-                                                                            placeholder="Введите наименование индикатора"
-                                                                            required>
-                                                                    </div>
+                                    </div>
+
+                                    <div class="tab-pane mt-3" id="settings-1" role="tabpanel">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="bootstrap-modal">
+                                                    <!-- Large modal -->
+                                                    <button type="button" class="btn btn-success mb-4 btn-sub"
+                                                        data-bs-toggle="modal"
+                                                        data-bs-target=".bd-example-modal-lg">Cоздать
+                                                        новый рейтинг</button>
+                                                    <div class="modal fade bd-example-modal-lg" tabindex="-1"
+                                                        role="dialog" aria-hidden="true">
+                                                        <div class="modal-dialog modal-lg">
+                                                            <div class="modal-content">
+                                                                <div class="modal-header">
+                                                                    <h5 class="modal-title">Добавить индикатор</h5>
+                                                                    <button type="button" class="btn-close"
+                                                                        data-bs-dismiss="modal">
+                                                                    </button>
                                                                 </div>
-                                                                <div class="mb-3 row mx-5 mt-3">
-                                                                    <label for="example-text-input"
-                                                                        class="col-md-4 col-form-label">Тип
-                                                                        индикатор</label>
-                                                                    <div class="col-md-8">
-                                                                        <select class="form-select"
-                                                                            id="formrow-inputState">
-                                                                            <option selected>Super admin</option>
-                                                                            <option>1</option>
-                                                                            <option>2</option>
-                                                                            <option>3</option>
-                                                                        </select>
+                                                                <form>
+                                                                    <div class="mb-3 row mx-5 mt-3">
+                                                                        <label class="col-lg-4 col-form-label"
+                                                                            for="validationCustom01">Наименование
+                                                                            индикатор
+                                                                        </label>
+                                                                        <div class="col-lg-8">
+                                                                            <input type="text" class="form-control"
+                                                                                id="validationCustom01"
+                                                                                placeholder="Введите наименование индикатора"
+                                                                                required>
+                                                                        </div>
                                                                     </div>
+                                                                    <div class="mb-3 row mx-5 mt-3">
+                                                                        <label for="example-text-input"
+                                                                            class="col-md-4 col-form-label">Тип
+                                                                            индикатор</label>
+                                                                        <div class="col-md-8">
+                                                                            <select class="form-select"
+                                                                                id="formrow-inputState">
+                                                                                <option selected>Super admin</option>
+                                                                                <option>1</option>
+                                                                                <option>2</option>
+                                                                                <option>3</option>
+                                                                            </select>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="mb-3 row mx-5 mt-3">
+                                                                        <label for="example-text-input"
+                                                                            class="col-md-4 col-form-label">Настройка
+                                                                            уведомлений для оповещения
+                                                                            пользователей</label>
+                                                                        <div class="col-md-8">
+                                                                            <select class="form-select"
+                                                                                id="formrow-inputState">
+                                                                                <option selected>Super admin</option>
+                                                                                <option>1</option>
+                                                                                <option>2</option>
+                                                                                <option>3</option>
+                                                                            </select>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="mb-3 row mx-5 mt-3">
+                                                                        <label class="col-lg-4">Radio
+                                                                        </label>
+                                                                        <div class="col-lg-8">
+                                                                            <input type="radio"
+                                                                                class="form-check-input">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="mb-3 row mx-5 mt-3">
+                                                                        <label class="col-lg-4 col-form-label"
+                                                                            for="validationCustom01">Switch
+                                                                        </label>
+                                                                        <div class="col-lg-8 col-form-label">
+                                                                            <p>
+                                                                                <input id="toggle-1"
+                                                                                    class="checkbox-toggle checkbox-toggle-round"
+                                                                                    type="checkbox" />
+                                                                                <label for="toggle-1" data-on="активный"
+                                                                                    data-off="неактивный"></label>
+                                                                            </p>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="mb-3 row mx-5 mt-3">
+                                                                        <label class="col-lg-4 col-form-label"
+                                                                            for="validationCustom01">Duble input
+                                                                        </label>
+                                                                        <div class="col-lg-4">
+                                                                            <input type="text" class="form-control"
+                                                                                id="validationCustom01" placeholder=""
+                                                                                required>
+                                                                        </div>
+                                                                        <div class="col-lg-4">
+                                                                            <input type="text" class="form-control"
+                                                                                id="validationCustom01" placeholder=""
+                                                                                required>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="mb-3 row mx-5 mt-3">
+                                                                        <label class="col-lg-4 col-form-label"
+                                                                            for="validationCustom01">Date
+                                                                        </label>
+                                                                        <div class="col-lg-8">
+                                                                            <input type="date" class="form-control"
+                                                                                id="validationCustom01" placeholder=""
+                                                                                required>
+                                                                        </div>
+                                                                    </div>
+                                                                </form>
+                                                                <div class="modal-footer">
+                                                                    <button type="button" class="btn btn-danger light"
+                                                                        data-bs-dismiss="modal">Закрывать</button>
+                                                                    <button type="button"
+                                                                        class="btn btn-primary">Добавить</button>
                                                                 </div>
-                                                                <div class="mb-3 row mx-5 mt-3">
-                                                                    <label for="example-text-input"
-                                                                        class="col-md-4 col-form-label">Настройка
-                                                                        уведомлений для оповещения пользователей</label>
-                                                                    <div class="col-md-8">
-                                                                        <select class="form-select"
-                                                                            id="formrow-inputState">
-                                                                            <option selected>Super admin</option>
-                                                                            <option>1</option>
-                                                                            <option>2</option>
-                                                                            <option>3</option>
-                                                                        </select>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="mb-3 row mx-5 mt-3">
-                                                                    <label class="col-lg-4">Radio
-                                                                    </label>
-                                                                    <div class="col-lg-8">
-                                                                        <input type="radio" class="form-check-input">
-                                                                    </div>
-                                                                </div>
-                                                                <div class="mb-3 row mx-5 mt-3">
-                                                                    <label class="col-lg-4 col-form-label"
-                                                                        for="validationCustom01">Switch
-                                                                    </label>
-                                                                    <div class="col-lg-8 col-form-label">
-                                                                        <p>
-                                                                            <input id="toggle-1"
-                                                                                class="checkbox-toggle checkbox-toggle-round"
-                                                                                type="checkbox" />
-                                                                            <label for="toggle-1" data-on="активный"
-                                                                                data-off="неактивный"></label>
-                                                                        </p>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="mb-3 row mx-5 mt-3">
-                                                                    <label class="col-lg-4 col-form-label"
-                                                                        for="validationCustom01">Duble input
-                                                                    </label>
-                                                                    <div class="col-lg-4">
-                                                                        <input type="text" class="form-control"
-                                                                            id="validationCustom01"
-                                                                            placeholder=""
-                                                                            required>
-                                                                    </div>
-                                                                    <div class="col-lg-4">
-                                                                        <input type="text" class="form-control"
-                                                                            id="validationCustom01"
-                                                                            placeholder=""
-                                                                            required>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="mb-3 row mx-5 mt-3">
-                                                                    <label class="col-lg-4 col-form-label"
-                                                                        for="validationCustom01">Date
-                                                                    </label>
-                                                                    <div class="col-lg-8">
-                                                                        <input type="date" class="form-control"
-                                                                            id="validationCustom01"
-                                                                            placeholder=""
-                                                                            required>
-                                                                    </div>
-                                                                </div>
-                                                            </form>
-                                                            <div class="modal-footer">
-                                                                <button type="button" class="btn btn-danger light"
-                                                                    data-bs-dismiss="modal">Закрывать</button>
-                                                                <button type="button"
-                                                                    class="btn btn-primary">Добавить</button>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="table-responsive">
-                                        <table class="table align-middle table-nowrap">
-                                            <thead>
-                                                <tr class="text-center">
-                                                    <th>Но</th>
-                                                    <th>Наименование индикатора</th>
-                                                    <th>Тип индикатора</th>
-                                                    <th>Подмножество подтверждающей информации</th>
-                                                    <th>Действие</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr class="text-center">
-                                                    <td>
-                                                        1
-                                                    </td>
-                                                    <td>Илмий ташкилотлар ва олий таълим муассасаларининг
-                                                        илмий-инновацион фаолиятини баҳолаш 2021</td>
-                                                    <td>Например</td>
-                                                    <td>Например</td>
+                                        <div class="table-responsive">
+                                            <table class="table align-middle table-nowrap">
+                                                <thead>
+                                                    <tr class="text-center">
+                                                        <th>Но</th>
+                                                        <th>Наименование индикатора</th>
+                                                        <th>Тип индикатора</th>
+                                                        <th>Подмножество подтверждающей информации</th>
+                                                        <th>Действие</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr class="text-center">
+                                                        <td>
+                                                            1
+                                                        </td>
+                                                        <td>Илмий ташкилотлар ва олий таълим муассасаларининг
+                                                            илмий-инновацион фаолиятини баҳолаш 2021</td>
+                                                        <td>Например</td>
+                                                        <td>Например</td>
 
-                                                    <td>
-                                                        <div class="dropdown">
-                                                            <a href="#" class="dropdown-toggle card-drop"
-                                                                data-bs-toggle="dropdown" aria-expanded="false">
-                                                                <i class="mdi mdi-dots-horizontal font-size-18"></i>
-                                                            </a>
-                                                            <ul class="dropdown-menu dropdown-menu-end">
-                                                                <li><a href="#" class="dropdown-item"><i
-                                                                            class="mdi mdi-pencil font-size-16 text-success me-1"></i>
-                                                                        Редактировать</a></li>
-                                                                <li><a href="#" class="dropdown-item"><i
-                                                                            class="mdi mdi-trash-can font-size-16 text-danger me-1"></i>
-                                                                        Удалить</a></li>
-                                                            </ul>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr class="text-center">
-                                                    <td>
-                                                        2
-                                                    </td>
-                                                    <td>Илмий-тадқиқот фаолиятининг самарадорлигини синаш ва ишлаб
-                                                        чиқаришга жорий этиш бўйича ташкил этилган инфратузилма</td>
-                                                    <td>Например</td>
-                                                    <td>Например</td>
+                                                        <td class="d-flex">
 
-                                                    <td>
-                                                        <div class="dropdown">
-                                                            <a href="#" class="dropdown-toggle card-drop"
-                                                                data-bs-toggle="dropdown" aria-expanded="false">
-                                                                <i class="mdi mdi-dots-horizontal font-size-18"></i>
-                                                            </a>
-                                                            <ul class="dropdown-menu dropdown-menu-end">
-                                                                <li><a href="#" class="dropdown-item"><i
-                                                                            class="mdi mdi-pencil font-size-16 text-success me-1"></i>
-                                                                        Редактировать</a></li>
-                                                                <li><a href="#" class="dropdown-item"><i
-                                                                            class="mdi mdi-trash-can font-size-16 text-danger me-1"></i>
-                                                                        Удалить</a></li>
-                                                            </ul>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr class="text-center">
-                                                    <td>
-                                                        3
-                                                    </td>
-                                                    <td>Илмий ташкилотлар ва олий таълим муассасаларининг
-                                                        илмий-инновацион фаолиятини баҳолаш 2021</td>
-                                                    <td>Например</td>
-                                                    <td>Например</td>
+                                                            <a href="#" class="mx-2"><i
+                                                                    class="mdi mdi-pencil font-size-16 text-success me-1"></i></a>
+                                                            </li>
+                                                            <a href="#" class="dropdown-item"><i
+                                                                    class="mdi mdi-trash-can font-size-16 text-danger me-1"></i></a>
+                                                            </li>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="text-center">
+                                                        <td>
+                                                            2
+                                                        </td>
+                                                        <td>Илмий-тадқиқот фаолиятининг самарадорлигини синаш ва ишлаб
+                                                            чиқаришга жорий этиш бўйича ташкил этилган инфратузилма</td>
+                                                        <td>Например</td>
+                                                        <td>Например</td>
 
-                                                    <td>
-                                                        <div class="dropdown">
-                                                            <a href="#" class="dropdown-toggle card-drop"
-                                                                data-bs-toggle="dropdown" aria-expanded="false">
-                                                                <i class="mdi mdi-dots-horizontal font-size-18"></i>
-                                                            </a>
-                                                            <ul class="dropdown-menu dropdown-menu-end">
-                                                                <li><a href="#" class="dropdown-item"><i
-                                                                            class="mdi mdi-pencil font-size-16 text-success me-1"></i>
-                                                                        Редактировать</a></li>
-                                                                <li><a href="#" class="dropdown-item"><i
-                                                                            class="mdi mdi-trash-can font-size-16 text-danger me-1"></i>
-                                                                        Удалить</a></li>
-                                                            </ul>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr class="text-center">
-                                                    <td>
-                                                        4
-                                                    </td>
-                                                    <td>Илмий-тадқиқот фаолиятининг самарадорлигини синаш ва ишлаб
-                                                        чиқаришга жорий этиш бўйича ташкил этилган инфратузилма</td>
-                                                    <td>Например</td>
-                                                    <td>Например</td>
+                                                        <td class="d-flex">
 
-                                                    <td>
-                                                        <div class="dropdown">
-                                                            <a href="#" class="dropdown-toggle card-drop"
-                                                                data-bs-toggle="dropdown" aria-expanded="false">
-                                                                <i class="mdi mdi-dots-horizontal font-size-18"></i>
-                                                            </a>
-                                                            <ul class="dropdown-menu dropdown-menu-end">
-                                                                <li><a href="#" class="dropdown-item"><i
-                                                                            class="mdi mdi-pencil font-size-16 text-success me-1"></i>
-                                                                        Редактировать</a></li>
-                                                                <li><a href="#" class="dropdown-item"><i
-                                                                            class="mdi mdi-trash-can font-size-16 text-danger me-1"></i>
-                                                                        Удалить</a></li>
-                                                            </ul>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr class="text-center">
-                                                    <td>
-                                                        5
-                                                    </td>
-                                                    <td>Илмий ташкилотлар ва олий таълим муассасаларининг
-                                                        илмий-инновацион фаолиятини баҳолаш 2021</td>
-                                                    <td>Например</td>
-                                                    <td>Например</td>
+                                                            <a href="#" class="mx-2"><i
+                                                                    class="mdi mdi-pencil font-size-16 text-success me-1"></i></a>
+                                                            </li>
+                                                            <a href="#" class="dropdown-item"><i
+                                                                    class="mdi mdi-trash-can font-size-16 text-danger me-1"></i></a>
+                                                            </li>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="text-center">
+                                                        <td>
+                                                            3
+                                                        </td>
+                                                        <td>Илмий ташкилотлар ва олий таълим муассасаларининг
+                                                            илмий-инновацион фаолиятини баҳолаш 2021</td>
+                                                        <td>Например</td>
+                                                        <td>Например</td>
 
-                                                    <td>
-                                                        <div class="dropdown">
-                                                            <a href="#" class="dropdown-toggle card-drop"
-                                                                data-bs-toggle="dropdown" aria-expanded="false">
-                                                                <i class="mdi mdi-dots-horizontal font-size-18"></i>
-                                                            </a>
-                                                            <ul class="dropdown-menu dropdown-menu-end">
-                                                                <li><a href="#" class="dropdown-item"><i
-                                                                            class="mdi mdi-pencil font-size-16 text-success me-1"></i>
-                                                                        Редактировать</a></li>
-                                                                <li><a href="#" class="dropdown-item"><i
-                                                                            class="mdi mdi-trash-can font-size-16 text-danger me-1"></i>
-                                                                        Удалить</a></li>
-                                                            </ul>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
+                                                        <td class="d-flex">
+
+                                                            <a href="#" class="mx-2"><i
+                                                                    class="mdi mdi-pencil font-size-16 text-success me-1"></i></a>
+                                                            </li>
+                                                            <a href="#" class="dropdown-item"><i
+                                                                    class="mdi mdi-trash-can font-size-16 text-danger me-1"></i></a>
+                                                            </li>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="text-center">
+                                                        <td>
+                                                            4
+                                                        </td>
+                                                        <td>Илмий-тадқиқот фаолиятининг самарадорлигини синаш ва ишлаб
+                                                            чиқаришга жорий этиш бўйича ташкил этилган инфратузилма</td>
+                                                        <td>Например</td>
+                                                        <td>Например</td>
+
+                                                        <td class="d-flex">
+
+                                                            <a href="#" class="mx-2"><i
+                                                                    class="mdi mdi-pencil font-size-16 text-success me-1"></i></a>
+                                                            </li>
+                                                            <a href="#" class="dropdown-item"><i
+                                                                    class="mdi mdi-trash-can font-size-16 text-danger me-1"></i></a>
+                                                            </li>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="text-center">
+                                                        <td>
+                                                            5
+                                                        </td>
+                                                        <td>Илмий ташкилотлар ва олий таълим муассасаларининг
+                                                            илмий-инновацион фаолиятини баҳолаш 2021</td>
+                                                        <td>Например</td>
+                                                        <td>Например</td>
+
+                                                        <td class="d-flex">
+
+                                                            <a href="#" class="mx-2"><i
+                                                                    class="mdi mdi-pencil font-size-16 text-success me-1"></i></a>
+                                                            </li>
+                                                            <a href="#" class="dropdown-item"><i
+                                                                    class="mdi mdi-trash-can font-size-16 text-danger me-1"></i></a>
+                                                            </li>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
+                            </form>
 
                         </div>
                     </div>
+                    <button class="btn btn-success mb-3 ">Сохранять</button>
                 </div>
                 <!-- container-fluid -->
             </div>
@@ -961,6 +930,8 @@
                     </div>
                 </div>
             </div>
+
+            
 
             <footer class="footer">
                 <div class="container-fluid">
