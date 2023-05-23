@@ -1,24 +1,24 @@
 <!doctype html>
 <html lang="en">
 
-<head>
+    <head>
 
-    <meta charset="utf-8" />
-    <title>National Index</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
-    <meta content="Themesbrand" name="author" />
-    <!-- App favicon -->
-    <link rel="shortcut icon" href="assets/images/minin.png">
-
-    <!-- Bootstrap Css -->
-    <link href="assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
-    <!-- Icons Css -->
-    <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
-    <!-- App Css-->
-    <link href="assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
-
-</head>
+        <meta charset="utf-8" />
+        <title>National Index</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
+        <meta content="Themesbrand" name="author" />
+        <!-- App favicon -->
+        <link rel="shortcut icon" href="assets/images/minin.png">
+    
+        <!-- Bootstrap Css -->
+        <link href="assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
+        <!-- Icons Css -->
+        <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+        <!-- App Css-->
+        <link href="assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
+    
+    </head>
 
 <body data-sidebar="dark" data-layout-mode="light">
 
@@ -114,10 +114,6 @@
                     </div>
 
                     <div class="dropdown d-none d-lg-inline-block ms-1">
-                        <!-- <button type="button" class="btn header-item noti-icon waves-effect" data-bs-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false">
-                            <i class="bx bx-customize"></i>
-                        </button> -->
                         <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end">
                             <div class="px-lg-2">
                                 <div class="row g-0">
@@ -273,7 +269,6 @@
                         <button type="button" class="btn header-item waves-effect" id="page-header-user-dropdown"
                             data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <i class='bx bx-user'></i>
-                            <!-- <span class="d-none d-xl-inline-block ms-1" key="t-henry">Henry</span> -->
                             <i class="mdi mdi-chevron-down d-none d-xl-inline-block"></i>
                         </button>
                         <div class="dropdown-menu dropdown-menu-end">
@@ -385,12 +380,12 @@
                             </ul>
                         </li>
 
-                    </ul>
                 </div>
                 <!-- Sidebar -->
             </div>
         </div>
         <!-- Left Sidebar End -->
+
 
 
         <!-- ============================================================== -->
@@ -405,8 +400,11 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                                <h4 class="mb-sm-3 font-size-18">Добавить нового члены-эксперты</h4>
+                                <h4 class="mb-sm-3 font-size-18">Список новости</h4>
 
+                                <a href="news-tab-2.html">
+                                    <button class="btn btn-success mb-3">Добавить</button>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -416,90 +414,191 @@
                         <div class="col-12">
                             <div class="card">
                                 <div class="card-body">
+                                    <div class="row mb-2">
+                                        <div class="col-sm-4">
+                                            <div class="search-box me-2 mb-2 d-inline-block">
+                                                <div class="position-relative">
+                                                    <input type="text" class="form-control" placeholder="Поиск...">
+                                                    <i class="bx bx-search-alt search-icon"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
 
-                                    <div class="mb-3 row">
-                                        <label for="example-text-input" class="col-md-2 col-form-label">СТИР</label>
-                                        <div class="col-md-10">
-                                            <input class="form-control" type="number" placeholder="Введите СТИР"
-                                                id="example-text-input">
-                                        </div>
+                                    <div class="table-responsive">
+                                        <table class="table align-middle table-nowrap">
+                                            <thead>
+                                                <tr>
+                                                    <th>Но</th>
+                                                    <th>Загаловка</th>
+                                                    <th>Категория</th>
+                                                    <th>Дата создания</th>
+                                                    <th>Положение дел</th>
+                                                    <th>Действие</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        1
+                                                    </td>
+                                                    <td>Стивен Раш</td>
+                                                    <td>Стивен Раш</td>
+                                                    <td>07 Oктябрь, 2024</td>
+
+                                                    <td>активный</td>
+
+                                                    <td class="d-flex">
+
+                                                        <a href="#" class="mx-2"><i
+                                                                class="mdi mdi-pencil font-size-16 text-success me-1"></i></a>
+                                                        </li>
+                                                        <a href="#" class="dropdown-item"><i
+                                                                class="mdi mdi-trash-can font-size-16 text-danger me-1"></i></a>
+                                                        </li>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        2
+                                                    </td>
+                                                    <td>Стивен Раш</td>
+                                                    <td>Стивен Раш</td>
+                                                    <td>07 Oктябрь, 2024</td>
+
+                                                    <td>неактивный</td>
+
+                                                    <td class="d-flex">
+
+                                                        <a href="#" class="mx-2"><i
+                                                                class="mdi mdi-pencil font-size-16 text-success me-1"></i></a>
+                                                        </li>
+                                                        <a href="#" class="dropdown-item"><i
+                                                                class="mdi mdi-trash-can font-size-16 text-danger me-1"></i></a>
+                                                        </li>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        3
+                                                    </td>
+                                                    <td>Стивен Раш</td>
+                                                    <td>Стивен Раш</td>
+                                                    <td>07 Oктябрь, 2024</td>
+
+                                                    <td>активный</td>
+
+                                                    <td class="d-flex">
+
+                                                        <a href="#" class="mx-2"><i
+                                                                class="mdi mdi-pencil font-size-16 text-success me-1"></i></a>
+                                                        </li>
+                                                        <a href="#" class="dropdown-item"><i
+                                                                class="mdi mdi-trash-can font-size-16 text-danger me-1"></i></a>
+                                                        </li>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        4
+                                                    </td>
+                                                    <td>Стивен Раш</td>
+                                                    <td>Стивен Раш</td>
+                                                    <td>07 Oктябрь, 2024</td>
+
+                                                    <td>неактивный</td>
+
+                                                    <td class="d-flex">
+
+                                                        <a href="#" class="mx-2"><i
+                                                                class="mdi mdi-pencil font-size-16 text-success me-1"></i></a>
+                                                        </li>
+                                                        <a href="#" class="dropdown-item"><i
+                                                                class="mdi mdi-trash-can font-size-16 text-danger me-1"></i></a>
+                                                        </li>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        5
+                                                    </td>
+                                                    <td>Стивен Раш</td>
+                                                    <td>Стивен Раш</td>
+                                                    <td>07 Oктябрь, 2024</td>
+
+                                                    <td>активный</td>
+
+                                                    <td class="d-flex">
+
+                                                        <a href="#" class="mx-2"><i
+                                                                class="mdi mdi-pencil font-size-16 text-success me-1"></i></a>
+                                                        </li>
+                                                        <a href="#" class="dropdown-item"><i
+                                                                class="mdi mdi-trash-can font-size-16 text-danger me-1"></i></a>
+                                                        </li>
+                                                    </td>
+                                                </tr>
+                                                <!-- <tr>
+                                                        <td>
+                                                            <div class="form-check font-size-16">
+                                                                <input class="form-check-input" type="checkbox" id="customerlistcheck08">
+                                                                <label class="form-check-label" for="customerlistcheck08"></label>
+                                                            </div>
+                                                        </td>
+                                                        <td>John McCray</td>
+                                                        <td>
+                                                            <p class="mb-1">253-661-7551</p>
+                                                            <p class="mb-0">JohnMcCray@armyspy.com</p>
+                                                        </td>
+                                                        
+                                                        <td>3309 Horizon Circle
+                                                                Tacoma, WA 98423</td>
+                                                        <td><span class="badge bg-success font-size-12"><i class="mdi mdi-star me-1"></i> 4.1</span></td>
+                                                        <td>$5,2870</td>
+                                                        <td>02 Oct, 2019</td>
+                                                        <td>
+                                                            <div class="dropdown">
+                                                                <a href="#" class="dropdown-toggle card-drop" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                    <i class="mdi mdi-dots-horizontal font-size-18"></i>
+                                                                </a>
+                                                                <ul class="dropdown-menu dropdown-menu-end">
+                                                                    <li><a href="#" class="dropdown-item"><i class="mdi mdi-pencil font-size-16 text-success me-1"></i> Edit</a></li>
+                                                                    <li><a href="#" class="dropdown-item"><i class="mdi mdi-trash-can font-size-16 text-danger me-1"></i> Delete</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </td>
+                                                    </tr> -->
+                                            </tbody>
+                                        </table>
                                     </div>
-                                    <div class="mb-3 row">
-                                        <label for="example-search-input" class="col-md-2 col-form-label">Полное
-                                            имя</label>
-                                        <div class="col-md-10">
-                                            <input class="form-control" type="search" placeholder="Введите полное имя"
-                                                id="example-search-input">
-                                        </div>
-                                    </div>
-                                    <div class="mb-3 row">
-                                        <label for="example-email-input" class="col-md-2 col-form-label">Электронная
-                                            почта</label>
-                                        <div class="col-md-10">
-                                            <input class="form-control" type="email"
-                                                placeholder="Введите электронная почта" placeholder="Enter Email"
-                                                id="example-email-input">
-                                        </div>
-                                    </div>
-                                    <div class="mb-3 row">
-                                        <label for="example-date-input" class="col-md-2 col-form-label">Год
-                                            рождения</label>
-                                        <div class="col-md-10">
-                                            <input class="form-control" type="date" id="example-date-input">
-                                        </div>
-                                    </div>
-                                    <div class="mb-3 row">
-                                        <label for="example-search-input"
-                                            class="col-md-2 col-form-label">Компания</label>
-                                        <div class="col-md-10">
-                                            <input class="form-control" type="text" placeholder="Введите компания"
-                                                id="example-search-input">
-                                        </div>
-                                    </div>
-                                    <div class="mb-3 row">
-                                        <label for="example-text-input" class="col-md-2 col-form-label">ПНФЛ</label>
-                                        <div class="col-md-10">
-                                            <input class="form-control" type="number" placeholder="Введите ПНФЛ"
-                                                id="example-text-input">
-                                        </div>
-                                    </div>
-                                    <div class="mb-3 row">
-                                        <label for="example-text-input" class="col-md-2 col-form-label">Пасспорт</label>
-                                        <div class="col-md-1">
-                                            <input class="form-control" type="text" placeholder="AA"
-                                                id="example-text-input">
-                                        </div>
-                                        <div class="col-md-9">
-                                            <input class="form-control" type="number" placeholder="1234567"
-                                                id="example-text-input">
-                                        </div>
-                                    </div>
-                                    <div class="mb-3 row">
-                                        <label for="example-text-input" class="col-md-2 col-form-label">Номер
-                                            телефона</label>
-                                        <div class="input-group-prepend col-md-1">
-                                            <span class="input-group-text">+998</span>
-                                        </div>
-                                        <div class="col-md-9">
-                                            <input type="number" class="form-control" placeholder="0123456789" required>
-                                        </div>
-                                    </div>
-                                    <div class="mb-3 row">
-                                        <label for="example-search-input"
-                                            class="col-md-2 col-form-label">Позиция</label>
-                                        <div class="col-md-10">
-                                            <input class="form-control" type="text" placeholder="Введите позиция"
-                                                id="example-text-input">
-                                        </div>
-                                    </div>
+                                    <ul class="pagination pagination-rounded justify-content-end mb-2">
+                                        <li class="page-item disabled">
+                                            <a class="page-link" href="javascript: void(0);" aria-label="Previous">
+                                                <i class="mdi mdi-chevron-left"></i>
+                                            </a>
+                                        </li>
+                                        <li class="page-item active"><a class="page-link"
+                                                href="javascript: void(0);">1</a></li>
+                                        <li class="page-item"><a class="page-link" href="javascript: void(0);">2</a>
+                                        </li>
+                                        <li class="page-item"><a class="page-link" href="javascript: void(0);">3</a>
+                                        </li>
+                                        <li class="page-item"><a class="page-link" href="javascript: void(0);">4</a>
+                                        </li>
+                                        <li class="page-item"><a class="page-link" href="javascript: void(0);">5</a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="javascript: void(0);" aria-label="Next">
+                                                <i class="mdi mdi-chevron-right"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
-                            <div class="btn-sub">
-                                <button class="btn btn-primary" type="submit">Submit</button>
-                            </div>
-                        </div> <!-- end col -->
+                        </div>
                     </div>
                     <!-- end row -->
+
                 </div> <!-- container-fluid -->
             </div>
             <!-- End Page-content -->
@@ -596,6 +695,7 @@
     <script src="assets/libs/simplebar/simplebar.min.js"></script>
     <script src="assets/libs/node-waves/waves.min.js"></script>
 
+    <!-- App js -->
     <script src="assets/js/app.js"></script>
 
 </body>

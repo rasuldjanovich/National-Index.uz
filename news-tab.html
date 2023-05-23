@@ -1,28 +1,26 @@
 <!doctype html>
 <html lang="en">
 
-<head>
+    <head>
 
-    <meta charset="utf-8" />
-    <title>National Index</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
-    <meta content="Themesbrand" name="author" />
-    <!-- App favicon -->
-    <link rel="shortcut icon" href="assets/images/minin.png">
-
-    <!-- Bootstrap Css -->
-    <link href="assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
-    <!-- Icons Css -->
-    <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
-    <!-- App Css-->
-    <link href="assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
-
-</head>
+        <meta charset="utf-8" />
+        <title>National Index</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
+        <meta content="Themesbrand" name="author" />
+        <!-- App favicon -->
+        <link rel="shortcut icon" href="assets/images/minin.png">
+    
+        <!-- Bootstrap Css -->
+        <link href="assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
+        <!-- Icons Css -->
+        <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+        <!-- App Css-->
+        <link href="assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
+    
+    </head>
 
 <body data-sidebar="dark" data-layout-mode="light">
-
-    <!-- <body data-layout="horizontal" data-topbar="dark"> -->
 
     <!-- Begin page -->
     <div id="layout-wrapper">
@@ -114,10 +112,6 @@
                     </div>
 
                     <div class="dropdown d-none d-lg-inline-block ms-1">
-                        <!-- <button type="button" class="btn header-item noti-icon waves-effect" data-bs-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false">
-                            <i class="bx bx-customize"></i>
-                        </button> -->
                         <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end">
                             <div class="px-lg-2">
                                 <div class="row g-0">
@@ -273,7 +267,6 @@
                         <button type="button" class="btn header-item waves-effect" id="page-header-user-dropdown"
                             data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <i class='bx bx-user'></i>
-                            <!-- <span class="d-none d-xl-inline-block ms-1" key="t-henry">Henry</span> -->
                             <i class="mdi mdi-chevron-down d-none d-xl-inline-block"></i>
                         </button>
                         <div class="dropdown-menu dropdown-menu-end">
@@ -290,7 +283,6 @@
                                     key="t-logout">Выйти</span></a>
                         </div>
                     </div>
-
                 </div>
             </div>
         </header>
@@ -331,6 +323,7 @@
                                 <li><a href="rating-table.html">Список рейтингов</a></li>
                                 <li><a href="new-rating.html">Добавить новый рейтинг</a></li>
                             </ul>
+
                         </li>
 
                         <li>
@@ -384,7 +377,6 @@
                                 <li><a href="crypto-exchange.html" key="t-exchange">Настройки электронной почты</a></li>
                             </ul>
                         </li>
-
                     </ul>
                 </div>
                 <!-- Sidebar -->
@@ -405,105 +397,227 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                                <h4 class="mb-sm-3 font-size-18">Добавить нового члены-эксперты</h4>
-
+                                <h4 class="mb-sm-3 font-size-18">Добавить категорию</h4>
                             </div>
                         </div>
                     </div>
                     <!-- end page title -->
 
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="card">
-                                <div class="card-body">
+                    <div class="card">
+                        <div class="card-body">
 
-                                    <div class="mb-3 row">
-                                        <label for="example-text-input" class="col-md-2 col-form-label">СТИР</label>
-                                        <div class="col-md-10">
-                                            <input class="form-control" type="number" placeholder="Введите СТИР"
-                                                id="example-text-input">
+                            <!-- Nav tabs -->
+                            <ul class="nav nav-pills nav-justified" role="tablist">
+                                <li class="waves-effect waves-light">
+                                    <a class="nav-link active p-3 px-5 mx-3" data-bs-toggle="tab" href="#home-1"
+                                        role="tab">
+                                        <span class="d-block d-sm-none"><i class="fas fa-home"></i></span>
+                                        <span class="d-none d-sm-block">Uzb</span>
+                                    </a>
+                                </li>
+                                <li class="waves-effect waves-light">
+                                    <a class="nav-link p-3 px-5 mx-3" data-bs-toggle="tab" href="#profile-1" role="tab">
+                                        <span class="d-block d-sm-none"><i class="far fa-user"></i></span>
+                                        <span class="d-none d-sm-block">Ру</span>
+                                    </a>
+                                </li>
+                                <li class="waves-effect waves-light">
+                                    <a class="nav-link p-3 px-5 mx-3" data-bs-toggle="tab" href="#settings-1"
+                                        role="tab">
+                                        <span class="d-block d-sm-none"><i class="fas fa-cog"></i></span>
+                                        <span class="d-none d-sm-block">Eng</span>
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <!-- Tab panes -->
+                            <div class="tab-content p-3 text-muted">
+                                <div class="tab-pane active mt-2" id="home-1" role="tabpanel">
+
+                                    <form>
+                                        <div class="form-floating mb-3">
+                                            <input type="text" class="form-control" id="floatingnameInput" placeholder="Названия">
+                                            <label for="floatingnameInput">Names</label>
                                         </div>
-                                    </div>
-                                    <div class="mb-3 row">
-                                        <label for="example-search-input" class="col-md-2 col-form-label">Полное
-                                            имя</label>
-                                        <div class="col-md-10">
-                                            <input class="form-control" type="search" placeholder="Введите полное имя"
-                                                id="example-search-input">
+
+                                        <div class="form-floating mb-3">
+                                            <select class="form-select" id="floatingSelectGrid"
+                                                aria-label="Floating label select example">
+                                                <option selected>Select</option>
+                                                <option value="1">1</option>
+                                            </select>
+                                            <label for="floatingSelectGrid">Parent category</label>
                                         </div>
-                                    </div>
-                                    <div class="mb-3 row">
-                                        <label for="example-email-input" class="col-md-2 col-form-label">Электронная
-                                            почта</label>
-                                        <div class="col-md-10">
-                                            <input class="form-control" type="email"
-                                                placeholder="Введите электронная почта" placeholder="Enter Email"
-                                                id="example-email-input">
+                                        <div class="px-3 row status">
+                                            <label class="col-lg-1 col-form-label" for="validationCustom01">Status
+                                            </label>
+                                            <div class="col-lg-11 col-form-label">
+                                                <p>
+                                                    <input id="toggle-1" class="checkbox-toggle checkbox-toggle-round"
+                                                        type="checkbox" />
+                                                    <label for="toggle-1" data-on="active"
+                                                        data-off="no-active"></label>
+                                                </p>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="mb-3 row">
-                                        <label for="example-date-input" class="col-md-2 col-form-label">Год
-                                            рождения</label>
-                                        <div class="col-md-10">
-                                            <input class="form-control" type="date" id="example-date-input">
+                                    </form>
+                                </div>
+
+
+                                <div class="tab-pane mt-2" id="profile-1" role="tabpanel">
+                                    <form>
+                                        <div class="form-floating mb-3">
+                                            <input type="text" class="form-control" id="floatingnameInput" placeholder="Наименование
+                                                раздела">
+                                            <label for="floatingnameInput">Название рейтинга</label>
                                         </div>
-                                    </div>
-                                    <div class="mb-3 row">
-                                        <label for="example-search-input"
-                                            class="col-md-2 col-form-label">Компания</label>
-                                        <div class="col-md-10">
-                                            <input class="form-control" type="text" placeholder="Введите компания"
-                                                id="example-search-input">
+
+                                        <div class="form-floating mb-3">
+                                            <select class="form-select" id="floatingSelectGrid"
+                                                aria-label="Floating label select example">
+                                                <option selected>Select</option>
+                                                <option value="1">1</option>
+                                            </select>
+                                            <label for="floatingSelectGrid">Родительская категория</label>
                                         </div>
-                                    </div>
-                                    <div class="mb-3 row">
-                                        <label for="example-text-input" class="col-md-2 col-form-label">ПНФЛ</label>
-                                        <div class="col-md-10">
-                                            <input class="form-control" type="number" placeholder="Введите ПНФЛ"
-                                                id="example-text-input">
+                                        <div class="px-3 row status">
+                                            <label class="col-lg-1 col-form-label" for="validationCustom01">Статус
+                                            </label>
+                                            <div class="col-lg-11 col-form-label">
+                                                <p>
+                                                    <input id="toggle-1" class="checkbox-toggle checkbox-toggle-round"
+                                                        type="checkbox" />
+                                                    <label for="toggle-1" data-on="активный"
+                                                        data-off="неактивный"></label>
+                                                </p>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="mb-3 row">
-                                        <label for="example-text-input" class="col-md-2 col-form-label">Пасспорт</label>
-                                        <div class="col-md-1">
-                                            <input class="form-control" type="text" placeholder="AA"
-                                                id="example-text-input">
+                                    </form>
+                                </div>
+
+                                <div class="tab-pane mt-3" id="settings-1" role="tabpanel">
+                                    <form>
+                                        <div class="form-floating mb-3">
+                                            <input type="text" class="form-control" id="floatingnameInput" placeholder="Названия">
+                                            <label for="floatingnameInput">Names</label>
                                         </div>
-                                        <div class="col-md-9">
-                                            <input class="form-control" type="number" placeholder="1234567"
-                                                id="example-text-input">
+
+                                        <div class="form-floating mb-3">
+                                            <select class="form-select" id="floatingSelectGrid"
+                                                aria-label="Floating label select example">
+                                                <option selected>Select</option>
+                                                <option value="1">1</option>
+                                            </select>
+                                            <label for="floatingSelectGrid">Parent category</label>
                                         </div>
-                                    </div>
-                                    <div class="mb-3 row">
-                                        <label for="example-text-input" class="col-md-2 col-form-label">Номер
-                                            телефона</label>
-                                        <div class="input-group-prepend col-md-1">
-                                            <span class="input-group-text">+998</span>
+                                        <div class="px-3 row status">
+                                            <label class="col-lg-1 col-form-label" for="validationCustom01">Status
+                                            </label>
+                                            <div class="col-lg-11 col-form-label">
+                                                <p>
+                                                    <input id="toggle-1" class="checkbox-toggle checkbox-toggle-round"
+                                                        type="checkbox" />
+                                                    <label for="toggle-1" data-on="active"
+                                                        data-off="no-active"></label>
+                                                </p>
+                                            </div>
                                         </div>
-                                        <div class="col-md-9">
-                                            <input type="number" class="form-control" placeholder="0123456789" required>
-                                        </div>
-                                    </div>
-                                    <div class="mb-3 row">
-                                        <label for="example-search-input"
-                                            class="col-md-2 col-form-label">Позиция</label>
-                                        <div class="col-md-10">
-                                            <input class="form-control" type="text" placeholder="Введите позиция"
-                                                id="example-text-input">
-                                        </div>
-                                    </div>
+                                    </form>
                                 </div>
                             </div>
-                            <div class="btn-sub">
-                                <button class="btn btn-primary" type="submit">Submit</button>
-                            </div>
-                        </div> <!-- end col -->
+                        </div>
                     </div>
-                    <!-- end row -->
-                </div> <!-- container-fluid -->
+                </div>
+                <!-- container-fluid -->
             </div>
             <!-- End Page-content -->
 
+            <!-- Transaction Modal -->
+            <div class="modal fade transaction-detailModal" tabindex="-1" role="dialog"
+                aria-labelledby="transaction-detailModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="transaction-detailModalLabel">Order Details</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p class="mb-2">Product id: <span class="text-primary">#SK2540</span></p>
+                            <p class="mb-4">Billing Name: <span class="text-primary">Neal Matthews</span></p>
+
+                            <div class="table-responsive">
+                                <table class="table align-middle table-nowrap">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Product</th>
+                                            <th scope="col">Product Name</th>
+                                            <th scope="col">Price</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">
+                                                <div>
+                                                    <img src="assets/images/product/img-7.png" alt="" class="avatar-sm">
+                                                </div>
+                                            </th>
+                                            <td>
+                                                <div>
+                                                    <h5 class="text-truncate font-size-14">Wireless Headphone (Black)
+                                                    </h5>
+                                                    <p class="text-muted mb-0">$ 225 x 1</p>
+                                                </div>
+                                            </td>
+                                            <td>$ 255</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">
+                                                <div>
+                                                    <img src="assets/images/product/img-4.png" alt="" class="avatar-sm">
+                                                </div>
+                                            </th>
+                                            <td>
+                                                <div>
+                                                    <h5 class="text-truncate font-size-14">Phone patterned cases</h5>
+                                                    <p class="text-muted mb-0">$ 145 x 1</p>
+                                                </div>
+                                            </td>
+                                            <td>$ 145</td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2">
+                                                <h6 class="m-0 text-right">Sub Total:</h6>
+                                            </td>
+                                            <td>
+                                                $ 400
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2">
+                                                <h6 class="m-0 text-right">Shipping:</h6>
+                                            </td>
+                                            <td>
+                                                Free
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2">
+                                                <h6 class="m-0 text-right">Total:</h6>
+                                            </td>
+                                            <td>
+                                                $ 400
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
             <footer class="footer">
                 <div class="container-fluid">
@@ -596,8 +710,14 @@
     <script src="assets/libs/simplebar/simplebar.min.js"></script>
     <script src="assets/libs/node-waves/waves.min.js"></script>
 
-    <script src="assets/js/app.js"></script>
+    <!-- apexcharts -->
+    <script src="assets/libs/apexcharts/apexcharts.min.js"></script>
 
+    <!-- dashboard init -->
+    <script src="assets/js/pages/dashboard.init.js"></script>
+
+    <!-- App js -->
+    <script src="assets/js/app.js"></script>
 </body>
 
 </html>

@@ -5817,4 +5817,9 @@ input.checkbox-toggle-round-flat:checked + label:after {
     display: none;
 }
 
+.status {
+    font-size: 15px;
+    color: #000;
+}
+
 /*# sourceMappingURL=app.min.css.map */
