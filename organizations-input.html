@@ -22,33 +22,40 @@
 
 <body data-sidebar="dark" data-layout-mode="light">
 
-    <!-- <body data-layout="horizontal" data-topbar="dark"> -->
-
     <!-- Begin page -->
     <div id="layout-wrapper">
 
 
         <header id="page-topbar">
             <div class="navbar-header">
-                <div class="navbar-brand-box">
-                    <a href="index.html" class="logo logo-dark">
-                        <span class="logo-sm">
-                            <img src="assets/images/minin.png" alt="" height="22">
-                        </span>
-                        <span class="logo-lg">
-                            <img src="assets//images/minin.png" alt="" height="17">
-                        </span>
-                    </a>
+                <div class="d-flex">
+                    <!-- LOGO -->
+                    <div class="navbar-brand-box">
+                        <a href="index.html" class="logo logo-dark">
+                            <span class="logo-sm">
+                                <img src="assets/images/minin.png" alt="" height="22">
+                            </span>
+                            <span class="logo-lg">
+                                <img src="assets//images/minin.png" alt="" height="17">
+                            </span>
+                        </a>
 
-                    <a href="index.html" class="logo logo-light">
-                        <span class="logo-sm">
-                            <img src="assets/images/minin.png" alt="" height="32">
-                        </span>
-                        <span class=" justify-content-center align-items-center logo-lg mt-4">
-                            <img src="assets//images/minin.png" alt="" height="30">
-                            <!-- <h4 class="align-items-center mt-2 px-2">National index</h4> -->
-                        </span>
-                    </a>
+                        <a href="index.html" class="logo logo-light">
+                            <span class="logo-sm">
+                                <img src="assets/images/minin.png" alt="" height="32">
+                            </span>
+                            <span class=" justify-content-center align-items-center logo-lg mt-4">
+                                <img src="assets//images/minin.png" alt="" height="30">
+                                <!-- <h4 class="align-items-center mt-2 px-2">National index</h4> -->
+                            </span>
+                        </a>
+                    </div>
+
+                    <button type="button" class="btn btn-sm px-3 font-size-16 header-item waves-effect"
+                        id="vertical-menu-btn">
+                        <i class="fa fa-fw fa-bars"></i>
+                    </button>
+
                 </div>
 
                 <div class="d-flex">
@@ -105,10 +112,6 @@
                     </div>
 
                     <div class="dropdown d-none d-lg-inline-block ms-1">
-                        <!-- <button type="button" class="btn header-item noti-icon waves-effect" data-bs-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false">
-                            <i class="bx bx-customize"></i>
-                        </button> -->
                         <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end">
                             <div class="px-lg-2">
                                 <div class="row g-0">
@@ -264,7 +267,6 @@
                         <button type="button" class="btn header-item waves-effect" id="page-header-user-dropdown"
                             data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <i class='bx bx-user'></i>
-                            <!-- <span class="d-none d-xl-inline-block ms-1" key="t-henry">Henry</span> -->
                             <i class="mdi mdi-chevron-down d-none d-xl-inline-block"></i>
                         </button>
                         <div class="dropdown-menu dropdown-menu-end">
@@ -281,7 +283,6 @@
                                     key="t-logout">Выйти</span></a>
                         </div>
                     </div>
-
                 </div>
             </div>
         </header>
@@ -298,11 +299,22 @@
                         <li>
                             <a href="index.html" class="index.html">
                                 <i class="bx bx-home-circle"></i>
-                                <span key="t-file-manager">Главная</span>
+                                <span key="t-file-manager">Home</span>
                             </a>
                         </li>
 
                         <li>
+                            <a href="javascript: void(0);" class="has-arrow waves-effect">
+                                <i class='bx bx-file-blank'></i>
+                                <span key="t-dashboards">Tashkilotlar</span>
+                            </a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li><a href="organizations-table.html">Tashkilotlar ro'yxati</a></li>
+                                <li><a href="participants-table.html">Qatnashuvchilar (Vakillar)</a></li>
+                            </ul>
+                        </li>
+
+                        <!-- <li>
                             <a href="javascript: void(0);" class="has-arrow waves-effect">
                                 <i class='bx bx-user'></i>
                                 <span key="t-dashboards">Эксперты</span>
@@ -311,40 +323,42 @@
                                 <li><a href="experts-table.html">Команды</a></li>
                                 <li><a href="expert-members.html">Члены-эксперты</a></li>
                             </ul>
-                        </li>
+                        </li> -->
 
                         <li>
                             <a href="javascript: void(0);" class="has-arrow waves-effect">
                                 <i class='bx bx-file-blank'></i>
-                                <span key="t-dashboards">Реестр рейтингов</span>
+                                <span key="t-dashboards">Baholar reestri</span>
                             </a>
                             <ul class="sub-menu" aria-expanded="false">
-                                <li><a href="rating-table.html">Список рейтингов</a></li>
-                                <li><a href="new-rating.html">Добавить новый рейтинг</a></li>
+                                <li><a href="rating-table.html">Reytinglar ro'yxati</a></li>
+                                <li><a href="new-rating.html">Yangi reyting qo'shish</a></li>
+                                <li><a href="indikator.html">Indikatorlar</a></li>
+                                <li><a href="participant-reestr.html">Foydalanuvchilar uchun reytinglar reestr</a></li>
                             </ul>
                         </li>
 
                         <li>
                             <a href="javascript: void(0);" class="has-arrow waves-effect">
                                 <i class='bx bx-file-blank'></i>
-                                <span key="t-dashboards">Новости</span>
+                                <span key="t-dashboards">Yangiliklar</span>
                             </a>
                             <ul class="sub-menu" aria-expanded="false">
-                                <li><a href="news-table.html">Подменю категорий</a></li>
-                                <li><a href="news-table-2.html">Список новости</a></li>
+                                <li><a href="news-table.html">Kategoriyalar</a></li>
+                                <li><a href="news-table-2.html">Yangiliklar ro'yxati</a></li>
                             </ul>
                         </li>
 
                         <li>
                             <a href="javascript: void(0);" class="has-arrow waves-effect">
                                 <i class="bx bx-calendar"></i>
-                                <span key="t-dashboards">Заявки</span>
+                                <span key="t-dashboards">Ilovalar</span>
                             </a>
                             <ul class="sub-menu" aria-expanded="false">
-                                <li><a href="calendar.html" key="t-tui-calendar">Заявка на оценку</a></li>
-                                <li><a href="calendar-full.html" key="t-full-calendar">Оценка экспертом</a></li>
-                                <li><a href="calendar-full.html" key="t-full-calendar">Претензию</a></li>
-                                <li><a href="calendar-full.html" key="t-full-calendar">Модерация</a></li>
+                                <li><a href="calendar.html" key="t-tui-calendar">Baholash uchun ariza</a></li>
+                                <li><a href="calendar-full.html" key="t-full-calendar">Ekspert baholash</a></li>
+                                <li><a href="calendar-full.html" key="t-full-calendar">Talablar</a></li>
+                                <li><a href="calendar-full.html" key="t-full-calendar">Moderatsiya</a></li>
                                 <li><a href="calendar-full.html" key="t-full-calendar">Moderatsiyadan o'tganlar</a></li>
                                 <li><a href="calendar-full.html" key="t-full-calendar">Moderatsiyadan qaytarilganlar</a>
                                 </li>
@@ -354,25 +368,24 @@
                         <li>
                             <a href="javascript: void(0);" class="has-arrow waves-effect">
                                 <i class="bx bxs-user-detail"></i>
-                                <span key="t-ecommerce">Пользователи</span>
+                                <span key="t-ecommerce">Foydalanuvchilar</span>
                             </a>
                             <ul class="sub-menu" aria-expanded="false">
-                                <li><a href="table.html" key="t-products">Список Участники</a></li>
-                                <li><a href="ecommerce-product-detail.html" key="t-product-detail">Список Эксперты</a>
+                                <li><a href="table.html" key="t-products">Roʻyxat aʼzolari</a></li>
+                                <li><a href="ecommerce-product-detail.html" key="t-product-detail">Mutaxassislar ro'yxati</a>
                                 </li>
-                                <li><a href="ecommerce-orders.html" key="t-orders">Список Координатор</a></li>
+                                <li><a href="ecommerce-orders.html" key="t-orders">Ro'yxat koordinatori</a></li>
                             </ul>
                         </li>
 
                         <li>
                             <a href="javascript: void(0);" class="has-arrow waves-effect">
                                 <i class='bx bx-cog'></i>
-                                <span key="t-crypto">Настройки</span>
+                                <span key="t-crypto">Sozlamalar</span>
                             </a>
                             <ul class="sub-menu" aria-expanded="false">
-                                <li><a href="crypto-wallet.html" key="t-wallet">Настройки системы</a></li>
-                                <li><a href="crypto-buy-sell.html" key="t-buy">Настройки API</a></li>
-                                <li><a href="crypto-exchange.html" key="t-exchange">Настройки электронной почты</a></li>
+                                <li><a href="setting-tab.html" key="t-wallet">Tizim sozlamalari</a></li>
+                                <li><a href="setting-email.html" key="t-exchange">Elektron pochta sozlamalari</a></li>
                             </ul>
                         </li>
 
@@ -396,8 +409,7 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                                <h4 class="mb-sm-3 font-size-18">Добавить нового члены-эксперты</h4>
-
+                                <h4 class="mb-sm-3 font-size-18">Qatnashuvchi qo'shish</h4>
                             </div>
                         </div>
                     </div>
@@ -407,115 +419,195 @@
                         <div class="col-12">
                             <div class="card">
                                 <div class="card-body">
+                                    <form action="">
+                                        
+                                        <div class="form-floating mb-3">
+                                            <input type="text" class="form-control" id="floatingnameInput" placeholder="STIR ni kiriting..." required>
+                                            <label for="floatingnameInput">STIR kiriting...</label>
+                                        </div>
+                                        <div class="form-floating mb-3">
+                                            <input type="text" class="form-control" id="floatingnameInput" placeholder="To'liq ismingizni kiriting..." required>
+                                            <label for="floatingnameInput">To'liq ism kiriting...</label>
+                                        </div>
+                                        
+                                        <div class="form-floating mb-3">
+                                            <input type="email" class="form-control" id="floatingnameInput" placeholder="Elektron pochtangizni kiriting..." required>
+                                            <label for="floatingnameInput">Elektron pochta kiriting...</label>
+                                        </div>
 
-                                    <div class="mb-3 row">
-                                        <label for="example-text-input" class="col-md-2 col-form-label">СТИР</label>
-                                        <div class="col-md-10">
-                                            <input class="form-control" type="number" placeholder="Введите СТИР"
-                                                id="example-text-input">
+                                        <div class="form-floating mb-3">
+                                            <input type="date" class="form-control" id="floatingnameInput" placeholder="Elektron pochtangizni kiriting..." required>
+                                            <label for="floatingnameInput">Tug'ilgan kun, yil, kiriting...</label>
                                         </div>
-                                    </div>
-                                    <div class="mb-3 row">
-                                        <label for="example-search-input" class="col-md-2 col-form-label">Полное
-                                            имя</label>
-                                        <div class="col-md-10">
-                                            <input class="form-control" type="search" placeholder="Введите полное имя"
-                                                id="example-search-input">
+
+                                        <div class="form-floating mb-3">
+                                            <input type="text" class="form-control" id="floatingnameInput" placeholder="Kompaniya kiriting..." required>
+                                            <label for="floatingnameInput">Kompaniya kiriting...</label>
                                         </div>
-                                    </div>
-                                    <div class="mb-3 row">
-                                        <label for="example-email-input" class="col-md-2 col-form-label">Электронная
-                                            почта</label>
-                                        <div class="col-md-10">
-                                            <input class="form-control" type="email"
-                                                placeholder="Введите электронная почта" placeholder="Enter Email"
-                                                id="example-email-input">
+
+                                        <div class="form-floating mb-3">
+                                            <input type="text" class="form-control" id="floatingnameInput" placeholder="PNFL kiriting..." required>
+                                            <label for="floatingnameInput">PNFL kiriting...</label>
                                         </div>
-                                    </div>
-                                    <div class="mb-3 row">
-                                        <label for="example-date-input" class="col-md-2 col-form-label">Год
-                                            рождения</label>
-                                        <div class="col-md-10">
-                                            <input class="form-control" type="date" id="example-date-input">
+                                        
+                                        <div class="mb-3 row">
+                                            <div class="form-floating col-md-1">
+                                                <input class="form-control" type="text" placeholder="AA"
+                                                    id="example-text-input" required>
+                                                <label class="mx-3" for="floatingnameInput">AA</label>
+                                            </div>
+                                            <div class="form-floating col-md-11">
+                                                <input class="form-control" type="text" placeholder="AA"
+                                                    id="example-text-input" required>
+                                                <label class="mx-3" for="floatingnameInput">Pasport seriya kiriting...</label>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="mb-3 row">
-                                        <label for="example-search-input"
-                                            class="col-md-2 col-form-label">Компания</label>
-                                        <div class="col-md-10">
-                                            <input class="form-control" type="text" placeholder="Введите компания"
-                                                id="example-search-input">
+
+                                        <div class="mb-3 row">
+                                            <div class="form-floating input-group-prepend col-md-1">
+                                                <span class="input-group-text p-3">+998</span>
+                                                <label for="example-text-input" class="col-md-2 col-form-label"></label>
+                                            </div>
+                                            <div class="form-floating col-md-11">
+                                                <input class="form-control" type="number" placeholder="AA"
+                                                    id="example-text-input" required>
+                                                <label class="mx-3" for="floatingnameInput">Telefon raqam kiriting...</label>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="mb-3 row">
-                                        <label for="example-text-input" class="col-md-2 col-form-label">ПНФЛ</label>
-                                        <div class="col-md-10">
-                                            <input class="form-control" type="number" placeholder="Введите ПНФЛ"
-                                                id="example-text-input">
+
+                                        <div class="form-floating mb-3">
+                                            <select class="form-select" id="floatingSelectGrid"
+                                                aria-label="Floating label select example">
+                                                <option selected>O'zbekiston Milliy Universiteti</option>
+                                                <option value="1">Farg'ona Davlat Universiteti</option>
+                                                <option value="2">Samarqand Arxitektura-Qurilish Instituti</option>
+                                                <option value="3">Andijon Mashinasozlik Instituti</option>
+                                            </select>
+                                            <label for="floatingSelectGrid">Tashkilotni tanlang</label>
                                         </div>
-                                    </div>
-                                    <div class="mb-3 row">
-                                        <label for="example-text-input" class="col-md-2 col-form-label">Пасспорт</label>
-                                        <div class="col-md-1">
-                                            <input class="form-control" type="text" placeholder="AA"
-                                                id="example-text-input">
-                                        </div>
-                                        <div class="col-md-9">
-                                            <input class="form-control" type="number" placeholder="1234567"
-                                                id="example-text-input">
-                                        </div>
-                                    </div>
-                                    <div class="mb-3 row">
-                                        <label for="example-text-input" class="col-md-2 col-form-label">Номер
-                                            телефона</label>
-                                        <div class="input-group-prepend col-md-1">
-                                            <span class="input-group-text">+998</span>
-                                        </div>
-                                        <div class="col-md-9">
-                                            <input type="number" class="form-control" placeholder="0123456789" required>
-                                        </div>
-                                    </div>
-                                    <div class="mb-3 row">
-                                        <label for="example-search-input"
-                                            class="col-md-2 col-form-label">Позиция</label>
-                                        <div class="col-md-10">
-                                            <input class="form-control" type="text" placeholder="Введите позиция"
-                                                id="example-text-input">
-                                        </div>
-                                    </div>
+                                        <button class="btn btn-success mb-3 mx-1 mt-4">Saqlash</button>
+
+                                    </form>
                                 </div>
-                            </div>
-                            <div class="btn-sub">
-                                <button class="btn btn-primary" type="submit">Submit</button>
                             </div>
                         </div> <!-- end col -->
                     </div>
                     <!-- end row -->
-                </div> <!-- container-fluid -->
+                </div>
             </div>
-            <!-- End Page-content -->
+            <!-- container-fluid -->
+        </div>
+        <!-- End Page-content -->
 
+        <!-- Transaction Modal -->
+        <div class="modal fade transaction-detailModal" tabindex="-1" role="dialog"
+            aria-labelledby="transaction-detailModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="transaction-detailModalLabel">Order Details</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p class="mb-2">Product id: <span class="text-primary">#SK2540</span></p>
+                        <p class="mb-4">Billing Name: <span class="text-primary">Neal Matthews</span></p>
 
-            <footer class="footer">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <script>
-                                document.write(new Date().getFullYear())
-
-                            </script> © National Index.
+                        <div class="table-responsive">
+                            <table class="table align-middle table-nowrap">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Product</th>
+                                        <th scope="col">Product Name</th>
+                                        <th scope="col">Price</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">
+                                            <div>
+                                                <img src="assets/images/product/img-7.png" alt="" class="avatar-sm">
+                                            </div>
+                                        </th>
+                                        <td>
+                                            <div>
+                                                <h5 class="text-truncate font-size-14">Wireless Headphone (Black)
+                                                </h5>
+                                                <p class="text-muted mb-0">$ 225 x 1</p>
+                                            </div>
+                                        </td>
+                                        <td>$ 255</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            <div>
+                                                <img src="assets/images/product/img-4.png" alt="" class="avatar-sm">
+                                            </div>
+                                        </th>
+                                        <td>
+                                            <div>
+                                                <h5 class="text-truncate font-size-14">Phone patterned cases</h5>
+                                                <p class="text-muted mb-0">$ 145 x 1</p>
+                                            </div>
+                                        </td>
+                                        <td>$ 145</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">
+                                            <h6 class="m-0 text-right">Sub Total:</h6>
+                                        </td>
+                                        <td>
+                                            $ 400
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">
+                                            <h6 class="m-0 text-right">Shipping:</h6>
+                                        </td>
+                                        <td>
+                                            Free
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">
+                                            <h6 class="m-0 text-right">Total:</h6>
+                                        </td>
+                                        <td>
+                                            $ 400
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
-                        <div class="col-sm-6">
-                            <div class="text-sm-end d-none d-sm-block">
-                                Design & Develop by
-                                <a target="_blank" href="#">TA'LIM SIFATI INVEST</a>
-                            </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <footer class="footer">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <script>
+                            document.write(new Date().getFullYear())
+
+                        </script> © National Index.
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="text-sm-end d-none d-sm-block">
+                            Design & Develop by
+                            <a target="_blank" href="#">TA'LIM SIFATI INVEST</a>
                         </div>
                     </div>
                 </div>
-            </footer>
-        </div>
-        <!-- end main content-->
+            </div>
+        </footer>
+    </div>
+    <!-- end main content-->
 
     </div>
     <!-- END layout-wrapper -->
@@ -587,8 +679,14 @@
     <script src="assets/libs/simplebar/simplebar.min.js"></script>
     <script src="assets/libs/node-waves/waves.min.js"></script>
 
-    <script src="assets/js/app.js"></script>
+    <!-- apexcharts -->
+    <script src="assets/libs/apexcharts/apexcharts.min.js"></script>
 
+    <!-- dashboard init -->
+    <script src="assets/js/pages/dashboard.init.js"></script>
+
+    <!-- App js -->
+    <script src="assets/js/app.js"></script>
 </body>
 
 </html>

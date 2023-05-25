@@ -18,17 +18,6 @@
     <!-- App Css-->
     <link href="assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
 
-    <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
-
-    <script>
-        tinymce.init({
-            selector: '#mytextarea'
-        });
-
-    </script>
-
-
-
 </head>
 
 <body data-sidebar="dark" data-layout-mode="light">
@@ -383,7 +372,8 @@
                             </a>
                             <ul class="sub-menu" aria-expanded="false">
                                 <li><a href="table.html" key="t-products">Roʻyxat aʼzolari</a></li>
-                                <li><a href="ecommerce-product-detail.html" key="t-product-detail">Mutaxassislar ro'yxati</a>
+                                <li><a href="ecommerce-product-detail.html" key="t-product-detail">Mutaxassislar
+                                        ro'yxati</a>
                                 </li>
                                 <li><a href="ecommerce-orders.html" key="t-orders">Ro'yxat koordinatori</a></li>
                             </ul>
@@ -420,7 +410,7 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                                <h4 class="mb-sm-3 font-size-18">Добавить новости</h4>
+                                <h4 class="mb-sm-3 font-size-18">Xisobot</h4>
                             </div>
                         </div>
                     </div>
@@ -430,27 +420,21 @@
                         <div class="card-body">
 
                             <form action="">
+
                                 <!-- Nav tabs -->
                                 <ul class="nav nav-pills nav-justified" role="tablist">
                                     <li class="waves-effect waves-light">
                                         <a class="nav-link active p-3 px-5 mx-3" data-bs-toggle="tab" href="#home-1"
                                             role="tab">
                                             <span class="d-block d-sm-none"><i class="fas fa-home"></i></span>
-                                            <span class="d-none d-sm-block">Uzb</span>
+                                            <span class="d-none d-sm-block">Umumiy ma'lumotlar</span>
                                         </a>
                                     </li>
                                     <li class="waves-effect waves-light">
                                         <a class="nav-link p-3 px-5 mx-3" data-bs-toggle="tab" href="#profile-1"
                                             role="tab">
                                             <span class="d-block d-sm-none"><i class="far fa-user"></i></span>
-                                            <span class="d-none d-sm-block">Ру</span>
-                                        </a>
-                                    </li>
-                                    <li class="waves-effect waves-light">
-                                        <a class="nav-link p-3 px-5 mx-3" data-bs-toggle="tab" href="#settings-1"
-                                            role="tab">
-                                            <span class="d-block d-sm-none"><i class="fas fa-cog"></i></span>
-                                            <span class="d-none d-sm-block">Eng</span>
+                                            <span class="d-none d-sm-block">Indikator</span>
                                         </a>
                                     </li>
                                 </ul>
@@ -459,74 +443,271 @@
                                 <div class="tab-content p-3 text-muted">
                                     <div class="tab-pane active mt-2" id="home-1" role="tabpanel">
 
-
-                                        <div class="form-floating mb-3">
-                                            <input type="text" class="form-control" id="floatingnameInput"
-                                                placeholder="Title">
-                                            <label for="floatingnameInput">Title</label>
-                                        </div>
-
                                         <div class="row">
-                                            <div class="col-md-6">
-                                                <div class="form-floating mb-3">
-                                                    <select class="form-select" id="floatingSelectGrid"
-                                                        aria-label="Floating label select example">
-                                                        <option selected>Select</option>
-                                                        <option value="1">1</option>
-                                                    </select>
-                                                    <label for="floatingSelectGrid">Category</label>
-                                                </div>
+                                            <div class="col-md-2">
+                                                <h5 class="mb-sm-3 font-size-18 text-color">Reyting to'liq nomi:</h5>
+                                                <h5 class="mb-sm-3 font-size-18 text-color">Reyting tavsifi:</h5>
+                                                <h5 class="mb-sm-3 font-size-18 text-color">Boshlanish sanasi:</h5>
+                                                <h5 class="mb-sm-3 font-size-18 text-color">Tugash sanasi:</h5>
                                             </div>
-                                            <div class="col-md-6">
-                                                <div class="input-group py-2">
-                                                    <input type="file" class="form-control" id="inputGroupFile02">
-                                                    <label class="input-group-text"
-                                                        for="inputGroupFile02">Upload</label>
-                                                </div>
+                                            <div class="col-md-10 mb-sm-3 font-size-18 text-color">
+                                                <h5 class="mb-sm-3 font-size-18 text-color">Илмий ташкилотлар ва олий таълим
+                                                    муассасаларининг илмий-инновацион фаолиятини баҳолаш 2022</h5>
+                                                <h5 class="mb-sm-3 font-size-18 text-color">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, tenetur!</h5>
+                                                <h5 class="mb-sm-3 font-size-18 text-color">25.05.2023</h5>
+                                                <h5 class="mb-sm-3 font-size-18 text-color">25.05.2024</h5>
                                             </div>
                                         </div>
-                                        <textarea id="mytextarea"></textarea>
-
                                     </div>
-
 
                                     <div class="tab-pane mt-2" id="profile-1" role="tabpanel">
+                                        <h4 class="mb-sm-3 text-color">1. Jami xodimlar soni</h4>
 
-                                        <div class="form-floating mb-3">
-                                            <input type="text" class="form-control" id="floatingnameInput"
-                                                placeholder="Title">
-                                            <label for="floatingnameInput">Названия</label>
+                                        <div class="row">
+                                            <div class="col-md-6 mt-3">
+                                                <h4 class="title-reestr">Tavsifiga ko'ra</h4>
+                                                <hr>
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <h5 class="text-color">Talab etilgan qiymat:</h5>
+                                                        <p class="text-color">Matn qiymati</p>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <h5 class="text-color">Zaruriyligi:</h5>
+                                                        <p class="text-color">Zarur</p>
+                                                    </div>
+                                                </div>
+                                                <div class="row mt-2">
+                                                    <div class="col-md-6">
+                                                        <h5 class="text-color">Min ball:</h5>
+                                                        <p class="text-color">0</p>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <h5 class="text-color">Maks ball:</h5>
+                                                        <p class="text-color">15</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 mt-3">
+                                                <h4 class="title-reestr">Qiymat</h4>
+                                                <hr>
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <h5 class="text-color">Kiritilgan qiymatga asos:</h5>
+                                                        <div class="mb-3">
+                                                            <input type="number" class="form-control"
+                                                                id="floatingnameInput" placeholder="Qiymat kiriting (Son)" required>
+                                                                <span>(Max Min)</span>
+                                                        </div>
+                                                        <div class="mb-3">
+                                                            <input class="form-control" type="file" id="formFile">
+                                                            <span>Fayl talab qilinadi: Kerakli ma'lumot
+                                                                jo'natilsin (Zarur)</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
 
-                                        <div class="form-floating mb-3">
-                                            <textarea class="form-control" name="" id="" cols="240"
-                                                rows="10"></textarea>
-                                            <label for="floatingnameInput">Descriptions</label>
+                                        <h4 class="mb-sm-3 text-color mt-5">2. Ma'muriy-boshqaruv xodimlar shtat birligi soni
+                                        </h4>
+
+                                        <div class="row">
+                                            <div class="col-md-6 mt-3">
+                                                <h4 class="title-reestr">Tavsifiga ko'ra</h4>
+                                                <hr>
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <h5 class="text-color">Talab etilgan qiymat:</h5>
+                                                        <p class="text-color">Matn qiymati</p>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <h5 class="text-color">Zaruriyligi:</h5>
+                                                        <p class="text-color">Zarur</p>
+                                                    </div>
+                                                </div>
+                                                <div class="row mt-2">
+                                                    <div class="col-md-6">
+                                                        <h5 class="text-color">Min ball:</h5>
+                                                        <p class="text-color">0</p>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <h5 class="text-color">Maks ball:</h5>
+                                                        <p class="text-color">15</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 mt-3">
+                                                <h4 class="title-reestr">Qiymat</h4>
+                                                <hr>
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <h5 class="text-color">Kiritilgan qiymatga asos:</h5>
+                                                        <div class="mb-3">
+                                                            <input type="number" class="form-control"
+                                                                id="floatingnameInput" placeholder="Qiymat kiriting (%)" required>
+                                                                <span>(Max Min)</span>
+                                                        </div>
+                                                        <div class="mb-3">
+                                                            <input class="form-control" type="text" id="formFile">
+                                                            <span>Kerakli ma'lumot jo'natilsin (Zarur)</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
 
+                                        <h4 class="mb-sm-3 text-color">3. Ilmiy darajaga ega ma'muriy-boshqaruv xodimlar
+                                            soni</h4>
+
+                                            <div class="row">
+                                                <div class="col-md-6 mt-3">
+                                                    <h4 class="title-reestr">Tavsifiga ko'ra</h4>
+                                                    <hr>
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <h5 class="text-color">Talab etilgan qiymat:</h5>
+                                                            <p class="text-color">Matn qiymati</p>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <h5 class="text-color">Zaruriyligi:</h5>
+                                                            <p class="text-color">Zarur</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row mt-2">
+                                                        <div class="col-md-6">
+                                                            <h5 class="text-color">Min ball:</h5>
+                                                            <p class="text-color">0</p>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <h5 class="text-color">Maks ball:</h5>
+                                                            <p class="text-color">15</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 mt-3">
+                                                    <h4 class="title-reestr">Qiymat</h4>
+                                                    <hr>
+                                                    <div class="row">
+                                                        <div class="col-md-12">
+                                                            <h5 class="text-color">Kiritilgan qiymatga asos:</h5>
+                                                            <div class="mb-3">
+                                                                <input type="number" class="form-control"
+                                                                    id="floatingnameInput" placeholder="Qiymat kiriting (miqdor)" required>
+                                                                    <span>(Max Min)</span>
+                                                            </div>
+                                                            <div class="mb-3">
+                                                                <input class="form-control" type="text" id="formFile">
+                                                                <span>Kerakli ma'lumot jo'natilsin (Zarur emas)</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        <h4 class="mb-sm-3 text-color">4. Ilmiy xodimlarning ilmiy salohiyati, shu jumladan shundan:</h4>
+                                        <h4 class="mb-sm-3 text-color">4.1 Ilmiy darajali xodimlar soni</h4>
+
+                                        <div class="row">
+                                            <div class="col-md-6 mt-3">
+                                                <h4 class="title-reestr">Tavsifiga ko'ra</h4>
+                                                <hr>
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <h5 class="text-color">Talab etilgan qiymat:</h5>
+                                                        <p class="text-color">Matn qiymati</p>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <h5 class="text-color">Zaruriyligi:</h5>
+                                                        <p class="text-color">Zarur</p>
+                                                    </div>
+                                                </div>
+                                                <div class="row mt-2">
+                                                    <div class="col-md-6">
+                                                        <h5 class="text-color">Min ball:</h5>
+                                                        <p class="text-color">0</p>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <h5 class="text-color">Maks ball:</h5>
+                                                        <p class="text-color">15</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 mt-3">
+                                                <h4 class="title-reestr">Qiymat</h4>
+                                                <hr>
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <h5 class="text-color">Kiritilgan qiymatga asos:</h5>
+                                                        <div class="mb-3">
+                                                            <input type="number" class="form-control"
+                                                                id="floatingnameInput" placeholder="Qiymat kiriting (Son)" required>
+                                                                <span>(Max Min)</span>
+                                                        </div>
+                                                        <div class="mb-3">
+                                                            <input class="form-control" type="file" id="formFile">
+                                                            <span>Fayl talab qilinadi: Kerakli ma'lumot
+                                                                jo'natilsin (Zarur)</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <h4 class="mb-sm-3 text-color">4. Ilmiy xodimlarning ilmiy salohiyati, shu jumladan shundan:</h4>
+                                        <h4 class="mb-sm-3 text-color">4.2 Akademiklar</h4>
+
+                                        <div class="row">
+                                            <div class="col-md-6 mt-3">
+                                                <h4 class="title-reestr">Tavsifiga ko'ra</h4>
+                                                <hr>
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <h5 class="text-color">Talab etilgan qiymat:</h5>
+                                                        <p class="text-color">Matn qiymati</p>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <h5 class="text-color">Zaruriyligi:</h5>
+                                                        <p class="text-color">Zarur</p>
+                                                    </div>
+                                                </div>
+                                                <div class="row mt-2">
+                                                    <div class="col-md-6">
+                                                        <h5 class="text-color">Min ball:</h5>
+                                                        <p class="text-color">0</p>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <h5 class="text-color">Maks ball:</h5>
+                                                        <p class="text-color">15</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 mt-3">
+                                                <h4 class="title-reestr">Qiymat</h4>
+                                                <hr>
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <h5 class="text-color">Kiritilgan qiymatga asos:</h5>
+                                                        <div class="mb-3">
+                                                            <input type="number" class="form-control"
+                                                                id="floatingnameInput" placeholder="Qiymat kiriting (%)" required>
+                                                                <span>(Max Min)</span>
+                                                        </div>
+                                                        <div class="mb-3">
+                                                            <input class="form-control" type="text" id="formFile">
+                                                            <span>Fayl talab qilinadi: Kerakli ma'lumot
+                                                                jo'natilsin (Zarur emas)</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button class="btn btn-success btn-sub px-4 py-2 mt-2">Xisobotni yuborish <i class='bx bx-check'></i></button>
                                     </div>
-
-                                    <div class="tab-pane mt-3" id="settings-1" role="tabpanel">
-
-                                        <div class="form-floating mb-3">
-                                            <input type="text" class="form-control" id="floatingnameInput"
-                                                placeholder="Title">
-                                            <label for="floatingnameInput">Title</label>
-                                        </div>
-
-                                        <div class="form-floating mb-3">
-                                            <textarea class="form-control" name="" id="" cols="240"
-                                                rows="10"></textarea>
-                                            <label for="floatingnameInput">Descriptions</label>
-                                        </div>
-
-                                    </div>
-
                                 </div>
                             </form>
                         </div>
                     </div>
-                    <button class="btn btn-success mb-3 ">Сохранять</button>
                 </div>
                 <!-- container-fluid -->
             </div>

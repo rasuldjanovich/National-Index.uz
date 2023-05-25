@@ -5822,4 +5822,31 @@ input.checkbox-toggle-round-flat:checked + label:after {
     color: #000;
 }
 
+.bx-plus {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+label {
+    color: #B7B7B7;
+    font-weight: lighter;
+}
+
+.title-reestr {
+    color: #1C6BD7;
+}
+
+.text-color {
+    color: #4b4b4b;
+}
+
+.mb-6 {
+    margin-bottom: 5rem;
+}
+
+.bx-check {
+    font-size: 18px;
+    font-weight: bold;
+}
+
 /*# sourceMappingURL=app.min.css.map */

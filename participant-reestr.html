@@ -1,24 +1,24 @@
 <!doctype html>
 <html lang="en">
 
-    <head>
+<head>
 
-        <meta charset="utf-8" />
-        <title>National Index</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
-        <meta content="Themesbrand" name="author" />
-        <!-- App favicon -->
-        <link rel="shortcut icon" href="assets/images/minin.png">
-    
-        <!-- Bootstrap Css -->
-        <link href="assets/css/bootstrap.min.css" id="bootstrap-style" rel="styleshedateet" type="text/css" />
-        <!-- Icons Css -->
-        <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
-        <!-- App Css-->
-        <link href="assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
-    
-    </head>
+    <meta charset="utf-8" />
+    <title>National Index</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
+    <meta content="Themesbrand" name="author" />
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="assets/images/minin.png">
+
+    <!-- Bootstrap Css -->
+    <link href="assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
+    <!-- Icons Css -->
+    <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+    <!-- App Css-->
+    <link href="assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
+
+</head>
 
 <body data-sidebar="dark" data-layout-mode="light">
 
@@ -269,7 +269,6 @@
                         <button type="button" class="btn header-item waves-effect" id="page-header-user-dropdown"
                             data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <i class='bx bx-user'></i>
-                            <!-- <span class="d-none d-xl-inline-block ms-1" key="t-henry">Henry</span> -->
                             <i class="mdi mdi-chevron-down d-none d-xl-inline-block"></i>
                         </button>
                         <div class="dropdown-menu dropdown-menu-end">
@@ -303,11 +302,22 @@
                         <li>
                             <a href="index.html" class="index.html">
                                 <i class="bx bx-home-circle"></i>
-                                <span key="t-file-manager">Главная</span>
+                                <span key="t-file-manager">Home</span>
                             </a>
                         </li>
 
                         <li>
+                            <a href="javascript: void(0);" class="has-arrow waves-effect">
+                                <i class='bx bx-file-blank'></i>
+                                <span key="t-dashboards">Tashkilotlar</span>
+                            </a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li><a href="organizations-table.html">Tashkilotlar ro'yxati</a></li>
+                                <li><a href="participants-table.html">Qatnashuvchilar (Vakillar)</a></li>
+                            </ul>
+                        </li>
+
+                        <!-- <li>
                             <a href="javascript: void(0);" class="has-arrow waves-effect">
                                 <i class='bx bx-user'></i>
                                 <span key="t-dashboards">Эксперты</span>
@@ -316,39 +326,42 @@
                                 <li><a href="experts-table.html">Команды</a></li>
                                 <li><a href="expert-members.html">Члены-эксперты</a></li>
                             </ul>
-                        </li>
+                        </li> -->
 
                         <li>
                             <a href="javascript: void(0);" class="has-arrow waves-effect">
                                 <i class='bx bx-file-blank'></i>
-                                <span key="t-dashboards">Реестр рейтингов</span>
+                                <span key="t-dashboards">Baholar reestri</span>
                             </a>
                             <ul class="sub-menu" aria-expanded="false">
-                                <li><a href="rating-table.html">Список рейтингов</a></li>
+                                <li><a href="rating-table.html">Reytinglar ro'yxati</a></li>
+                                <li><a href="new-rating.html">Yangi reyting qo'shish</a></li>
+                                <li><a href="indikator.html">Indikatorlar</a></li>
+                                <li><a href="participant-reestr.html">Foydalanuvchilar uchun reytinglar reestr</a></li>
                             </ul>
                         </li>
 
                         <li>
                             <a href="javascript: void(0);" class="has-arrow waves-effect">
                                 <i class='bx bx-file-blank'></i>
-                                <span key="t-dashboards">Новости</span>
+                                <span key="t-dashboards">Yangiliklar</span>
                             </a>
                             <ul class="sub-menu" aria-expanded="false">
-                                <li><a href="news-table.html">Подменю категорий</a></li>
-                                <li><a href="news-table-2.html">Список новости</a></li>
+                                <li><a href="news-table.html">Kategoriyalar</a></li>
+                                <li><a href="news-table-2.html">Yangiliklar ro'yxati</a></li>
                             </ul>
                         </li>
 
                         <li>
                             <a href="javascript: void(0);" class="has-arrow waves-effect">
                                 <i class="bx bx-calendar"></i>
-                                <span key="t-dashboards">Заявки</span>
+                                <span key="t-dashboards">Ilovalar</span>
                             </a>
                             <ul class="sub-menu" aria-expanded="false">
-                                <li><a href="calendar.html" key="t-tui-calendar">Заявка на оценку</a></li>
-                                <li><a href="calendar-full.html" key="t-full-calendar">Оценка экспертом</a></li>
-                                <li><a href="calendar-full.html" key="t-full-calendar">Претензию</a></li>
-                                <li><a href="calendar-full.html" key="t-full-calendar">Модерация</a></li>
+                                <li><a href="calendar.html" key="t-tui-calendar">Baholash uchun ariza</a></li>
+                                <li><a href="calendar-full.html" key="t-full-calendar">Ekspert baholash</a></li>
+                                <li><a href="calendar-full.html" key="t-full-calendar">Talablar</a></li>
+                                <li><a href="calendar-full.html" key="t-full-calendar">Moderatsiya</a></li>
                                 <li><a href="calendar-full.html" key="t-full-calendar">Moderatsiyadan o'tganlar</a></li>
                                 <li><a href="calendar-full.html" key="t-full-calendar">Moderatsiyadan qaytarilganlar</a>
                                 </li>
@@ -358,28 +371,27 @@
                         <li>
                             <a href="javascript: void(0);" class="has-arrow waves-effect">
                                 <i class="bx bxs-user-detail"></i>
-                                <span key="t-ecommerce">Пользователи</span>
+                                <span key="t-ecommerce">Foydalanuvchilar</span>
                             </a>
                             <ul class="sub-menu" aria-expanded="false">
-                                <li><a href="table.html" key="t-products">Список Участники</a></li>
-                                <li><a href="ecommerce-product-detail.html" key="t-product-detail">Список Эксперты</a>
+                                <li><a href="table.html" key="t-products">Roʻyxat aʼzolari</a></li>
+                                <li><a href="ecommerce-product-detail.html" key="t-product-detail">Mutaxassislar
+                                        ro'yxati</a>
                                 </li>
-                                <li><a href="ecommerce-orders.html" key="t-orders">Список Координатор</a></li>
+                                <li><a href="ecommerce-orders.html" key="t-orders">Ro'yxat koordinatori</a></li>
                             </ul>
                         </li>
 
                         <li>
                             <a href="javascript: void(0);" class="has-arrow waves-effect">
                                 <i class='bx bx-cog'></i>
-                                <span key="t-crypto">Настройки</span>
+                                <span key="t-crypto">Sozlamalar</span>
                             </a>
                             <ul class="sub-menu" aria-expanded="false">
-                                <li><a href="crypto-wallet.html" key="t-wallet">Настройки системы</a></li>
-                                <li><a href="crypto-buy-sell.html" key="t-buy">Настройки API</a></li>
-                                <li><a href="crypto-exchange.html" key="t-exchange">Настройки электронной почты</a></li>
+                                <li><a href="setting-tab.html" key="t-wallet">Tizim sozlamalari</a></li>
+                                <li><a href="setting-email.html" key="t-exchange">Elektron pochta sozlamalari</a></li>
                             </ul>
                         </li>
-
                     </ul>
                 </div>
                 <!-- Sidebar -->
@@ -401,69 +413,15 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                                <h4 class="mb-sm-0 font-size-18">Команды</h4>
+                                <h4 class="mb-sm-3 font-size-18">Foydalanuvchilar uchun reytinglar reestri</h4>
 
-                                <div class="row">
-                                    <div class="col-12">
-                                        <div class="bootstrap-modal">
-                                            <!-- Large modal -->
-                                            <button type="button" class="btn btn-success mt-3 mb-3"
-                                                data-bs-toggle="modal"
-                                                data-bs-target=".bd-example-modal-lg">Добавить</button>
-                                            <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog"
-                                                aria-hidden="true">
-                                                <div class="modal-dialog modal-lg">
-                                                    <div class="modal-content">
-                                                        <div class="modal-header">
-                                                            <h5 class="modal-title">Добавить</h5>
-                                                            <button type="button" class="btn-close"
-                                                                data-bs-dismiss="modal">
-                                                            </button>
-                                                        </div>
-                                                        <form action="">
-                                                            <div class="mb-3 row mx-5 mt-3">
-                                                                <label class="col-lg-4 col-form-label"
-                                                                    for="validationCustom01">Наименований
-                                                                </label>
-                                                                <div class="col-lg-8">
-                                                                    <input type="text" class="form-control"
-                                                                        id="validationCustom01"
-                                                                        placeholder="Наименований" required>
-                                                                    <div class="invalid-feedback">
-                                                                        Please enter a username.
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="mb-3 row mx-5 mt-3">
-                                                                <label class="col-lg-4 col-form-label"
-                                                                    for="validationCustom01">Status
-                                                                </label>
-                                                                <div class="col-lg-8 col-form-label">
-                                                                    <p>
-                                                                        <input id="toggle-1"
-                                                                            class="checkbox-toggle checkbox-toggle-round"
-                                                                            type="checkbox" />
-                                                                        <label for="toggle-1" data-on="активный"
-                                                                            data-off="неактивный"></label>
-                                                                    </p>
-                                                                </div>
-                                                            </div>
-                                                        </form>
-                                                        <div class="modal-footer">
-                                                            <button type="button" class="btn btn-danger light"
-                                                                data-bs-dismiss="modal">Закрывать</button>
-                                                            <button type="button"
-                                                                class="btn btn-primary">Добавить</button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                <!-- <a href="participant-reestr-tab.html">
+                                    <button class="btn btn-success mb-3"><i class='bx bx-plus'></i> Qo'shish</button>
+                                </a> -->
                             </div>
                         </div>
                     </div>
+                    <!-- end page title -->
 
                     <div class="row">
                         <div class="col-12">
@@ -473,7 +431,7 @@
                                         <div class="col-sm-4">
                                             <div class="search-box me-2 mb-2 d-inline-block">
                                                 <div class="position-relative">
-                                                    <input type="text" class="form-control" placeholder="Поиск...">
+                                                    <input type="text" class="form-control" placeholder="Qidiruv...">
                                                     <i class="bx bx-search-alt search-icon"></i>
                                                 </div>
                                             </div>
@@ -484,10 +442,12 @@
                                         <table class="table align-middle table-nowrap">
                                             <thead>
                                                 <tr>
-                                                    <th>Но</th>
-                                                    <th>Наименований</th>
-                                                    <th>Положение дел</th>
-                                                    <th>Действие</th>
+                                                    <th>No</th>
+                                                    <th>Nomi</th>
+                                                    <th>Boshlanish muddati</th>
+                                                    <th>Tugash muddati</th>
+                                                    <th>Holati</th>
+                                                    <th>Action</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -495,87 +455,194 @@
                                                     <td>
                                                         1
                                                     </td>
-                                                    <td>Илмий ташкилотлар ва олий таълим муассасаларининг илмий-инновацион фаолиятини баҳолаш 2021</td>
-                                                    <td>активный</td>
+                                                    <td>Илмий ташкилотлар ва олий таълим муассасаларининг
+                                                        илмий-инновацион фаолиятини баҳолаш</td>
+                                                    <td>07 Oktyabr, 2023</td>
+                                                    <td>07 Oktyabr, 2024</td>
+                                                    <td>o'tgan</td>
 
-                                                    <td class="d-flex">
+                                                    <td>
+                                                        <div class="dropdown">
+                                                            <a href="#" class="dropdown-toggle card-drop"
+                                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                                <i class="mdi mdi-dots-horizontal font-size-18"></i>
+                                                            </a>
+                                                            <ul class="dropdown-menu dropdown-menu-end">
+                                                                <li><a href="participant-reestr-tab.html" class="dropdown-item"><i
+                                                                            class="mdi mdi-eye font-size-16 text-success me-1"></i>
+                                                                        Batafsil</a></li>
+                                                                <li><a href="#" class="dropdown-item">
+                                                                        <i
+                                                                            class='bx bx-question-mark font-size-16 text-danger me-1'></i>
+                                                                        Holatini tekshirish</a></li>
 
-                                                        <a href="#" class="mx-2"><i
-                                                                class="mdi mdi-pencil font-size-16 text-success me-1"></i></a>
-                                                        </li>
-                                                        <a href="#" class="dropdown-item"><i
-                                                                class="mdi mdi-trash-can font-size-16 text-danger me-1"></i></a>
-                                                        </li>
+                                                                <li><a href="#" class="dropdown-item"><i
+                                                                            class="mdi mdi-exclamation-thick font-size-16 text-warning me-1"></i>
+                                                                        Shikoyat</a></li>
+                                                            </ul>
+                                                        </div>
                                                     </td>
                                                 </tr>
                                                 <tr>
                                                     <td>
                                                         2
                                                     </td>
-                                                    <td>Илмий-тадқиқот фаолиятининг самарадорлигини синаш ва ишлаб чиқаришга жорий этиш бўйича ташкил этилган инфратузилма</td>
-                                                    <td>неактивный</td>
+                                                    <td>Илмий-тадқиқот фаолиятининг самарадорлигини синаш ва ишлаб
+                                                        чиқаришга жорий этиш бўйича ташкил этилган инфратузилма</td>
+                                                    <td>07 Oktyabr, 2023</td>
+                                                    <!-- <td><span class="badge bg-success font-size-12"><i class="mdi mdi-star me-1"></i> 4.3</span></td> -->
+                                                    <td>07 Oktyabr, 2024</td>
+                                                    <td>moderatsiyada</td>
 
-                                                    <td class="d-flex">
+                                                    <td>
+                                                        <div class="dropdown">
+                                                            <a href="#" class="dropdown-toggle card-drop"
+                                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                                <i class="mdi mdi-dots-horizontal font-size-18"></i>
+                                                            </a>
+                                                            <ul class="dropdown-menu dropdown-menu-end">
+                                                                <li><a href="participant-reestr-tab.html" class="dropdown-item"><i
+                                                                            class="mdi mdi-eye font-size-16 text-success me-1"></i>
+                                                                        Batafsil</a></li>
+                                                                <li><a href="#" class="dropdown-item">
+                                                                        <i
+                                                                            class='bx bx-question-mark font-size-16 text-danger me-1'></i>
+                                                                        Holatini tekshirish</a></li>
 
-                                                        <a href="#" class="mx-2"><i
-                                                                class="mdi mdi-pencil font-size-16 text-success me-1"></i></a>
-                                                        </li>
-                                                        <a href="#" class="dropdown-item"><i
-                                                                class="mdi mdi-trash-can font-size-16 text-danger me-1"></i></a>
-                                                        </li>
+                                                                <li><a href="#" class="dropdown-item"><i
+                                                                            class="mdi mdi-exclamation-thick font-size-16 text-warning me-1"></i>
+                                                                        Shikoyat</a></li>
+                                                            </ul>
+                                                        </div>
                                                     </td>
                                                 </tr>
                                                 <tr>
                                                     <td>
                                                         3
                                                     </td>
-                                                    <td>Илмий ташкилотлар ва олий таълим муассасаларининг илмий-инновацион фаолиятини баҳолаш 2021</td>
-                                                    <td>активный</td>
+                                                    <td>Илмий ташкилотлар ва олий таълим муассасаларининг
+                                                        илмий-инновацион фаолиятини баҳолаш</td>
+                                                    <td>07 Oktyabr, 2023</td>
+                                                    <!-- <td><span class="badge bg-success font-size-12"><i class="mdi mdi-star me-1"></i> 4.4</span></td> -->
+                                                    <td>07 Oktyabr, 2024</td>
+                                                    <td>qaytarilgan</td>
 
-                                                    <td class="d-flex">
+                                                    <td>
+                                                        <div class="dropdown">
+                                                            <a href="#" class="dropdown-toggle card-drop"
+                                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                                <i class="mdi mdi-dots-horizontal font-size-18"></i>
+                                                            </a>
+                                                            <ul class="dropdown-menu dropdown-menu-end">
+                                                                <li><a href="participant-reestr-tab.html" class="dropdown-item"><i
+                                                                            class="mdi mdi-eye font-size-16 text-success me-1"></i>
+                                                                        Batafsil</a></li>
+                                                                <li><a href="#" class="dropdown-item">
+                                                                        <i
+                                                                            class='bx bx-question-mark font-size-16 text-danger me-1'></i>
+                                                                        Holatini tekshirish</a></li>
 
-                                                        <a href="#" class="mx-2"><i
-                                                                class="mdi mdi-pencil font-size-16 text-success me-1"></i></a>
-                                                        </li>
-                                                        <a href="#" class="dropdown-item"><i
-                                                                class="mdi mdi-trash-can font-size-16 text-danger me-1"></i></a>
-                                                        </li>
+                                                                <li><a href="#" class="dropdown-item"><i
+                                                                            class="mdi mdi-exclamation-thick font-size-16 text-warning me-1"></i>
+                                                                        Shikoyat</a></li>
+                                                            </ul>
+                                                        </div>
                                                     </td>
                                                 </tr>
                                                 <tr>
                                                     <td>
                                                         4
                                                     </td>
-                                                    <td>Илмий-тадқиқот фаолиятининг самарадорлигини синаш ва ишлаб чиқаришга жорий этиш бўйича ташкил этилган инфратузилма</td>
-                                                    <td>неактивный</td>
+                                                    <td>Илмий-тадқиқот фаолиятининг самарадорлигини синаш ва ишлаб
+                                                        чиқаришга жорий этиш бўйича ташкил этилган инфратузилма</td>
+                                                    <td>07 Oktyabr, 2023</td>
+                                                    <td>07 Oktyabr, 2024</td>
+                                                    <td>o'tgan</td>
 
-                                                    <td class="d-flex">
+                                                    <td>
+                                                        <div class="dropdown">
+                                                            <a href="#" class="dropdown-toggle card-drop"
+                                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                                <i class="mdi mdi-dots-horizontal font-size-18"></i>
+                                                            </a>
+                                                            <ul class="dropdown-menu dropdown-menu-end">
+                                                                <li><a href="participant-reestr-tab.html" class="dropdown-item"><i
+                                                                            class="mdi mdi-eye font-size-16 text-success me-1"></i>
+                                                                        Batafsil</a></li>
+                                                                <li><a href="#" class="dropdown-item">
+                                                                        <i
+                                                                            class='bx bx-question-mark font-size-16 text-danger me-1'></i>
+                                                                        Holatini tekshirish</a></li>
 
-                                                        <a href="#" class="mx-2"><i
-                                                                class="mdi mdi-pencil font-size-16 text-success me-1"></i></a>
-                                                        </li>
-                                                        <a href="#" class="dropdown-item"><i
-                                                                class="mdi mdi-trash-can font-size-16 text-danger me-1"></i></a>
-                                                        </li>
+                                                                <li><a href="#" class="dropdown-item"><i
+                                                                            class="mdi mdi-exclamation-thick font-size-16 text-warning me-1"></i>
+                                                                        Shikoyat</a></li>
+                                                            </ul>
+                                                        </div>
                                                     </td>
                                                 </tr>
                                                 <tr>
                                                     <td>
                                                         5
                                                     </td>
-                                                    <td>Илмий ташкилотлар ва олий таълим муассасаларининг илмий-инновацион фаолиятини баҳолаш 2021</td>
-                                                    <td>активный</td>
+                                                    <td>Илмий ташкилотлар ва олий таълим муассасаларининг
+                                                        илмий-инновацион фаолиятини баҳолаш</td>
+                                                    <td>07 Oktyabr, 2023</td>
+                                                    <td>07 Oktyabr, 2024</td>
+                                                    <td>moderatsiyada</td>
 
-                                                    <td class="d-flex">
+                                                    <td>
+                                                        <div class="dropdown">
+                                                            <a href="#" class="dropdown-toggle card-drop"
+                                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                                <i class="mdi mdi-dots-horizontal font-size-18"></i>
+                                                            </a>
+                                                            <ul class="dropdown-menu dropdown-menu-end">
+                                                                <li><a href="participant-reestr-tab.html" class="dropdown-item"><i
+                                                                            class="mdi mdi-eye font-size-16 text-success me-1"></i>
+                                                                        Batafsil</a></li>
+                                                                <li><a href="#" class="dropdown-item">
+                                                                        <i
+                                                                            class='bx bx-question-mark font-size-16 text-danger me-1'></i>
+                                                                        Holatini tekshirish</a></li>
 
-                                                        <a href="#" class="mx-2"><i
-                                                                class="mdi mdi-pencil font-size-16 text-success me-1"></i></a>
-                                                        </li>
-                                                        <a href="#" class="dropdown-item"><i
-                                                                class="mdi mdi-trash-can font-size-16 text-danger me-1"></i></a>
-                                                        </li>
+                                                                <li><a href="#" class="dropdown-item"><i
+                                                                            class="mdi mdi-exclamation-thick font-size-16 text-warning me-1"></i>
+                                                                        Shikoyat</a></li>
+                                                            </ul>
+                                                        </div>
                                                     </td>
                                                 </tr>
+                                                <!-- <tr>
+                                                        <td>
+                                                            <div class="form-check font-size-16">
+                                                                <input class="form-check-input" type="checkbox" id="customerlistcheck08">
+                                                                <label class="form-check-label" for="customerlistcheck08"></label>
+                                                            </div>
+                                                        </td>
+                                                        <td>John McCray</td>
+                                                        <td>
+                                                            <p class="mb-1">253-661-7551</p>
+                                                            <p class="mb-0">JohnMcCray@armyspy.com</p>
+                                                        </td>
+                                                        
+                                                        <td>3309 Horizon Circle
+                                                                Tacoma, WA 98423</td>
+                                                        <td><span class="badge bg-success font-size-12"><i class="mdi mdi-star me-1"></i> 4.1</span></td>
+                                                        <td>$5,2870</td>
+                                                        <td>02 Oct, 2019</td>
+                                                        <td>
+                                                            <div class="dropdown">
+                                                                <a href="#" class="dropdown-toggle card-drop" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                    <i class="mdi mdi-dots-horizontal font-size-18"></i>
+                                                                </a>
+                                                                <ul class="dropdown-menu dropdown-menu-end">
+                                                                    <li><a href="#" class="dropdown-item"><i class="mdi mdi-pencil font-size-16 text-success me-1"></i> Edit</a></li>
+                                                                    <li><a href="#" class="dropdown-item"><i class="mdi mdi-trash-can font-size-16 text-danger me-1"></i> Delete</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </td>
+                                                    </tr> -->
                                             </tbody>
                                         </table>
                                     </div>
@@ -605,102 +672,106 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                    <!-- end row -->
+
+                </div> <!-- container-fluid -->
+            </div>
+            <!-- End Page-content -->
 
 
-                <footer class="footer">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <script>
-                                    document.write(new Date().getFullYear())
+            <footer class="footer">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <script>
+                                document.write(new Date().getFullYear())
 
-                                </script> © National Index.
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="text-sm-end d-none d-sm-block">
-                                    Design & Develop by
-                                    <a target="_blank" href="#">TA'LIM SIFATI INVEST</a>
-                                </div>
+                            </script> © National Index.
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="text-sm-end d-none d-sm-block">
+                                Design & Develop by
+                                <a target="_blank" href="#">TA'LIM SIFATI INVEST</a>
                             </div>
                         </div>
                     </div>
-                </footer>
+                </div>
+            </footer>
+        </div>
+        <!-- end main content-->
+
+    </div>
+    <!-- END layout-wrapper -->
+
+    <!-- Right Sidebar -->
+    <div class="right-bar">
+        <div data-simplebar class="h-100">
+            <div class="rightbar-title d-flex align-items-center px-3 py-4">
+
+                <h5 class="m-0 me-2">Settings</h5>
+
+                <a href="javascript:void(0);" class="right-bar-toggle ms-auto">
+                    <i class="mdi mdi-close noti-icon"></i>
+                </a>
             </div>
-            <!-- end main content-->
 
-        </div>
-        <!-- END layout-wrapper -->
+            <!-- Settings -->
+            <hr class="mt-0" />
+            <h6 class="text-center mb-0">Choose Layouts</h6>
 
-        <!-- Right Sidebar -->
-        <div class="right-bar">
-            <div data-simplebar class="h-100">
-                <div class="rightbar-title d-flex align-items-center px-3 py-4">
-
-                    <h5 class="m-0 me-2">Settings</h5>
-
-                    <a href="javascript:void(0);" class="right-bar-toggle ms-auto">
-                        <i class="mdi mdi-close noti-icon"></i>
-                    </a>
+            <div class="p-4">
+                <div class="mb-2">
+                    <img src="assets/images/layouts/layout-1.jpg" class="img-thumbnail" alt="layout images">
                 </div>
 
-                <!-- Settings -->
-                <hr class="mt-0" />
-                <h6 class="text-center mb-0">Choose Layouts</h6>
-
-                <div class="p-4">
-                    <div class="mb-2">
-                        <img src="assets/images/layouts/layout-1.jpg" class="img-thumbnail" alt="layout images">
-                    </div>
-
-                    <div class="form-check form-switch mb-3">
-                        <input class="form-check-input theme-choice" type="checkbox" id="light-mode-switch" checked>
-                        <label class="form-check-label" for="light-mode-switch">Light Mode</label>
-                    </div>
-
-                    <div class="mb-2">
-                        <img src="assets/images/layouts/layout-2.jpg" class="img-thumbnail" alt="layout images">
-                    </div>
-                    <div class="form-check form-switch mb-3">
-                        <input class="form-check-input theme-choice" type="checkbox" id="dark-mode-switch">
-                        <label class="form-check-label" for="dark-mode-switch">Dark Mode</label>
-                    </div>
-
-                    <div class="mb-2">
-                        <img src="assets/images/layouts/layout-3.jpg" class="img-thumbnail" alt="layout images">
-                    </div>
-                    <div class="form-check form-switch mb-3">
-                        <input class="form-check-input theme-choice" type="checkbox" id="rtl-mode-switch">
-                        <label class="form-check-label" for="rtl-mode-switch">RTL Mode</label>
-                    </div>
-
-                    <div class="mb-2">
-                        <img src="assets/images/layouts/layout-4.jpg" class="img-thumbnail" alt="layout images">
-                    </div>
-                    <div class="form-check form-switch mb-5">
-                        <input class="form-check-input theme-choice" type="checkbox" id="dark-rtl-mode-switch">
-                        <label class="form-check-label" for="dark-rtl-mode-switch">Dark RTL Mode</label>
-                    </div>
-
-
+                <div class="form-check form-switch mb-3">
+                    <input class="form-check-input theme-choice" type="checkbox" id="light-mode-switch" checked>
+                    <label class="form-check-label" for="light-mode-switch">Light Mode</label>
                 </div>
 
-            </div> <!-- end slimscroll-menu-->
-        </div>
-        <!-- /Right-bar -->
+                <div class="mb-2">
+                    <img src="assets/images/layouts/layout-2.jpg" class="img-thumbnail" alt="layout images">
+                </div>
+                <div class="form-check form-switch mb-3">
+                    <input class="form-check-input theme-choice" type="checkbox" id="dark-mode-switch">
+                    <label class="form-check-label" for="dark-mode-switch">Dark Mode</label>
+                </div>
 
-        <!-- Right bar overlay-->
-        <div class="rightbar-overlay"></div>
+                <div class="mb-2">
+                    <img src="assets/images/layouts/layout-3.jpg" class="img-thumbnail" alt="layout images">
+                </div>
+                <div class="form-check form-switch mb-3">
+                    <input class="form-check-input theme-choice" type="checkbox" id="rtl-mode-switch">
+                    <label class="form-check-label" for="rtl-mode-switch">RTL Mode</label>
+                </div>
 
-        <!-- JAVASCRIPT -->
-        <script src="assets/libs/jquery/jquery.min.js"></script>
-        <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
-        <script src="assets/libs/metismenu/metisMenu.min.js"></script>
-        <script src="assets/libs/simplebar/simplebar.min.js"></script>
-        <script src="assets/libs/node-waves/waves.min.js"></script>
+                <div class="mb-2">
+                    <img src="assets/images/layouts/layout-4.jpg" class="img-thumbnail" alt="layout images">
+                </div>
+                <div class="form-check form-switch mb-5">
+                    <input class="form-check-input theme-choice" type="checkbox" id="dark-rtl-mode-switch">
+                    <label class="form-check-label" for="dark-rtl-mode-switch">Dark RTL Mode</label>
+                </div>
 
-        <!-- App js -->
-        <script src="assets/js/app.js"></script>
+
+            </div>
+
+        </div> <!-- end slimscroll-menu-->
+    </div>
+    <!-- /Right-bar -->
+
+    <!-- Right bar overlay-->
+    <div class="rightbar-overlay"></div>
+
+    <!-- JAVASCRIPT -->
+    <script src="assets/libs/jquery/jquery.min.js"></script>
+    <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/libs/metismenu/metisMenu.min.js"></script>
+    <script src="assets/libs/simplebar/simplebar.min.js"></script>
+    <script src="assets/libs/node-waves/waves.min.js"></script>
+
+    <!-- App js -->
+    <script src="assets/js/app.js"></script>
 
 </body>
 

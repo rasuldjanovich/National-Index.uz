@@ -302,11 +302,22 @@
                         <li>
                             <a href="index.html" class="index.html">
                                 <i class="bx bx-home-circle"></i>
-                                <span key="t-file-manager">Главная</span>
+                                <span key="t-file-manager">Home</span>
                             </a>
                         </li>
 
                         <li>
+                            <a href="javascript: void(0);" class="has-arrow waves-effect">
+                                <i class='bx bx-file-blank'></i>
+                                <span key="t-dashboards">Tashkilotlar</span>
+                            </a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li><a href="organizations-table.html">Tashkilotlar ro'yxati</a></li>
+                                <li><a href="participants-table.html">Qatnashuvchilar (Vakillar)</a></li>
+                            </ul>
+                        </li>
+
+                        <!-- <li>
                             <a href="javascript: void(0);" class="has-arrow waves-effect">
                                 <i class='bx bx-user'></i>
                                 <span key="t-dashboards">Эксперты</span>
@@ -315,40 +326,42 @@
                                 <li><a href="experts-table.html">Команды</a></li>
                                 <li><a href="expert-members.html">Члены-эксперты</a></li>
                             </ul>
-                        </li>
+                        </li> -->
 
                         <li>
                             <a href="javascript: void(0);" class="has-arrow waves-effect">
                                 <i class='bx bx-file-blank'></i>
-                                <span key="t-dashboards">Реестр рейтингов</span>
+                                <span key="t-dashboards">Baholar reestri</span>
                             </a>
                             <ul class="sub-menu" aria-expanded="false">
-                                <li><a href="rating-table.html">Список рейтингов</a></li>
-                                <li><a href="new-rating.html">Добавить новый рейтинг</a></li>
+                                <li><a href="rating-table.html">Reytinglar ro'yxati</a></li>
+                                <li><a href="new-rating.html">Yangi reyting qo'shish</a></li>
+                                <li><a href="indikator.html">Indikatorlar</a></li>
+                                <li><a href="participant-reestr.html">Foydalanuvchilar uchun reytinglar reestr</a></li>
                             </ul>
                         </li>
 
                         <li>
                             <a href="javascript: void(0);" class="has-arrow waves-effect">
                                 <i class='bx bx-file-blank'></i>
-                                <span key="t-dashboards">Новости</span>
+                                <span key="t-dashboards">Yangiliklar</span>
                             </a>
                             <ul class="sub-menu" aria-expanded="false">
-                                <li><a href="news-table.html">Подменю категорий</a></li>
-                                <li><a href="news-table-2.html">Список новости</a></li>
+                                <li><a href="news-table.html">Kategoriyalar</a></li>
+                                <li><a href="news-table-2.html">Yangiliklar ro'yxati</a></li>
                             </ul>
                         </li>
 
                         <li>
                             <a href="javascript: void(0);" class="has-arrow waves-effect">
                                 <i class="bx bx-calendar"></i>
-                                <span key="t-dashboards">Заявки</span>
+                                <span key="t-dashboards">Ilovalar</span>
                             </a>
                             <ul class="sub-menu" aria-expanded="false">
-                                <li><a href="calendar.html" key="t-tui-calendar">Заявка на оценку</a></li>
-                                <li><a href="calendar-full.html" key="t-full-calendar">Оценка экспертом</a></li>
-                                <li><a href="calendar-full.html" key="t-full-calendar">Претензию</a></li>
-                                <li><a href="calendar-full.html" key="t-full-calendar">Модерация</a></li>
+                                <li><a href="calendar.html" key="t-tui-calendar">Baholash uchun ariza</a></li>
+                                <li><a href="calendar-full.html" key="t-full-calendar">Ekspert baholash</a></li>
+                                <li><a href="calendar-full.html" key="t-full-calendar">Talablar</a></li>
+                                <li><a href="calendar-full.html" key="t-full-calendar">Moderatsiya</a></li>
                                 <li><a href="calendar-full.html" key="t-full-calendar">Moderatsiyadan o'tganlar</a></li>
                                 <li><a href="calendar-full.html" key="t-full-calendar">Moderatsiyadan qaytarilganlar</a>
                                 </li>
@@ -358,28 +371,28 @@
                         <li>
                             <a href="javascript: void(0);" class="has-arrow waves-effect">
                                 <i class="bx bxs-user-detail"></i>
-                                <span key="t-ecommerce">Пользователи</span>
+                                <span key="t-ecommerce">Foydalanuvchilar</span>
                             </a>
                             <ul class="sub-menu" aria-expanded="false">
-                                <li><a href="table.html" key="t-products">Список Участники</a></li>
-                                <li><a href="ecommerce-product-detail.html" key="t-product-detail">Список Эксперты</a>
+                                <li><a href="table.html" key="t-products">Roʻyxat aʼzolari</a></li>
+                                <li><a href="ecommerce-product-detail.html" key="t-product-detail">Mutaxassislar ro'yxati</a>
                                 </li>
-                                <li><a href="ecommerce-orders.html" key="t-orders">Список Координатор</a></li>
+                                <li><a href="ecommerce-orders.html" key="t-orders">Ro'yxat koordinatori</a></li>
                             </ul>
                         </li>
 
                         <li>
                             <a href="javascript: void(0);" class="has-arrow waves-effect">
                                 <i class='bx bx-cog'></i>
-                                <span key="t-crypto">Настройки</span>
+                                <span key="t-crypto">Sozlamalar</span>
                             </a>
                             <ul class="sub-menu" aria-expanded="false">
-                                <li><a href="crypto-wallet.html" key="t-wallet">Настройки системы</a></li>
-                                <li><a href="crypto-buy-sell.html" key="t-buy">Настройки API</a></li>
-                                <li><a href="crypto-exchange.html" key="t-exchange">Настройки электронной почты</a></li>
+                                <li><a href="setting-tab.html" key="t-wallet">Tizim sozlamalari</a></li>
+                                <li><a href="setting-email.html" key="t-exchange">Elektron pochta sozlamalari</a></li>
                             </ul>
                         </li>
 
+                    </ul>
                 </div>
                 <!-- Sidebar -->
             </div>
@@ -400,10 +413,10 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                                <h4 class="mb-sm-3 font-size-18">Подменю категорий</h4>
+                                <h4 class="mb-sm-3 font-size-18">Kategoriyalar</h4>
 
                                 <a href="news-tab.html">
-                                    <button class="btn btn-success mb-3">Добавить</button>
+                                    <button class="btn btn-success mb-3"><i class='bx bx-plus'></i> Qo'shish</button>
                                 </a>
                             </div>
                         </div>
@@ -418,7 +431,7 @@
                                         <div class="col-sm-4">
                                             <div class="search-box me-2 mb-2 d-inline-block">
                                                 <div class="position-relative">
-                                                    <input type="text" class="form-control" placeholder="Поиск...">
+                                                    <input type="text" class="form-control" placeholder="Qidiruv...">
                                                     <i class="bx bx-search-alt search-icon"></i>
                                                 </div>
                                             </div>
@@ -429,11 +442,11 @@
                                         <table class="table align-middle table-nowrap">
                                             <thead>
                                                 <tr>
-                                                    <th>Но</th>
-                                                    <th>Нозвания</th>
-                                                    <th>Автор</th>
-                                                    <th>Дата создания</th>
-                                                    <th>Действие</th>
+                                                    <th>No</th>
+                                                    <th>Ism</th>
+                                                    <th>Muallif</th>
+                                                    <th>Boshlangan muddati</th>
+                                                    <th>Action</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -443,7 +456,7 @@
                                                     </td>
                                                     <td>Стивен Раш</td>
                                                     <td>Стивен Раш</td>
-                                                    <td>07 Oктябрь, 2024</td>
+                                                    <td>07 Oktyabr, 2024</td>
 
                                                     <td class="d-flex">
 
@@ -461,7 +474,7 @@
                                                     </td>
                                                     <td>Стивен Раш</td>
                                                     <td>Стивен Раш</td>
-                                                    <td>07 Oктябрь, 2024</td>
+                                                    <td>07 Oktyabr, 2024</td>
 
                                                     <td class="d-flex">
 
@@ -479,7 +492,7 @@
                                                     </td>
                                                     <td>Стивен Раш</td>
                                                     <td>Стивен Раш</td>
-                                                    <td>07 Oктябрь, 2024</td>
+                                                    <td>07 Oktyabr, 2024</td>
 
                                                     <td class="d-flex">
 
@@ -497,7 +510,7 @@
                                                     </td>
                                                     <td>Стивен Раш</td>
                                                     <td>Стивен Раш</td>
-                                                    <td>07 Oктябрь, 2024</td>
+                                                    <td>07 Oktyabr, 2024</td>
 
                                                     <td class="d-flex">
 
@@ -515,7 +528,7 @@
                                                     </td>
                                                     <td>Стивен Раш</td>
                                                     <td>Стивен Раш</td>
-                                                    <td>07 Oктябрь, 2024</td>
+                                                    <td>07 Oktyabr, 2024</td>
 
                                                     <td class="d-flex">
 
@@ -605,7 +618,7 @@
                         <div class="col-sm-6">
                             <div class="text-sm-end d-none d-sm-block">
                                 Design & Develop by
-                                <a target="_blank" href="https://www.mimaxgroup.com/">MIMAX Software Group</a>
+                                <a target="_blank" href="#">TA'LIM SIFATI INVEST</a>
                             </div>
                         </div>
                     </div>

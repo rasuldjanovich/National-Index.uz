@@ -299,11 +299,22 @@
                         <li>
                             <a href="index.html" class="index.html">
                                 <i class="bx bx-home-circle"></i>
-                                <span key="t-file-manager">Главная</span>
+                                <span key="t-file-manager">Home</span>
                             </a>
                         </li>
 
                         <li>
+                            <a href="javascript: void(0);" class="has-arrow waves-effect">
+                                <i class='bx bx-file-blank'></i>
+                                <span key="t-dashboards">Tashkilotlar</span>
+                            </a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li><a href="organizations-table.html">Tashkilotlar ro'yxati</a></li>
+                                <li><a href="participants-table.html">Qatnashuvchilar (Vakillar)</a></li>
+                            </ul>
+                        </li>
+
+                        <!-- <li>
                             <a href="javascript: void(0);" class="has-arrow waves-effect">
                                 <i class='bx bx-user'></i>
                                 <span key="t-dashboards">Эксперты</span>
@@ -312,41 +323,42 @@
                                 <li><a href="experts-table.html">Команды</a></li>
                                 <li><a href="expert-members.html">Члены-эксперты</a></li>
                             </ul>
-                        </li>
+                        </li> -->
 
                         <li>
                             <a href="javascript: void(0);" class="has-arrow waves-effect">
                                 <i class='bx bx-file-blank'></i>
-                                <span key="t-dashboards">Реестр рейтингов</span>
+                                <span key="t-dashboards">Baholar reestri</span>
                             </a>
                             <ul class="sub-menu" aria-expanded="false">
-                                <li><a href="rating-table.html">Список рейтингов</a></li>
-                                <li><a href="new-rating.html">Добавить новый рейтинг</a></li>
+                                <li><a href="rating-table.html">Reytinglar ro'yxati</a></li>
+                                <li><a href="new-rating.html">Yangi reyting qo'shish</a></li>
+                                <li><a href="indikator.html">Indikatorlar</a></li>
+                                <li><a href="participant-reestr.html">Foydalanuvchilar uchun reytinglar reestr</a></li>
                             </ul>
-
                         </li>
 
                         <li>
                             <a href="javascript: void(0);" class="has-arrow waves-effect">
                                 <i class='bx bx-file-blank'></i>
-                                <span key="t-dashboards">Новости</span>
+                                <span key="t-dashboards">Yangiliklar</span>
                             </a>
                             <ul class="sub-menu" aria-expanded="false">
-                                <li><a href="news-table.html">Подменю категорий</a></li>
-                                <li><a href="news-table-2.html">Список новости</a></li>
+                                <li><a href="news-table.html">Kategoriyalar</a></li>
+                                <li><a href="news-table-2.html">Yangiliklar ro'yxati</a></li>
                             </ul>
                         </li>
 
                         <li>
                             <a href="javascript: void(0);" class="has-arrow waves-effect">
                                 <i class="bx bx-calendar"></i>
-                                <span key="t-dashboards">Заявки</span>
+                                <span key="t-dashboards">Ilovalar</span>
                             </a>
                             <ul class="sub-menu" aria-expanded="false">
-                                <li><a href="calendar.html" key="t-tui-calendar">Заявка на оценку</a></li>
-                                <li><a href="calendar-full.html" key="t-full-calendar">Оценка экспертом</a></li>
-                                <li><a href="calendar-full.html" key="t-full-calendar">Претензию</a></li>
-                                <li><a href="calendar-full.html" key="t-full-calendar">Модерация</a></li>
+                                <li><a href="calendar.html" key="t-tui-calendar">Baholash uchun ariza</a></li>
+                                <li><a href="calendar-full.html" key="t-full-calendar">Ekspert baholash</a></li>
+                                <li><a href="calendar-full.html" key="t-full-calendar">Talablar</a></li>
+                                <li><a href="calendar-full.html" key="t-full-calendar">Moderatsiya</a></li>
                                 <li><a href="calendar-full.html" key="t-full-calendar">Moderatsiyadan o'tganlar</a></li>
                                 <li><a href="calendar-full.html" key="t-full-calendar">Moderatsiyadan qaytarilganlar</a>
                                 </li>
@@ -356,27 +368,27 @@
                         <li>
                             <a href="javascript: void(0);" class="has-arrow waves-effect">
                                 <i class="bx bxs-user-detail"></i>
-                                <span key="t-ecommerce">Пользователи</span>
+                                <span key="t-ecommerce">Foydalanuvchilar</span>
                             </a>
                             <ul class="sub-menu" aria-expanded="false">
-                                <li><a href="table.html" key="t-products">Список Участники</a></li>
-                                <li><a href="ecommerce-product-detail.html" key="t-product-detail">Список Эксперты</a>
+                                <li><a href="table.html" key="t-products">Roʻyxat aʼzolari</a></li>
+                                <li><a href="ecommerce-product-detail.html" key="t-product-detail">Mutaxassislar ro'yxati</a>
                                 </li>
-                                <li><a href="ecommerce-orders.html" key="t-orders">Список Координатор</a></li>
+                                <li><a href="ecommerce-orders.html" key="t-orders">Ro'yxat koordinatori</a></li>
                             </ul>
                         </li>
 
                         <li>
                             <a href="javascript: void(0);" class="has-arrow waves-effect">
                                 <i class='bx bx-cog'></i>
-                                <span key="t-crypto">Настройки</span>
+                                <span key="t-crypto">Sozlamalar</span>
                             </a>
                             <ul class="sub-menu" aria-expanded="false">
-                                <li><a href="crypto-wallet.html" key="t-wallet">Настройки системы</a></li>
-                                <li><a href="crypto-buy-sell.html" key="t-buy">Настройки API</a></li>
-                                <li><a href="crypto-exchange.html" key="t-exchange">Настройки электронной почты</a></li>
+                                <li><a href="setting-tab.html" key="t-wallet">Tizim sozlamalari</a></li>
+                                <li><a href="setting-email.html" key="t-exchange">Elektron pochta sozlamalari</a></li>
                             </ul>
                         </li>
+
                     </ul>
                 </div>
                 <!-- Sidebar -->
@@ -397,7 +409,7 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                                <h4 class="mb-sm-3 font-size-18">Добавить новый рейтинг</h4>
+                                <h4 class="mb-sm-3 font-size-18">Yangi reyting qo'shish</h4>
                             </div>
                         </div>
                     </div>
@@ -408,7 +420,7 @@
 
                             <form action="">
                                 <!-- Nav tabs -->
-                                <ul class="nav nav-pills nav-justified" role="tablist">
+                                <!-- <ul class="nav nav-pills nav-justified" role="tablist">
                                     <li class="waves-effect waves-light">
                                         <a class="nav-link active p-3" data-bs-toggle="tab" href="#home-1" role="tab">
                                             <span class="d-block d-sm-none"><i class="fas fa-home"></i></span>
@@ -427,7 +439,7 @@
                                             <span class="d-none d-sm-block">Список индикаторов</span>
                                         </a>
                                     </li>
-                                </ul>
+                                </ul> -->
 
                                 <!-- Tab panes -->
                                 <div class="tab-content p-3 text-muted">
@@ -435,22 +447,61 @@
 
 
                                         <div class="form-floating mb-3">
-                                            <input type="text" class="form-control" id="floatingnameInput" placeholder="Наименование
-                                                раздела">
-                                            <label for="floatingnameInput">Название рейтинга</label>
+                                            <input type="text" class="form-control" id="floatingnameInput"
+                                                placeholder="Reyting nomi" required>
+                                            <label for="floatingnameInput">Reyting nomi</label>
                                         </div>
                                         <div class="form-floating mb-3">
-                                            <textarea class="form-control" name="" id="" cols="240"
-                                                rows="10"></textarea>
-                                            <label for="floatingnameInput">Описание рейтинга</label>
+                                            <textarea class="form-control" name="" id="" cols="240" rows="10"
+                                                required></textarea>
+                                            <label for="floatingnameInput">Reyting tavsifi</label>
                                         </div>
-                                        <div class="form-floating mb-3">
-                                            <input type="text" class="form-control" id="floatingnameInput" placeholder="Примечания
-                                                раздела">
-                                            <label for="floatingnameInput">Примечания
-                                                раздела</label>
+                                        <div class="row">
+                                            <div class="col-md-3">
+                                                <div class="form-floating mb-3">
+                                                    <select class="form-select" id="floatingSelectGrid"
+                                                        aria-label="Floating label select example">
+                                                        <option selected>chorak</option>
+                                                        <option value="1">yillik</option>
+                                                    </select>
+                                                    <label for="floatingSelectGrid">Reyting turi</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="form-floating mb-3">
+                                                    <input type="date" class="form-control" id="floatingnameInput"
+                                                        required>
+                                                    <label for="floatingnameInput">Boshlanish muddati</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="form-floating mb-3">
+                                                    <input type="date" class="form-control" id="floatingnameInput"
+                                                        required>
+                                                    <label for="floatingnameInput">Tugash muddati</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="mb-3 row">
+                                                    <label class="col-lg-2 col-form-label mt-2"
+                                                        for="validationCustom01">Holati
+                                                    </label>
+                                                    <div class="col-lg-10 col-form-label">
+                                                        <p>
+                                                            <input id="toggle-1"
+                                                                class="checkbox-toggle checkbox-toggle-round"
+                                                                type="checkbox" />
+                                                            <label for="toggle-1" data-on="faol"
+                                                                data-off="faol emas"></label>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="form-floating mb-3">
+
+                                        <button class="btn btn-success mb-3 mt-2">Saqlash</button>
+
+                                        <!-- <div class="form-floating mb-3">
                                             <input type="text" class="form-control" id="floatingnameInput" placeholder="Плановые
                                                 показатели">
                                             <label for="floatingnameInput">Плановые
@@ -562,12 +613,12 @@
                                                         предоставления итогов</label>
                                                 </div>
                                             </div>
-                                        </div>
+                                        </div> -->
 
                                     </div>
 
 
-                                    <div class="tab-pane mt-2" id="profile-1" role="tabpanel">
+                                    <!-- <div class="tab-pane mt-2" id="profile-1" role="tabpanel">
 
                                         <div class="form-floating mb-3">
                                             <input type="text" class="form-control" id="floatingnameInput" placeholder="Наименование
@@ -599,13 +650,13 @@
                                                 раздела</label>
                                         </div>
 
-                                    </div>
+                                    </div> -->
 
-                                    <div class="tab-pane mt-3" id="settings-1" role="tabpanel">
+                                    <!-- <div class="tab-pane mt-3" id="settings-1" role="tabpanel">
                                         <div class="row">
                                             <div class="col-12">
                                                 <div class="bootstrap-modal">
-                                                    <!-- Large modal -->
+
                                                     <button type="button" class="btn btn-success mb-4 btn-sub"
                                                         data-bs-toggle="modal"
                                                         data-bs-target=".bd-example-modal-lg">Cоздать
@@ -832,13 +883,12 @@
                                                 </tbody>
                                             </table>
                                         </div>
-                                    </div>
+                                    </div> -->
                                 </div>
                             </form>
 
                         </div>
                     </div>
-                    <button class="btn btn-success mb-3 ">Сохранять</button>
                 </div>
                 <!-- container-fluid -->
             </div>
@@ -931,7 +981,7 @@
                 </div>
             </div>
 
-            
+
 
             <footer class="footer">
                 <div class="container-fluid">
@@ -945,7 +995,7 @@
                         <div class="col-sm-6">
                             <div class="text-sm-end d-none d-sm-block">
                                 Design & Develop by
-                                <a target="_blank" href="https://www.mimaxgroup.com/">MIMAX Software Group</a>
+                                <a target="_blank" href="#">TA'LIM SIFATI INVEST</a>
                             </div>
                         </div>
                     </div>
