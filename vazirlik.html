@@ -1,24 +1,33 @@
 <!doctype html>
 <html lang="en">
 
-    <head>
+<head>
 
-        <meta charset="utf-8" />
-        <title>National Index</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
-        <meta content="Themesbrand" name="author" />
-        <!-- App favicon -->
-        <link rel="shortcut icon" href="assets/images/minin.png">
-    
-        <!-- Bootstrap Css -->
-        <link href="assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
-        <!-- Icons Css -->
-        <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
-        <!-- App Css-->
-        <link href="assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
-    
-    </head>
+    <meta charset="utf-8" />
+    <title>Data Tables | Skote - Admin & Dashboard Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
+    <meta content="Themesbrand" name="author" />
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+    <!-- DataTables -->
+    <link href="assets/libs/datatables.net-bs4/css/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/libs/datatables.net-buttons-bs4/css/buttons.bootstrap4.min.css" rel="stylesheet"
+        type="text/css" />
+
+    <!-- Responsive datatable examples -->
+    <link href="assets/libs/datatables.net-responsive-bs4/css/responsive.bootstrap4.min.css" rel="stylesheet"
+        type="text/css" />
+
+    <!-- Bootstrap Css -->
+    <link href="assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
+    <!-- Icons Css -->
+    <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+    <!-- App Css-->
+    <link href="assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
+
+</head>
 
 <body data-sidebar="dark" data-layout-mode="light">
 
@@ -58,6 +67,13 @@
                         <i class="fa fa-fw fa-bars"></i>
                     </button>
 
+                    <!-- App Search-->
+                    <!-- <form class="app-search d-none d-lg-block">
+                            <div class="position-relative">
+                                <input type="text" class="form-control" placeholder="Поиск...">
+                                <span class="bx bx-search-alt"></span>
+                            </div>
+                        </form> -->
                 </div>
 
                 <div class="d-flex">
@@ -285,7 +301,6 @@
                                     key="t-logout">Выйти</span></a>
                         </div>
                     </div>
-
                 </div>
             </div>
         </header>
@@ -428,9 +443,9 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                                <h4 class="mb-sm-3 font-size-18">Indikator ro'yxati</h4>
+                                <h4 class="mb-sm-3 font-size-18">Vazirliklar ro'yxati</h4>
 
-                                <a href="indikator-qoshish.html">
+                                <a href="Vazirlik-qo'shish.html">
                                     <button class="btn btn-success mb-3"><i class='bx bx-plus'></i> Qo'shish</button>
                                 </a>
                             </div>
@@ -442,168 +457,122 @@
                         <div class="col-12">
                             <div class="card">
                                 <div class="card-body">
-                                    <div class="row mb-2">
-                                        <div class="col-sm-4">
-                                            <div class="search-box me-2 mb-2 d-inline-block">
-                                                <div class="position-relative">
-                                                    <input type="text" class="form-control" placeholder="Qidiruv...">
-                                                    <i class="bx bx-search-alt search-icon"></i>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
 
-                                    <div class="table-responsive">
-                                        <table class="table align-middle table-nowrap">
-                                            <thead>
-                                                <tr>
-                                                    <th>No</th>
-                                                    <th>Nomi</th>
-                                                    <th>Holat</th>
-                                                    <th>Action</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>
-                                                        1
-                                                    </td>
-                                                    <td>Ilmiy hodimlarning ilmiy salohiyati</td>
-                                                    <td>faol</td>
-                                                    <td class="d-flex">
+                                    <table id="datatable"
+                                        class="table table-bordered dt-responsive  nowrap w-100 table-striped">
+                                        <thead>
+                                            <tr class="bg-secondary text-white">
+                                                <th>#</th>
+                                                <th>Vazirlik nomi</th>
+                                                <th></th>
+                                                <th>Yaratilgan sanasi</th>
+                                                <th>Holati</th>
+                                                <th>Action</th>
+                                            </tr>
+                                        </thead>
 
-                                                        <a href="#" class="mx-2"><i
-                                                                class="mdi mdi-pencil font-size-16 text-success me-1"></i></a>
-                                                        </li>
-                                                        <a href="#" class="dropdown-item"><i
-                                                                class="mdi mdi-trash-can font-size-16 text-danger me-1"></i></a>
-                                                        </li>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        2
-                                                    </td>
-                                                    <td>Ilmiy hodimlarning ilmiy salohiyati</td>
-                                                    <td>faol emas</td>
-                                                    <td class="d-flex">
 
-                                                        <a href="#" class="mx-2"><i
-                                                                class="mdi mdi-pencil font-size-16 text-success me-1"></i></a>
-                                                        </li>
-                                                        <a href="#" class="dropdown-item"><i
-                                                                class="mdi mdi-trash-can font-size-16 text-danger me-1"></i></a>
-                                                        </li>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        3
-                                                    </td>
-                                                    <td>Ilmiy hodimlarning ilmiy salohiyati</td>
-                                                    <td>faol</td>
-                                                    <td class="d-flex">
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>O'zbekiston Respublikasi Oliy Ta'lim, Fan va Innovatsiyalar Vazirligi</td>
+                                                <td></td>
+                                                <td>23 Mart 2023</td>
+                                                <td>
+                                                    <span
+                                                        class="badge badge-pill badge-soft-success font-size-11">faol</span>
+                                                </td>
+                                                <td class="d-flex">
 
-                                                        <a href="#" class="mx-2"><i
-                                                                class="mdi mdi-pencil font-size-16 text-success me-1"></i></a>
-                                                        </li>
-                                                        <a href="#" class="dropdown-item"><i
-                                                                class="mdi mdi-trash-can font-size-16 text-danger me-1"></i></a>
-                                                        </li>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        4
-                                                    </td>
-                                                    <td>Ilmiy hodimlarning ilmiy salohiyati</td>
-                                                    <td>faol emas</td>
-                                                    <td class="d-flex">
+                                                    <a href="#" class="mx-2"><i
+                                                            class="mdi mdi-pencil font-size-16 text-success me-1"></i></a>
+                                                    </li>
+                                                    <a href="#" class="dropdown-item"><i
+                                                            class="mdi mdi-trash-can font-size-16 text-danger me-1"></i></a>
+                                                    </li>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>O'zbekiston Respublikasi Oliy Ta'lim, Fan va Innovatsiyalar Vazirligi</td>
+                                                <td></td>
+                                                <td>25 Mart, 2023</td>
+                                                <td>
+                                                    <span
+                                                        class="badge badge-pill badge-soft-danger font-size-11">faol emas</span>
+                                                </td>
+                                                <td class="d-flex">
 
-                                                        <a href="#" class="mx-2"><i
-                                                                class="mdi mdi-pencil font-size-16 text-success me-1"></i></a>
-                                                        </li>
-                                                        <a href="#" class="dropdown-item"><i
-                                                                class="mdi mdi-trash-can font-size-16 text-danger me-1"></i></a>
-                                                        </li>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        5
-                                                    </td>
-                                                    <td>Ilmiy hodimlarning ilmiy salohiyati</td>
-                                                    <td>faol</td>
-                                                    <td class="d-flex">
+                                                    <a href="#" class="mx-2"><i
+                                                            class="mdi mdi-pencil font-size-16 text-success me-1"></i></a>
+                                                    </li>
+                                                    <a href="#" class="dropdown-item"><i
+                                                            class="mdi mdi-trash-can font-size-16 text-danger me-1"></i></a>
+                                                    </li>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td>O'zbekiston Respublikasi Oliy Ta'lim, Fan va Innovatsiyalar Vazirligi</td>
+                                                <td></td>
+                                                <td>6 Aprel, 2023</td>
+                                                <td>
+                                                    <span
+                                                        class="badge badge-pill badge-soft-success font-size-11">faol</span>
+                                                </td>
+                                                <td class="d-flex">
 
-                                                        <a href="#" class="mx-2"><i
-                                                                class="mdi mdi-pencil font-size-16 text-success me-1"></i></a>
-                                                        </li>
-                                                        <a href="#" class="dropdown-item"><i
-                                                                class="mdi mdi-trash-can font-size-16 text-danger me-1"></i></a>
-                                                        </li>
-                                                    </td>
-                                                </tr>
-                                                <!-- <tr>
-                                                        <td>
-                                                            <div class="form-check font-size-16">
-                                                                <input class="form-check-input" type="checkbox" id="customerlistcheck08">
-                                                                <label class="form-check-label" for="customerlistcheck08"></label>
-                                                            </div>
-                                                        </td>
-                                                        <td>John McCray</td>
-                                                        <td>
-                                                            <p class="mb-1">253-661-7551</p>
-                                                            <p class="mb-0">JohnMcCray@armyspy.com</p>
-                                                        </td>
-                                                        
-                                                        <td>3309 Horizon Circle
-                                                                Tacoma, WA 98423</td>
-                                                        <td><span class="badge bg-success font-size-12"><i class="mdi mdi-star me-1"></i> 4.1</span></td>
-                                                        <td>$5,2870</td>
-                                                        <td>02 Oct, 2019</td>
-                                                        <td>
-                                                            <div class="dropdown">
-                                                                <a href="#" class="dropdown-toggle card-drop" data-bs-toggle="dropdown" aria-expanded="false">
-                                                                    <i class="mdi mdi-dots-horizontal font-size-18"></i>
-                                                                </a>
-                                                                <ul class="dropdown-menu dropdown-menu-end">
-                                                                    <li><a href="#" class="dropdown-item"><i class="mdi mdi-pencil font-size-16 text-success me-1"></i> Edit</a></li>
-                                                                    <li><a href="#" class="dropdown-item"><i class="mdi mdi-trash-can font-size-16 text-danger me-1"></i> Delete</a></li>
-                                                                </ul>
-                                                            </div>
-                                                        </td>
-                                                    </tr> -->
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                    <ul class="pagination pagination-rounded justify-content-end mb-2">
-                                        <li class="page-item disabled">
-                                            <a class="page-link" href="javascript: void(0);" aria-label="Previous">
-                                                <i class="mdi mdi-chevron-left"></i>
-                                            </a>
-                                        </li>
-                                        <li class="page-item active"><a class="page-link"
-                                                href="javascript: void(0);">1</a></li>
-                                        <li class="page-item"><a class="page-link" href="javascript: void(0);">2</a>
-                                        </li>
-                                        <li class="page-item"><a class="page-link" href="javascript: void(0);">3</a>
-                                        </li>
-                                        <li class="page-item"><a class="page-link" href="javascript: void(0);">4</a>
-                                        </li>
-                                        <li class="page-item"><a class="page-link" href="javascript: void(0);">5</a>
-                                        </li>
-                                        <li class="page-item">
-                                            <a class="page-link" href="javascript: void(0);" aria-label="Next">
-                                                <i class="mdi mdi-chevron-right"></i>
-                                            </a>
-                                        </li>
-                                    </ul>
+                                                    <a href="#" class="mx-2"><i
+                                                            class="mdi mdi-pencil font-size-16 text-success me-1"></i></a>
+                                                    </li>
+                                                    <a href="#" class="dropdown-item"><i
+                                                            class="mdi mdi-trash-can font-size-16 text-danger me-1"></i></a>
+                                                    </li>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>4</td>
+                                                <td>O'zbekiston Respublikasi Oliy Ta'lim, Fan va Innovatsiyalar Vazirligi</td>
+                                                <td></td>
+                                                <td>23 Aprel, 2023</td>
+                                                <td><span
+                                                    class="badge badge-pill badge-soft-danger font-size-11">faol emas</span></td>
+                                                <td class="d-flex">
+
+                                                    <a href="#" class="mx-2"><i
+                                                            class="mdi mdi-pencil font-size-16 text-success me-1"></i></a>
+                                                    </li>
+                                                    <a href="#" class="dropdown-item"><i
+                                                            class="mdi mdi-trash-can font-size-16 text-danger me-1"></i></a>
+                                                    </li>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>5</td>
+                                                <td>O'zbekiston Respublikasi Oliy Ta'lim, Fan va Innovatsiyalar Vazirligi</td>
+                                                <td></td>
+                                                <td>17 Aprel, 2023</td>
+                                                <td>
+                                                    <span
+                                                        class="badge badge-pill badge-soft-success font-size-11">faol</span>
+                                                </td>
+                                                <td class="d-flex">
+
+                                                    <a href="#" class="mx-2"><i
+                                                            class="mdi mdi-pencil font-size-16 text-success me-1"></i></a>
+                                                    </li>
+                                                    <a href="#" class="dropdown-item"><i
+                                                            class="mdi mdi-trash-can font-size-16 text-danger me-1"></i></a>
+                                                    </li>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <!-- end row -->
+                        </div> <!-- end col -->
+                    </div> <!-- end row -->
 
                 </div> <!-- container-fluid -->
             </div>
@@ -701,8 +670,28 @@
     <script src="assets/libs/simplebar/simplebar.min.js"></script>
     <script src="assets/libs/node-waves/waves.min.js"></script>
 
-    <!-- App js -->
+    <!-- Required datatable js -->
+    <script src="assets/libs/datatables.net/js/jquery.dataTables.min.js"></script>
+    <script src="assets/libs/datatables.net-bs4/js/dataTables.bootstrap4.min.js"></script>
+    <!-- Buttons examples -->
+    <script src="assets/libs/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
+    <script src="assets/libs/datatables.net-buttons-bs4/js/buttons.bootstrap4.min.js"></script>
+    <script src="assets/libs/jszip/jszip.min.js"></script>
+    <script src="assets/libs/pdfmake/build/pdfmake.min.js"></script>
+    <script src="assets/libs/pdfmake/build/vfs_fonts.js"></script>
+    <script src="assets/libs/datatables.net-buttons/js/buttons.html5.min.js"></script>
+    <script src="assets/libs/datatables.net-buttons/js/buttons.print.min.js"></script>
+    <script src="assets/libs/datatables.net-buttons/js/buttons.colVis.min.js"></script>
+
+    <!-- Responsive examples -->
+    <script src="assets/libs/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+    <script src="assets/libs/datatables.net-responsive-bs4/js/responsive.bootstrap4.min.js"></script>
+
+    <!-- Datatable init js -->
+    <script src="assets/js/pages/datatables.init.js"></script>
+
     <script src="assets/js/app.js"></script>
+    
 
 </body>
 

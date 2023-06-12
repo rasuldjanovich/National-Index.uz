@@ -4,12 +4,21 @@
 <head>
 
     <meta charset="utf-8" />
-    <title>National Index</title>
+    <title>Data Tables | Skote - Admin & Dashboard Template</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
     <meta content="Themesbrand" name="author" />
     <!-- App favicon -->
-    <link rel="shortcut icon" href="assets/images/minin.png">
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+    <!-- DataTables -->
+    <link href="assets/libs/datatables.net-bs4/css/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/libs/datatables.net-buttons-bs4/css/buttons.bootstrap4.min.css" rel="stylesheet"
+        type="text/css" />
+
+    <!-- Responsive datatable examples -->
+    <link href="assets/libs/datatables.net-responsive-bs4/css/responsive.bootstrap4.min.css" rel="stylesheet"
+        type="text/css" />
 
     <!-- Bootstrap Css -->
     <link href="assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
@@ -18,20 +27,11 @@
     <!-- App Css-->
     <link href="assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
 
-    <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
-
-    <script>
-        tinymce.init({
-            selector: '#mytextarea'
-        });
-
-    </script>
-
-
-
 </head>
 
 <body data-sidebar="dark" data-layout-mode="light">
+
+    <!-- <body data-layout="horizontal" data-topbar="dark"> -->
 
     <!-- Begin page -->
     <div id="layout-wrapper">
@@ -67,6 +67,13 @@
                         <i class="fa fa-fw fa-bars"></i>
                     </button>
 
+                    <!-- App Search-->
+                    <!-- <form class="app-search d-none d-lg-block">
+                            <div class="position-relative">
+                                <input type="text" class="form-control" placeholder="Поиск...">
+                                <span class="bx bx-search-alt"></span>
+                            </div>
+                        </form> -->
                 </div>
 
                 <div class="d-flex">
@@ -310,9 +317,17 @@
                         <li>
                             <a href="index.html" class="index.html">
                                 <i class="bx bx-home-circle"></i>
-                                <span key="t-file-manager">Home</span>
+                                <span key="t-file-manager">Boshqaruv paneli</span>
                             </a>
                         </li>
+                        
+                        <li>
+                            <a href="vazirlik.html" class="waves-effect">
+                                <i class="bx bx-file"></i>
+                                <span key="t-file-manager">Vazirliklar</span>
+                            </a>
+                        </li>
+
 
                         <li>
                             <a href="javascript: void(0);" class="has-arrow waves-effect">
@@ -320,9 +335,16 @@
                                 <span key="t-dashboards">Tashkilotlar</span>
                             </a>
                             <ul class="sub-menu" aria-expanded="false">
-                                <li><a href="organizations-table.html">Tashkilotlar ro'yxati</a></li>
-                                <li><a href="participants-table.html">Qatnashuvchilar (Vakillar)</a></li>
+                                <li><a href="tashkilot-turlari.html">Tashkilotlar turlari</a></li>
+                                <li><a href="tashkillot-royxati.html">Tashkilotlar ro'yxati</a></li>
                             </ul>
+                        </li>
+
+                        <li>
+                            <a href="viloyat.html" class="waves-effect">
+                                <i class="bx bx-file"></i>
+                                <span key="t-file-manager">Viloyat</span>
+                            </a>
                         </li>
 
                         <!-- <li>
@@ -342,10 +364,10 @@
                                 <span key="t-dashboards">Baholar reestri</span>
                             </a>
                             <ul class="sub-menu" aria-expanded="false">
-                                <li><a href="rating-table.html">Reytinglar ro'yxati</a></li>
-                                <li><a href="new-rating.html">Yangi reyting qo'shish</a></li>
+                                <li><a href="reytinglar-royxati.html">Reytinglar ro'yxati</a></li>
+                                <li><a href="reyting-qoshish.html">Yangi reyting qo'shish</a></li>
                                 <li><a href="indikator.html">Indikatorlar</a></li>
-                                <li><a href="participant-reestr.html">Foydalanuvchilar uchun reytinglar reestr</a></li>
+                                <li><a href="foydalanuvchi-reyting.html">Foydalanuvchilar uchun reytinglar reestr</a></li>
                             </ul>
                         </li>
 
@@ -355,8 +377,8 @@
                                 <span key="t-dashboards">Yangiliklar</span>
                             </a>
                             <ul class="sub-menu" aria-expanded="false">
-                                <li><a href="news-table.html">Kategoriyalar</a></li>
-                                <li><a href="news-table-2.html">Yangiliklar ro'yxati</a></li>
+                                <li><a href="kategoriyalar.html">Kategoriyalar</a></li>
+                                <li><a href="yangiliklar-royxati.html">Yangiliklar ro'yxati</a></li>
                             </ul>
                         </li>
 
@@ -366,12 +388,12 @@
                                 <span key="t-dashboards">Ilovalar</span>
                             </a>
                             <ul class="sub-menu" aria-expanded="false">
-                                <li><a href="calendar.html" key="t-tui-calendar">Baholash uchun ariza</a></li>
-                                <li><a href="calendar-full.html" key="t-full-calendar">Ekspert baholash</a></li>
-                                <li><a href="calendar-full.html" key="t-full-calendar">Talablar</a></li>
-                                <li><a href="calendar-full.html" key="t-full-calendar">Moderatsiya</a></li>
-                                <li><a href="calendar-full.html" key="t-full-calendar">Moderatsiyadan o'tganlar</a></li>
-                                <li><a href="calendar-full.html" key="t-full-calendar">Moderatsiyadan qaytarilganlar</a>
+                                <li><a href="#" key="t-tui-calendar">Baholash uchun ariza</a></li>
+                                <li><a href="#" key="t-full-calendar">Ekspert baholash</a></li>
+                                <li><a href="#" key="t-full-calendar">Talablar</a></li>
+                                <li><a href="#" key="t-full-calendar">Moderatsiya</a></li>
+                                <li><a href="#" key="t-full-calendar">Moderatsiyadan o'tganlar</a></li>
+                                <li><a href="#" key="t-full-calendar">Moderatsiyadan qaytarilganlar</a>
                                 </li>
                             </ul>
                         </li>
@@ -382,10 +404,10 @@
                                 <span key="t-ecommerce">Foydalanuvchilar</span>
                             </a>
                             <ul class="sub-menu" aria-expanded="false">
-                                <li><a href="table.html" key="t-products">Roʻyxat aʼzolari</a></li>
-                                <li><a href="ecommerce-product-detail.html" key="t-product-detail">Mutaxassislar ro'yxati</a>
+                                <li><a href="royxat-azolari.html" key="t-products">Roʻyxat aʼzolari</a></li>
+                                <li><a href="#" key="t-product-detail">Mutaxassislar ro'yxati</a>
                                 </li>
-                                <li><a href="ecommerce-orders.html" key="t-orders">Ro'yxat koordinatori</a></li>
+                                <li><a href="#" key="t-orders">Ro'yxat koordinatori</a></li>
                             </ul>
                         </li>
 
@@ -395,8 +417,8 @@
                                 <span key="t-crypto">Sozlamalar</span>
                             </a>
                             <ul class="sub-menu" aria-expanded="false">
-                                <li><a href="setting-tab.html" key="t-wallet">Tizim sozlamalari</a></li>
-                                <li><a href="setting-email.html" key="t-exchange">Elektron pochta sozlamalari</a></li>
+                                <li><a href="tizim-sozlamalari.html" key="t-wallet">Tizim sozlamalari</a></li>
+                                <li><a href="elektron-pochta-sozlamalari.html" key="t-exchange">Elektron pochta sozlamalari</a></li>
                             </ul>
                         </li>
 
@@ -406,6 +428,7 @@
             </div>
         </div>
         <!-- Left Sidebar End -->
+
 
 
         <!-- ============================================================== -->
@@ -420,204 +443,141 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                                <h4 class="mb-sm-3 font-size-18">Добавить новости</h4>
+                                <h4 class="mb-sm-3 font-size-18">Viloyatlar ro'yxati</h4>
+
+                                <a href="viloyat-qoshish.html">
+                                    <button class="btn btn-success mb-3"><i class='bx bx-plus'></i> Qo'shish</button>
+                                </a>
                             </div>
                         </div>
                     </div>
                     <!-- end page title -->
 
-                    <div class="card">
-                        <div class="card-body">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-body">
 
-                            <form action="">
-                                <!-- Nav tabs -->
-                                <ul class="nav nav-pills nav-justified" role="tablist">
-                                    <li class="waves-effect waves-light">
-                                        <a class="nav-link active p-3 px-5 mx-3" data-bs-toggle="tab" href="#home-1"
-                                            role="tab">
-                                            <span class="d-block d-sm-none"><i class="fas fa-home"></i></span>
-                                            <span class="d-none d-sm-block">Uzb</span>
-                                        </a>
-                                    </li>
-                                    <li class="waves-effect waves-light">
-                                        <a class="nav-link p-3 px-5 mx-3" data-bs-toggle="tab" href="#profile-1"
-                                            role="tab">
-                                            <span class="d-block d-sm-none"><i class="far fa-user"></i></span>
-                                            <span class="d-none d-sm-block">Ру</span>
-                                        </a>
-                                    </li>
-                                    <li class="waves-effect waves-light">
-                                        <a class="nav-link p-3 px-5 mx-3" data-bs-toggle="tab" href="#settings-1"
-                                            role="tab">
-                                            <span class="d-block d-sm-none"><i class="fas fa-cog"></i></span>
-                                            <span class="d-none d-sm-block">Eng</span>
-                                        </a>
-                                    </li>
-                                </ul>
-
-                                <!-- Tab panes -->
-                                <div class="tab-content p-3 text-muted">
-                                    <div class="tab-pane active mt-2" id="home-1" role="tabpanel">
+                                    <table id="datatable"
+                                        class="table table-bordered dt-responsive  nowrap w-100 table-striped">
+                                        <thead>
+                                            <tr class="bg-secondary text-white">
+                                                <th>#</th>
+                                                <th>Nomi</th>
+                                                <th></th>
+                                                <th></th>
+                                                <th>Holati</th>
+                                                <th>Action</th>
+                                            </tr>
+                                        </thead>
 
 
-                                        <div class="form-floating mb-3">
-                                            <input type="text" class="form-control" id="floatingnameInput"
-                                                placeholder="Title">
-                                            <label for="floatingnameInput">Title</label>
-                                        </div>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>Andijon</td>
+                                                <td></td>
+                                                <td></td>
+                                                <td>
+                                                    <span
+                                                        class="badge badge-pill badge-soft-success font-size-11">faol</span>
+                                                </td>
+                                                <td class="d-flex">
 
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <div class="form-floating mb-3">
-                                                    <select class="form-select" id="floatingSelectGrid"
-                                                        aria-label="Floating label select example">
-                                                        <option selected>Select</option>
-                                                        <option value="1">1</option>
-                                                    </select>
-                                                    <label for="floatingSelectGrid">Category</label>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="input-group py-2">
-                                                    <input type="file" class="form-control" id="inputGroupFile02">
-                                                    <label class="input-group-text"
-                                                        for="inputGroupFile02">Upload</label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <textarea id="mytextarea"></textarea>
+                                                    <a href="#" class="mx-2"><i
+                                                            class="mdi mdi-pencil font-size-16 text-success me-1"></i></a>
+                                                    </li>
+                                                    <a href="#" class="dropdown-item"><i
+                                                            class="mdi mdi-trash-can font-size-16 text-danger me-1"></i></a>
+                                                    </li>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>Samarqad</td>
+                                                <td></td>
+                                                <td></td>
+                                                <td>
+                                                    <span
+                                                        class="badge badge-pill badge-soft-danger font-size-11">faol emas</span>
+                                                </td>
+                                                <td class="d-flex">
 
-                                    </div>
+                                                    <a href="#" class="mx-2"><i
+                                                            class="mdi mdi-pencil font-size-16 text-success me-1"></i></a>
+                                                    </li>
+                                                    <a href="#" class="dropdown-item"><i
+                                                            class="mdi mdi-trash-can font-size-16 text-danger me-1"></i></a>
+                                                    </li>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td>Farg'ona</td>
+                                                <td></td>
+                                                <td></td>
+                                                <td>
+                                                    <span
+                                                        class="badge badge-pill badge-soft-success font-size-11">faol</span>
+                                                </td>
+                                                <td class="d-flex">
 
+                                                    <a href="#" class="mx-2"><i
+                                                            class="mdi mdi-pencil font-size-16 text-success me-1"></i></a>
+                                                    </li>
+                                                    <a href="#" class="dropdown-item"><i
+                                                            class="mdi mdi-trash-can font-size-16 text-danger me-1"></i></a>
+                                                    </li>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>4</td>
+                                                <td>Samarqand</td>
+                                                <td></td>
+                                                <td></td>
+                                                <td><span
+                                                    class="badge badge-pill badge-soft-danger font-size-11">faol emas</span></td>
+                                                <td class="d-flex">
 
-                                    <div class="tab-pane mt-2" id="profile-1" role="tabpanel">
+                                                    <a href="#" class="mx-2"><i
+                                                            class="mdi mdi-pencil font-size-16 text-success me-1"></i></a>
+                                                    </li>
+                                                    <a href="#" class="dropdown-item"><i
+                                                            class="mdi mdi-trash-can font-size-16 text-danger me-1"></i></a>
+                                                    </li>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>5</td>
+                                                <td>Andijon</td>
+                                                <td></td>
+                                                <td></td>
+                                                <td>
+                                                    <span
+                                                        class="badge badge-pill badge-soft-success font-size-11">faol</span>
+                                                </td>
+                                                <td class="d-flex">
 
-                                        <div class="form-floating mb-3">
-                                            <input type="text" class="form-control" id="floatingnameInput"
-                                                placeholder="Title">
-                                            <label for="floatingnameInput">Названия</label>
-                                        </div>
-
-                                        <div class="form-floating mb-3">
-                                            <textarea class="form-control" name="" id="" cols="240"
-                                                rows="10"></textarea>
-                                            <label for="floatingnameInput">Descriptions</label>
-                                        </div>
-
-                                    </div>
-
-                                    <div class="tab-pane mt-3" id="settings-1" role="tabpanel">
-
-                                        <div class="form-floating mb-3">
-                                            <input type="text" class="form-control" id="floatingnameInput"
-                                                placeholder="Title">
-                                            <label for="floatingnameInput">Title</label>
-                                        </div>
-
-                                        <div class="form-floating mb-3">
-                                            <textarea class="form-control" name="" id="" cols="240"
-                                                rows="10"></textarea>
-                                            <label for="floatingnameInput">Descriptions</label>
-                                        </div>
-
-                                    </div>
+                                                    <a href="#" class="mx-2"><i
+                                                            class="mdi mdi-pencil font-size-16 text-success me-1"></i></a>
+                                                    </li>
+                                                    <a href="#" class="dropdown-item"><i
+                                                            class="mdi mdi-trash-can font-size-16 text-danger me-1"></i></a>
+                                                    </li>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
 
                                 </div>
-                            </form>
-                        </div>
-                    </div>
-                    <button class="btn btn-success mb-3 ">Сохранять</button>
-                </div>
-                <!-- container-fluid -->
+                            </div>
+                        </div> <!-- end col -->
+                    </div> <!-- end row -->
+
+                </div> <!-- container-fluid -->
             </div>
             <!-- End Page-content -->
 
-            <!-- Transaction Modal -->
-            <div class="modal fade transaction-detailModal" tabindex="-1" role="dialog"
-                aria-labelledby="transaction-detailModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="transaction-detailModalLabel">Order Details</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <p class="mb-2">Product id: <span class="text-primary">#SK2540</span></p>
-                            <p class="mb-4">Billing Name: <span class="text-primary">Neal Matthews</span></p>
-
-                            <div class="table-responsive">
-                                <table class="table align-middle table-nowrap">
-                                    <thead>
-                                        <tr>
-                                            <th scope="col">Product</th>
-                                            <th scope="col">Product Name</th>
-                                            <th scope="col">Price</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <th scope="row">
-                                                <div>
-                                                    <img src="assets/images/product/img-7.png" alt="" class="avatar-sm">
-                                                </div>
-                                            </th>
-                                            <td>
-                                                <div>
-                                                    <h5 class="text-truncate font-size-14">Wireless Headphone (Black)
-                                                    </h5>
-                                                    <p class="text-muted mb-0">$ 225 x 1</p>
-                                                </div>
-                                            </td>
-                                            <td>$ 255</td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">
-                                                <div>
-                                                    <img src="assets/images/product/img-4.png" alt="" class="avatar-sm">
-                                                </div>
-                                            </th>
-                                            <td>
-                                                <div>
-                                                    <h5 class="text-truncate font-size-14">Phone patterned cases</h5>
-                                                    <p class="text-muted mb-0">$ 145 x 1</p>
-                                                </div>
-                                            </td>
-                                            <td>$ 145</td>
-                                        </tr>
-                                        <tr>
-                                            <td colspan="2">
-                                                <h6 class="m-0 text-right">Sub Total:</h6>
-                                            </td>
-                                            <td>
-                                                $ 400
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td colspan="2">
-                                                <h6 class="m-0 text-right">Shipping:</h6>
-                                            </td>
-                                            <td>
-                                                Free
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td colspan="2">
-                                                <h6 class="m-0 text-right">Total:</h6>
-                                            </td>
-                                            <td>
-                                                $ 400
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
             <footer class="footer">
                 <div class="container-fluid">
@@ -710,14 +670,29 @@
     <script src="assets/libs/simplebar/simplebar.min.js"></script>
     <script src="assets/libs/node-waves/waves.min.js"></script>
 
-    <!-- apexcharts -->
-    <script src="assets/libs/apexcharts/apexcharts.min.js"></script>
+    <!-- Required datatable js -->
+    <script src="assets/libs/datatables.net/js/jquery.dataTables.min.js"></script>
+    <script src="assets/libs/datatables.net-bs4/js/dataTables.bootstrap4.min.js"></script>
+    <!-- Buttons examples -->
+    <script src="assets/libs/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
+    <script src="assets/libs/datatables.net-buttons-bs4/js/buttons.bootstrap4.min.js"></script>
+    <script src="assets/libs/jszip/jszip.min.js"></script>
+    <script src="assets/libs/pdfmake/build/pdfmake.min.js"></script>
+    <script src="assets/libs/pdfmake/build/vfs_fonts.js"></script>
+    <script src="assets/libs/datatables.net-buttons/js/buttons.html5.min.js"></script>
+    <script src="assets/libs/datatables.net-buttons/js/buttons.print.min.js"></script>
+    <script src="assets/libs/datatables.net-buttons/js/buttons.colVis.min.js"></script>
 
-    <!-- dashboard init -->
-    <script src="assets/js/pages/dashboard.init.js"></script>
+    <!-- Responsive examples -->
+    <script src="assets/libs/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+    <script src="assets/libs/datatables.net-responsive-bs4/js/responsive.bootstrap4.min.js"></script>
 
-    <!-- App js -->
+    <!-- Datatable init js -->
+    <script src="assets/js/pages/datatables.init.js"></script>
+
     <script src="assets/js/app.js"></script>
+    
+
 </body>
 
 </html>

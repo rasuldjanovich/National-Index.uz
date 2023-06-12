@@ -18,6 +18,8 @@
     <!-- App Css-->
     <link href="assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 
 <body data-sidebar="dark" data-layout-mode="light">
@@ -302,9 +304,6 @@
             <div data-simplebar class="h-100">
 
                 <!--- Sidemenu -->
-
-
-                
                 <div id="sidebar-menu">
                     <!-- Left Menu Start -->
                     <ul class="metismenu list-unstyled" id="side-menu">
@@ -314,16 +313,31 @@
                                 <span key="t-file-manager">Boshqaruv paneli</span>
                             </a>
                         </li>
+                        
+                        <li>
+                            <a href="vazirlik.html" class="waves-effect">
+                                <i class="fa-solid fa-building"></i>
+                                <span key="t-file-manager">Vazirliklar</span>
+                            </a>
+                        </li>
+
 
                         <li>
                             <a href="javascript: void(0);" class="has-arrow waves-effect">
-                                <i class='bx bx-file-blank'></i>
+                                <i class="fa-light fa-sitemap"></i>
                                 <span key="t-dashboards">Tashkilotlar</span>
                             </a>
                             <ul class="sub-menu" aria-expanded="false">
-                                <li><a href="organizations-table.html">Tashkilotlar ro'yxati</a></li>
-                                <li><a href="participants-table.html">Qatnashuvchilar (Vakillar)</a></li>
+                                <li><a href="tashkilot-turlari.html">Tashkilotlar turlari</a></li>
+                                <li><a href="tashkillot-royxati.html">Tashkilotlar ro'yxati</a></li>
                             </ul>
+                        </li>
+
+                        <li>
+                            <a href="viloyat.html" class="waves-effect">
+                                <i class="bx bx-file"></i>
+                                <span key="t-file-manager">Viloyat</span>
+                            </a>
                         </li>
 
                         <!-- <li>
@@ -343,10 +357,11 @@
                                 <span key="t-dashboards">Baholar reestri</span>
                             </a>
                             <ul class="sub-menu" aria-expanded="false">
-                                <li><a href="rating-table.html">Reytinglar ro'yxati</a></li>
-                                <li><a href="new-rating.html">Yangi reyting qo'shish</a></li>
+                                <li><a href="reytinglar-royxati.html">Reytinglar ro'yxati</a></li>
+                                <li><a href="reyting-qoshish.html">Yangi reyting qo'shish</a></li>
                                 <li><a href="indikator.html">Indikatorlar</a></li>
-                                <li><a href="participant-reestr.html">Foydalanuvchilar uchun reytinglar reestr</a></li>
+                                <li><a href="foydalanuvchi-reyting.html">Foydalanuvchilar uchun reytinglar reestr</a></li>
+                                <li><a href="baholar-indikatori.html">Baholash indikatorlari</a></li>
                             </ul>
                         </li>
 
@@ -356,8 +371,8 @@
                                 <span key="t-dashboards">Yangiliklar</span>
                             </a>
                             <ul class="sub-menu" aria-expanded="false">
-                                <li><a href="news-table.html">Kategoriyalar</a></li>
-                                <li><a href="news-table-2.html">Yangiliklar ro'yxati</a></li>
+                                <li><a href="kategoriyalar.html">Kategoriyalar</a></li>
+                                <li><a href="yangiliklar-royxati.html">Yangiliklar ro'yxati</a></li>
                             </ul>
                         </li>
 
@@ -367,12 +382,12 @@
                                 <span key="t-dashboards">Ilovalar</span>
                             </a>
                             <ul class="sub-menu" aria-expanded="false">
-                                <li><a href="calendar.html" key="t-tui-calendar">Baholash uchun ariza</a></li>
-                                <li><a href="calendar-full.html" key="t-full-calendar">Ekspert baholash</a></li>
-                                <li><a href="calendar-full.html" key="t-full-calendar">Talablar</a></li>
-                                <li><a href="calendar-full.html" key="t-full-calendar">Moderatsiya</a></li>
-                                <li><a href="calendar-full.html" key="t-full-calendar">Moderatsiyadan o'tganlar</a></li>
-                                <li><a href="calendar-full.html" key="t-full-calendar">Moderatsiyadan qaytarilganlar</a>
+                                <li><a href="#" key="t-tui-calendar">Baholash uchun ariza</a></li>
+                                <li><a href="#" key="t-full-calendar">Ekspert baholash</a></li>
+                                <li><a href="#" key="t-full-calendar">Talablar</a></li>
+                                <li><a href="#" key="t-full-calendar">Moderatsiya</a></li>
+                                <li><a href="#" key="t-full-calendar">Moderatsiyadan o'tganlar</a></li>
+                                <li><a href="#" key="t-full-calendar">Moderatsiyadan qaytarilganlar</a>
                                 </li>
                             </ul>
                         </li>
@@ -383,10 +398,10 @@
                                 <span key="t-ecommerce">Foydalanuvchilar</span>
                             </a>
                             <ul class="sub-menu" aria-expanded="false">
-                                <li><a href="table.html" key="t-products">Roʻyxat aʼzolari</a></li>
-                                <li><a href="ecommerce-product-detail.html" key="t-product-detail">Mutaxassislar ro'yxati</a>
+                                <li><a href="royxat-azolari.html" key="t-products">Roʻyxat aʼzolari</a></li>
+                                <li><a href="#" key="t-product-detail">Mutaxassislar ro'yxati</a>
                                 </li>
-                                <li><a href="ecommerce-orders.html" key="t-orders">Ro'yxat koordinatori</a></li>
+                                <li><a href="#" key="t-orders">Ro'yxat koordinatori</a></li>
                             </ul>
                         </li>
 
@@ -396,11 +411,17 @@
                                 <span key="t-crypto">Sozlamalar</span>
                             </a>
                             <ul class="sub-menu" aria-expanded="false">
-                                <li><a href="setting-tab.html" key="t-wallet">Tizim sozlamalari</a></li>
-                                <li><a href="setting-email.html" key="t-exchange">Elektron pochta sozlamalari</a></li>
+                                <li><a href="tizim-sozlamalari.html" key="t-wallet">Tizim sozlamalari</a></li>
+                                <li><a href="elektron-pochta-sozlamalari.html" key="t-exchange">Elektron pochta sozlamalari</a></li>
                             </ul>
                         </li>
-
+                        
+                        <li>
+                            <a href="baholash-indikator.html" class="waves-effect">
+                                <i class="bx bx-file"></i>
+                                <span key="t-file-manager">Baholash indikatorlari</span>
+                            </a>
+                        </li>
                     </ul>
                 </div>
                 <!-- Sidebar -->

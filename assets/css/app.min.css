@@ -5849,4 +5849,22 @@ label {
     font-weight: bold;
 }
 
+.table-indikator {
+    width: 100%;
+}
+
+.mb-6 {
+    margin-bottom: 2rem;
+}
+
+.question {
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+.formula {
+    color: #909090;
+    font-size: 12px;
+}
+
 /*# sourceMappingURL=app.min.css.map */

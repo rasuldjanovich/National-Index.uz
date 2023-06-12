@@ -18,6 +18,15 @@
     <!-- App Css-->
     <link href="assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
 
+    <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+
+    <script>
+        tinymce.init({
+            selector: '#mytextarea'
+        });
+
+    </script>
+
 </head>
 
 <body data-sidebar="dark" data-layout-mode="light">
@@ -299,9 +308,17 @@
                         <li>
                             <a href="index.html" class="index.html">
                                 <i class="bx bx-home-circle"></i>
-                                <span key="t-file-manager">Home</span>
+                                <span key="t-file-manager">Boshqaruv paneli</span>
                             </a>
                         </li>
+                        
+                        <li>
+                            <a href="vazirlik.html" class="waves-effect">
+                                <i class="bx bx-file"></i>
+                                <span key="t-file-manager">Vazirliklar</span>
+                            </a>
+                        </li>
+
 
                         <li>
                             <a href="javascript: void(0);" class="has-arrow waves-effect">
@@ -309,9 +326,16 @@
                                 <span key="t-dashboards">Tashkilotlar</span>
                             </a>
                             <ul class="sub-menu" aria-expanded="false">
-                                <li><a href="organizations-table.html">Tashkilotlar ro'yxati</a></li>
-                                <li><a href="participants-table.html">Qatnashuvchilar (Vakillar)</a></li>
+                                <li><a href="tashkilot-turlari.html">Tashkilotlar turlari</a></li>
+                                <li><a href="tashkillot-royxati.html">Tashkilotlar ro'yxati</a></li>
                             </ul>
+                        </li>
+
+                        <li>
+                            <a href="viloyat.html" class="waves-effect">
+                                <i class="bx bx-file"></i>
+                                <span key="t-file-manager">Viloyat</span>
+                            </a>
                         </li>
 
                         <!-- <li>
@@ -331,10 +355,10 @@
                                 <span key="t-dashboards">Baholar reestri</span>
                             </a>
                             <ul class="sub-menu" aria-expanded="false">
-                                <li><a href="rating-table.html">Reytinglar ro'yxati</a></li>
-                                <li><a href="new-rating.html">Yangi reyting qo'shish</a></li>
+                                <li><a href="reytinglar-royxati.html">Reytinglar ro'yxati</a></li>
+                                <li><a href="reyting-qoshish.html">Yangi reyting qo'shish</a></li>
                                 <li><a href="indikator.html">Indikatorlar</a></li>
-                                <li><a href="participant-reestr.html">Foydalanuvchilar uchun reytinglar reestr</a></li>
+                                <li><a href="foydalanuvchi-reyting.html">Foydalanuvchilar uchun reytinglar reestr</a></li>
                             </ul>
                         </li>
 
@@ -344,8 +368,8 @@
                                 <span key="t-dashboards">Yangiliklar</span>
                             </a>
                             <ul class="sub-menu" aria-expanded="false">
-                                <li><a href="news-table.html">Kategoriyalar</a></li>
-                                <li><a href="news-table-2.html">Yangiliklar ro'yxati</a></li>
+                                <li><a href="kategoriyalar.html">Kategoriyalar</a></li>
+                                <li><a href="yangiliklar-royxati.html">Yangiliklar ro'yxati</a></li>
                             </ul>
                         </li>
 
@@ -355,12 +379,12 @@
                                 <span key="t-dashboards">Ilovalar</span>
                             </a>
                             <ul class="sub-menu" aria-expanded="false">
-                                <li><a href="calendar.html" key="t-tui-calendar">Baholash uchun ariza</a></li>
-                                <li><a href="calendar-full.html" key="t-full-calendar">Ekspert baholash</a></li>
-                                <li><a href="calendar-full.html" key="t-full-calendar">Talablar</a></li>
-                                <li><a href="calendar-full.html" key="t-full-calendar">Moderatsiya</a></li>
-                                <li><a href="calendar-full.html" key="t-full-calendar">Moderatsiyadan o'tganlar</a></li>
-                                <li><a href="calendar-full.html" key="t-full-calendar">Moderatsiyadan qaytarilganlar</a>
+                                <li><a href="#" key="t-tui-calendar">Baholash uchun ariza</a></li>
+                                <li><a href="#" key="t-full-calendar">Ekspert baholash</a></li>
+                                <li><a href="#" key="t-full-calendar">Talablar</a></li>
+                                <li><a href="#" key="t-full-calendar">Moderatsiya</a></li>
+                                <li><a href="#" key="t-full-calendar">Moderatsiyadan o'tganlar</a></li>
+                                <li><a href="#" key="t-full-calendar">Moderatsiyadan qaytarilganlar</a>
                                 </li>
                             </ul>
                         </li>
@@ -371,10 +395,10 @@
                                 <span key="t-ecommerce">Foydalanuvchilar</span>
                             </a>
                             <ul class="sub-menu" aria-expanded="false">
-                                <li><a href="table.html" key="t-products">Roʻyxat aʼzolari</a></li>
-                                <li><a href="ecommerce-product-detail.html" key="t-product-detail">Mutaxassislar ro'yxati</a>
+                                <li><a href="royxat-azolari.html" key="t-products">Roʻyxat aʼzolari</a></li>
+                                <li><a href="#" key="t-product-detail">Mutaxassislar ro'yxati</a>
                                 </li>
-                                <li><a href="ecommerce-orders.html" key="t-orders">Ro'yxat koordinatori</a></li>
+                                <li><a href="#" key="t-orders">Ro'yxat koordinatori</a></li>
                             </ul>
                         </li>
 
@@ -384,8 +408,8 @@
                                 <span key="t-crypto">Sozlamalar</span>
                             </a>
                             <ul class="sub-menu" aria-expanded="false">
-                                <li><a href="setting-tab.html" key="t-wallet">Tizim sozlamalari</a></li>
-                                <li><a href="setting-email.html" key="t-exchange">Elektron pochta sozlamalari</a></li>
+                                <li><a href="tizim-sozlamalari.html" key="t-wallet">Tizim sozlamalari</a></li>
+                                <li><a href="elektron-pochta-sozlamalari.html" key="t-exchange">Elektron pochta sozlamalari</a></li>
                             </ul>
                         </li>
 
@@ -446,26 +470,27 @@
                                     <div class="tab-pane active mt-2" id="home-1" role="tabpanel">
 
 
-                                        <div class="form-floating mb-3">
+                                        <!-- <div class="form-floating mb-3">
                                             <input type="text" class="form-control" id="floatingnameInput"
                                                 placeholder="Reyting nomi" required>
                                             <label for="floatingnameInput">Reyting nomi</label>
-                                        </div>
+                                        </div> -->
                                         <div class="form-floating mb-3">
-                                            <textarea class="form-control" name="" id="" cols="240" rows="10"
-                                                required></textarea>
-                                            <label for="floatingnameInput">Reyting tavsifi</label>
+                                            <select class="form-select" id="floatingSelectGrid"
+                                                aria-label="Floating label select example">
+                                                <option selected>chorak</option>
+                                                <option value="1">yillik</option>
+                                            </select>
+                                            <label for="floatingSelectGrid">Reyting turi</label>
                                         </div>
                                         <div class="row">
                                             <div class="col-md-3">
-                                                <div class="form-floating mb-3">
-                                                    <select class="form-select" id="floatingSelectGrid"
-                                                        aria-label="Floating label select example">
-                                                        <option selected>chorak</option>
-                                                        <option value="1">yillik</option>
-                                                    </select>
-                                                    <label for="floatingSelectGrid">Reyting turi</label>
-                                                </div>
+                                                
+                                        <div class="form-floating mb-3">
+                                            <input type="number" class="form-control" id="floatingnameInput"
+                                                placeholder="Reyting nomi" required>
+                                            <label for="floatingnameInput">Reyting yilini kiriting...</label>
+                                        </div>
                                             </div>
                                             <div class="col-md-3">
                                                 <div class="form-floating mb-3">
@@ -498,8 +523,6 @@
                                                 </div>
                                             </div>
                                         </div>
-
-                                        <button class="btn btn-success mb-3 mt-2">Saqlash</button>
 
                                         <!-- <div class="form-floating mb-3">
                                             <input type="text" class="form-control" id="floatingnameInput" placeholder="Плановые
@@ -614,6 +637,71 @@
                                                 </div>
                                             </div>
                                         </div> -->
+
+                                        <!-- Nav tabs -->
+                                        <ul class="nav nav-tabs mt-4" role="tablist">
+                                            <li class="nav-item">
+                                                <a class="nav-link active" data-bs-toggle="tab" href="#home" role="tab">
+                                                    <span class="d-block d-sm-none"><i class="fas fa-home"></i></span>
+                                                    <span class="d-none d-sm-block">O'zbek tili</span>
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" data-bs-toggle="tab" href="#profile" role="tab">
+                                                    <span class="d-block d-sm-none"><i class="far fa-user"></i></span>
+                                                    <span class="d-none d-sm-block">Русский</span>
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" data-bs-toggle="tab" href="#messages" role="tab">
+                                                    <span class="d-block d-sm-none"><i
+                                                            class="far fa-envelope"></i></span>
+                                                    <span class="d-none d-sm-block">English</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+
+                                        <!-- Tab panes -->
+                                        <div class="tab-content p-3 text-muted">
+                                            <div class="tab-pane active" id="home" role="tabpanel">
+                                                <div class="form-floating mb-3">
+                                                    <input type="text" class="form-control" id="floatingnameInput"
+                                                        placeholder="Tartib raqamini ni kiriting..." required>
+                                                    <label for="floatingnameInput">Nom kiriting...</label>
+                                                </div>
+                                                <textarea id="mytextarea"></textarea>
+                                            </div>
+                                            <div class="tab-pane" id="profile" role="tabpanel">
+                                                <div class="form-floating mb-3">
+                                                    <input type="text" class="form-control" id="floatingnameInput"
+                                                        placeholder="Tartib raqamini ni kiriting..." required>
+                                                    <label for="floatingnameInput">Nom kiriting...</label>
+                                                </div>
+                                                <textarea id="mytextarea"></textarea>
+                                            </div>
+                                            <div class="tab-pane" id="messages" role="tabpanel">
+                                                <div class="form-floating mb-3">
+                                                    <input type="text" class="form-control" id="floatingnameInput"
+                                                        placeholder="Tartib raqamini ni kiriting..." required>
+                                                    <label for="floatingnameInput">Nom kiriting...</label>
+                                                </div>
+                                                <textarea id="mytextarea"></textarea>
+                                            </div>
+                                        </div>
+
+                                        <div class="mb-3 px-1 row status">
+                                            <label class="col-lg-1 col-form-label mt-2"
+                                                for="validationCustom01">Holati:</label>
+                                            <div class="col-lg-2 col-form-label mt-1">
+                                                <p>
+                                                    <input id="toggle-1" class="checkbox-toggle checkbox-toggle-round"
+                                                        type="checkbox" />
+                                                    <label for="toggle-1" data-on="faol" data-off="faol emas"></label>
+                                                </p>
+                                            </div>
+
+                                        </div>
+                                        <button class="btn btn-success mt-3">Ma'lumotlarni saqlash</button>
 
                                     </div>
 
