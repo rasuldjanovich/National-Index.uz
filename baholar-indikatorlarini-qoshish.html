@@ -358,8 +358,7 @@
                                 <li><a href="reytinglar-royxati.html">Reytinglar ro'yxati</a></li>
                                 <li><a href="reyting-qoshish.html">Yangi reyting qo'shish</a></li>
                                 <li><a href="indikator.html">Indikatorlar</a></li>
-                                <li><a href="foydalanuvchi-reyting.html">Foydalanuvchilar uchun reytinglar reestr</a>
-                                </li>
+                                <li><a href="foydalanuvchi-reyting.html">Foydalanuvchilar uchun reytinglar reestr</a></li>
                                 <li><a href="baholar-indikatori.html">Baholash indikatorlari</a></li>
                             </ul>
                         </li>
@@ -411,11 +410,16 @@
                             </a>
                             <ul class="sub-menu" aria-expanded="false">
                                 <li><a href="tizim-sozlamalari.html" key="t-wallet">Tizim sozlamalari</a></li>
-                                <li><a href="elektron-pochta-sozlamalari.html" key="t-exchange">Elektron pochta
-                                        sozlamalari</a></li>
+                                <li><a href="elektron-pochta-sozlamalari.html" key="t-exchange">Elektron pochta sozlamalari</a></li>
                             </ul>
                         </li>
-
+                        
+                        <li>
+                            <a href="baholash-indikator.html" class="waves-effect">
+                                <i class="bx bx-file"></i>
+                                <span key="t-file-manager">Baholash indikatorlari</span>
+                            </a>
+                        </li>
                     </ul>
                 </div>
                 <!-- Sidebar -->
@@ -446,23 +450,34 @@
                             <div class="card">
                                 <div class="card-body">
 
-                                    <form class="custom-validation" action="#">
-                                        <div class="form-floating mb-3">
-                                            <input type="number" class="form-control" id="floatingnameInput"
-                                            required placeholder="Type something" />
-                                            <label for="floatingnameInput">Tartib raqamini kiriting...</label>
-                                        </div>
-                                        <div class="form-floating mb-3">
-                                            <select class="form-select" id="floatingSelectGrid"
-                                                aria-label="Floating label select example">
-                                                <option selected>Маъмурий-бошқарув ходимлар штат бирлиги сони</option>
-                                                <option value="1">Маъмурий-бошқарув ходимлар умумий сони</option>
-                                                <option value="2">Илмий даражага эга маъмурий-бошқарув ходимлар сони
-                                                </option>
-                                                <option value="3">Ёрдамчи ходимлар штат бирлиги сони</option>
-                                                <option value="4">Ёрдамчи ходимлар умумий сони</option>
-                                            </select>
-                                            <label for="floatingSelectGrid">Indikator turi</label>
+                                    <form class="needs-validation" novalidate>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-floating mb-3">
+                                                    <input type="number" class="form-control" id="floatingnameInput"
+                                                        required placeholder="Tartib raqamini kiriting..." />
+                                                    <label for="floatingnameInput">Tartib raqamini kiriting...</label>
+                                                    <div class="invalid-feedback">
+                                                        Majburiy maydon to'ldirilsin
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-floating mb-3">
+                                                    <select class="form-select" id="validationCustom03" required>
+                                                        <option selected disabled value="">Indikator turi</option>
+                                                        <option>Маъмурий-бошқарув ходимлар штат бирлиги сони</option>
+                                                        <option>Маъмурий-бошқарув ходимлар умумий сони</option>
+                                                        <option>Илмий даражага эга маъмурий-бошқарув ходимлар сони</option>
+                                                        <option>Ёрдамчи ходимлар штат бирлиги сони</option>
+                                                        <option>Ёрдамчи ходимлар умумий сони</option>
+                                                    </select>
+                                                    <label for="floatingSelectGrid">Indikator turi</label>
+                                                    <div class="invalid-feedback">
+                                                        Majburiy maydon to'ldirilsin
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
 
                                         <!-- Nav tabs -->
@@ -495,6 +510,9 @@
                                                     <input type="text" class="form-control" id="floatingnameInput"
                                                         placeholder="Indikator nomi" required>
                                                     <label for="floatingnameInput">Indikator nomi</label>
+                                                    <div class="invalid-feedback">
+                                                        Majburiy maydon to'ldirilsin
+                                                    </div>
                                                 </div>
                                             </div>
                                             <div class="tab-pane" id="profile" role="tabpanel">
@@ -502,6 +520,9 @@
                                                     <input type="text" class="form-control" id="floatingnameInput"
                                                         placeholder="Indikator nomi" required>
                                                     <label for="floatingnameInput">Indikator nomi</label>
+                                                    <div class="invalid-feedback">
+                                                        Majburiy maydon to'ldirilsin
+                                                    </div>
                                                 </div>
                                             </div>
                                             <div class="tab-pane" id="messages" role="tabpanel">
@@ -509,59 +530,65 @@
                                                     <input type="text" class="form-control" id="floatingnameInput"
                                                         placeholder="Indikator nomi" required>
                                                     <label for="floatingnameInput">Indikator nomi</label>
+                                                    <div class="invalid-feedback">
+                                                        Majburiy maydon to'ldirilsin
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
 
-                                        <div class="row">
+                                        <div class="row mt-2">
                                             <div class="col-md-4">
-                                                <div class="form-floating mt-2 mb-3">
+                                                <div class="form-floating mb-3">
                                                     <input type="text" class="form-control" id="floatingnameInput"
                                                         placeholder="Hisoblash formulasi" required>
                                                     <label for="floatingnameInput">Hisoblash formulasi</label>
                                                     <span class="formula">masalan: (4+7+9)</span>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-4">
-                                                <div class="mb-3 px-5 mt-2 row status">
-                                                    <label class="col-lg-2 col-form-label mt-2"
-                                                        for="validationCustom01">Holati:</label>
-                                                    <div class="col-lg-2 col-form-label mt-1">
-                                                        <p>
-                                                            <input id="toggle-1"
-                                                                class="checkbox-toggle checkbox-toggle-round"
-                                                                type="checkbox" />
-                                                            <label for="toggle-1" data-on="faol"
-                                                                data-off="faol emas"></label>
-                                                        </p>
+                                                    <div class="invalid-feedback">
+                                                        Majburiy maydon to'ldirilsin
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="col-md-4">
-                                                <div class="form-check mt-3">
-                                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                                        id="flexRadioDefault1" checked>
-                                                    <label class="form-check-label" for="flexRadioDefault1">
-                                                        Matn
-                                                    </label>
+                                                <div class="form-floating mb-3">
+                                                    <select class="form-select" id="validationCustom03" required>
+                                                        <option selected disabled value="">Majbuririyligi</option>
+                                                        <option>Majburiy</option>
+                                                        <option>Majburiy emas</option>
+                                                    </select>
+                                                    <label for="floatingSelectGrid">Majbuririyligi</label>
+                                                    <div class="invalid-feedback">
+                                                        Majburiy maydon to'ldirilsin
+                                                    </div>
                                                 </div>
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                                        id="flexRadioDefault2">
-                                                    <label class="form-check-label" for="flexRadioDefault2">
-                                                        Matn va fayl
-                                                    </label>
-                                                </div>
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                                        id="flexRadioDefault2">
-                                                    <label class="form-check-label" for="flexRadioDefault2">
-                                                        Matn va fayl
-                                                    </label>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="form-floating mb-3">
+                                                    <select class="form-select" id="validationCustom03" required>
+                                                        <option selected disabled value="">Asos turi</option>
+                                                        <option>Matn</option>
+                                                        <option>Matn va fayl</option>
+                                                        <option>Fayl</option>
+                                                    </select>
+                                                    <label for="floatingSelectGrid">Asos turi</label>
+                                                    <div class="invalid-feedback">
+                                                        Majburiy maydon to'ldirilsin
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
 
+                                        <div class="mb-3 mt-1 row status">
+                                            <label class="col-lg-1 col-form-label mt-2"
+                                                for="validationCustom01">Holati:</label>
+                                            <div class="col-lg-2 col-form-label mt-1">
+                                                <p>
+                                                    <input id="toggle-1" class="checkbox-toggle checkbox-toggle-round"
+                                                        type="checkbox" />
+                                                    <label for="toggle-1" data-on="faol" data-off="faol emas"></label>
+                                                </p>
+                                            </div>
+                                        </div>
                                         <button class="btn btn-success">Saqlash</button>
                                     </form>
 
