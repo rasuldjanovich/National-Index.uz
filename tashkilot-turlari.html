@@ -42,22 +42,13 @@
                 <div class="d-flex">
                     <!-- LOGO -->
                     <div class="navbar-brand-box">
-                        <a href="index.html" class="logo logo-dark">
-                            <span class="logo-sm">
-                                <img src="assets/images/minin.png" alt="" height="22">
-                            </span>
-                            <span class="logo-lg">
-                                <img src="assets//images/minin.png" alt="" height="17">
-                            </span>
-                        </a>
 
                         <a href="index.html" class="logo logo-light">
                             <span class="logo-sm">
-                                <img src="assets/images/minin.png" alt="" height="32">
+                                <img src="assets/images/logo (2).svg" alt="" height="50">
                             </span>
-                            <span class=" justify-content-center align-items-center logo-lg mt-4">
-                                <img src="assets//images/minin.png" alt="" height="30">
-                                <!-- <h4 class="align-items-center mt-2 px-2">National index</h4> -->
+                            <span class="logo-lg">
+                                <img class="mt-3" src="assets/images/logo.svg" alt="" height="60">
                             </span>
                         </a>
                     </div>
@@ -66,14 +57,16 @@
                         id="vertical-menu-btn">
                         <i class="fa fa-fw fa-bars"></i>
                     </button>
+                    
+                    <a class="mt-4" href="https://phd.mininnovation.uz/" target="blank">Asosiy saytga o'tish</a>
 
                     <!-- App Search-->
                     <!-- <form class="app-search d-none d-lg-block">
-                            <div class="position-relative">
-                                <input type="text" class="form-control" placeholder="Поиск...">
-                                <span class="bx bx-search-alt"></span>
-                            </div>
-                        </form> -->
+                        <div class="position-relative">
+                            <input type="text" class="form-control" placeholder="Поиск...">
+                            <span class="bx bx-search-alt"></span>
+                        </div>
+                    </form> -->
                 </div>
 
                 <div class="d-flex">
@@ -284,158 +277,162 @@
                     <div class="dropdown d-inline-block">
                         <button type="button" class="btn header-item waves-effect" id="page-header-user-dropdown"
                             data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <i class='bx bx-user'></i>
-                            <i class="mdi mdi-chevron-down d-none d-xl-inline-block"></i>
+                            <div class="d-flex mt-3">
+                                <i class='bx bx-user'></i>
+                                <p class="mx-1 mt-1">O'ktam Yaqubov</p>
+                                <i class="mt-1 mdi mdi-chevron-down d-none d-xl-inline-block"></i>
+                            </div>
+                            
                         </button>
                         <div class="dropdown-menu dropdown-menu-end">
                             <!-- item-->
                             <a class="dropdown-item" href="#"><i class="bx bx-user font-size-16 align-middle me-1"></i>
-                                <span key="t-profile">Профиль</span></a>
+                                <span key="t-profile">Profil sozlamalari</span></a>
                             <a class="dropdown-item d-block" href="#"><span
                                     class="badge bg-success float-end">11</span><i
                                     class="bx bx-wrench font-size-16 align-middle me-1"></i> <span
-                                    key="t-settings">Настройки</span></a>
+                                    key="t-settings">Sozlamalar</span></a>
                             <div class="dropdown-divider"></div>
                             <a class="dropdown-item text-danger" href="auth-login-2.html"><i
                                     class="bx bx-power-off font-size-16 align-middle me-1 text-danger"></i> <span
-                                    key="t-logout">Выйти</span></a>
+                                    key="t-logout">Chiqish</span></a>
                         </div>
                     </div>
                 </div>
             </div>
         </header>
 
-       <!-- ========== Left Sidebar Start ========== -->
-       <div class="vertical-menu">
+        <!-- ========== Left Sidebar Start ========== -->
+        <div class="vertical-menu">
 
-        <div data-simplebar class="h-100">
+            <div data-simplebar class="h-100">
 
-            <!--- Sidemenu -->
-            <div id="sidebar-menu">
-                <!-- Left Menu Start -->
-                <ul class="metismenu list-unstyled" id="side-menu">
-                    <li>
-                        <a href="index.html" class="index.html">
-                            <i class="bx bx-home-circle"></i>
-                            <span key="t-file-manager">Boshqaruv paneli</span>
-                        </a>
-                    </li>
-                    
-                    <li>
-                        <a href="vazirlik.html" class="waves-effect">
-                            <i class="fa-solid fa-building"></i>
-                            <span key="t-file-manager">Vazirliklar</span>
-                        </a>
-                    </li>
+                <!--- Sidemenu -->
+                <div id="sidebar-menu">
+                    <!-- Left Menu Start -->
+                    <ul class="metismenu list-unstyled mt-5" id="side-menu">
+                        <li>
+                            <a href="index.html" class="index.html">
+                                <i class="bx bx-home-circle"></i>
+                                <span key="t-file-manager">Boshqaruv paneli</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="vazirlik.html" class="waves-effect">
+                                <i class="fa-solid fa-building"></i>
+                                <span key="t-file-manager">Vazirliklar</span>
+                            </a>
+                        </li>
 
 
-                    <li>
-                        <a href="javascript: void(0);" class="has-arrow waves-effect">
-                            <i class="fa-light fa-sitemap"></i>
-                            <span key="t-dashboards">Tashkilotlar</span>
-                        </a>
-                        <ul class="sub-menu" aria-expanded="false">
-                            <li><a href="tashkilot-turlari.html">Tashkilotlar turlari</a></li>
-                            <li><a href="tashkillot-royxati.html">Tashkilotlar ro'yxati</a></li>
-                        </ul>
-                    </li>
+                        <li>
+                            <a href="javascript: void(0);" class="has-arrow waves-effect">
+                                <i class="fa-light fa-sitemap"></i>
+                                <span key="t-dashboards">Tashkilotlar</span>
+                            </a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li><a href="tashkilot-turlari.html">Tashkilotlar turlari</a></li>
+                                <li><a href="tashkillot-royxati.html">Tashkilotlar ro'yxati</a></li>
+                            </ul>
+                        </li>
 
-                    <li>
-                        <a href="viloyat.html" class="waves-effect">
-                            <i class="bx bx-file"></i>
-                            <span key="t-file-manager">Viloyat</span>
-                        </a>
-                    </li>
+                        <li>
+                            <a href="viloyat.html" class="waves-effect">
+                                <i class="bx bx-file"></i>
+                                <span key="t-file-manager">Viloyat</span>
+                            </a>
+                        </li>
 
-                    <!-- <li>
-                        <a href="javascript: void(0);" class="has-arrow waves-effect">
-                            <i class='bx bx-user'></i>
-                            <span key="t-dashboards">Эксперты</span>
-                        </a>
-                        <ul class="sub-menu" aria-expanded="false">
-                            <li><a href="experts-table.html">Команды</a></li>
-                            <li><a href="expert-members.html">Члены-эксперты</a></li>
-                        </ul>
-                    </li> -->
+                        <!-- <li>
+                            <a href="javascript: void(0);" class="has-arrow waves-effect">
+                                <i class='bx bx-user'></i>
+                                <span key="t-dashboards">Эксперты</span>
+                            </a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li><a href="experts-table.html">Команды</a></li>
+                                <li><a href="expert-members.html">Члены-эксперты</a></li>
+                            </ul>
+                        </li> -->
 
-                    <li>
-                        <a href="javascript: void(0);" class="has-arrow waves-effect">
-                            <i class='bx bx-file-blank'></i>
-                            <span key="t-dashboards">Baholar reestri</span>
-                        </a>
-                        <ul class="sub-menu" aria-expanded="false">
-                            <li><a href="reytinglar-royxati.html">Reytinglar ro'yxati</a></li>
-                            <li><a href="reyting-qoshish.html">Yangi reyting qo'shish</a></li>
-                            <li><a href="indikator.html">Indikatorlar</a></li>
-                            <li><a href="foydalanuvchi-reyting.html">Foydalanuvchilar uchun reytinglar reestr</a></li>
-                            <li><a href="baholar-indikatori.html">Baholash indikatorlari</a></li>
-                        </ul>
-                    </li>
+                        <li>
+                            <a href="javascript: void(0);" class="has-arrow waves-effect">
+                                <i class='bx bx-file-blank'></i>
+                                <span key="t-dashboards">Baholar reestri</span>
+                            </a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li><a href="reytinglar-royxati.html">Reytinglar ro'yxati</a></li>
+                                <li><a href="reyting-qoshish.html">Yangi reyting qo'shish</a></li>
+                                <li><a href="indikator.html">Indikatorlar</a></li>
+                                <li><a href="foydalanuvchi-reyting.html">Foydalanuvchilar uchun reytinglar reestr</a></li>
+                                <li><a href="baholar-indikatori.html">Baholash indikatorlari</a></li>
+                            </ul>
+                        </li>
 
-                    <li>
-                        <a href="javascript: void(0);" class="has-arrow waves-effect">
-                            <i class='bx bx-file-blank'></i>
-                            <span key="t-dashboards">Yangiliklar</span>
-                        </a>
-                        <ul class="sub-menu" aria-expanded="false">
-                            <li><a href="kategoriyalar.html">Kategoriyalar</a></li>
-                            <li><a href="yangiliklar-royxati.html">Yangiliklar ro'yxati</a></li>
-                        </ul>
-                    </li>
+                        <li>
+                            <a href="javascript: void(0);" class="has-arrow waves-effect">
+                                <i class='bx bx-file-blank'></i>
+                                <span key="t-dashboards">Yangiliklar</span>
+                            </a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li><a href="kategoriyalar.html">Kategoriyalar</a></li>
+                                <li><a href="yangiliklar-royxati.html">Yangiliklar ro'yxati</a></li>
+                            </ul>
+                        </li>
 
-                    <li>
-                        <a href="javascript: void(0);" class="has-arrow waves-effect">
-                            <i class="bx bx-calendar"></i>
-                            <span key="t-dashboards">Ilovalar</span>
-                        </a>
-                        <ul class="sub-menu" aria-expanded="false">
-                            <li><a href="#" key="t-tui-calendar">Baholash uchun ariza</a></li>
-                            <li><a href="#" key="t-full-calendar">Ekspert baholash</a></li>
-                            <li><a href="#" key="t-full-calendar">Talablar</a></li>
-                            <li><a href="#" key="t-full-calendar">Moderatsiya</a></li>
-                            <li><a href="#" key="t-full-calendar">Moderatsiyadan o'tganlar</a></li>
-                            <li><a href="#" key="t-full-calendar">Moderatsiyadan qaytarilganlar</a>
-                            </li>
-                        </ul>
-                    </li>
+                        <li>
+                            <a href="javascript: void(0);" class="has-arrow waves-effect">
+                                <i class="bx bx-calendar"></i>
+                                <span key="t-dashboards">Ilovalar</span>
+                            </a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li><a href="#" key="t-tui-calendar">Baholash uchun ariza</a></li>
+                                <li><a href="#" key="t-full-calendar">Ekspert baholash</a></li>
+                                <li><a href="#" key="t-full-calendar">Talablar</a></li>
+                                <li><a href="#" key="t-full-calendar">Moderatsiya</a></li>
+                                <li><a href="#" key="t-full-calendar">Moderatsiyadan o'tganlar</a></li>
+                                <li><a href="#" key="t-full-calendar">Moderatsiyadan qaytarilganlar</a>
+                                </li>
+                            </ul>
+                        </li>
 
-                    <li>
-                        <a href="javascript: void(0);" class="has-arrow waves-effect">
-                            <i class="bx bxs-user-detail"></i>
-                            <span key="t-ecommerce">Foydalanuvchilar</span>
-                        </a>
-                        <ul class="sub-menu" aria-expanded="false">
-                            <li><a href="royxat-azolari.html" key="t-products">Roʼyxat aʼzolari</a></li>
-                            <li><a href="masul-shaxslarr.html" key="t-products">Masʼul shaxslar</a></li>
-                            <li><a href="#" key="t-product-detail">Mutaxassislar roʼyxati</a>
-                            </li>
-                            <li><a href="#" key="t-orders">Ro'yxat koordinatori</a></li>
-                        </ul>
-                    </li>
+                        <li>
+                            <a href="javascript: void(0);" class="has-arrow waves-effect">
+                                <i class="bx bxs-user-detail"></i>
+                                <span key="t-ecommerce">Foydalanuvchilar</span>
+                            </a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li><a href="royxat-azolari.html" key="t-products">Roʼyxat aʼzolari</a></li>
+                                <li><a href="masul-shaxslarr.html" key="t-products">Masʼul shaxslar</a></li>
+                                <li><a href="#" key="t-product-detail">Mutaxassislar roʼyxati</a>
+                                </li>
+                                <li><a href="#" key="t-orders">Ro'yxat koordinatori</a></li>
+                            </ul>
+                        </li>
 
-                    <li>
-                        <a href="javascript: void(0);" class="has-arrow waves-effect">
-                            <i class='bx bx-cog'></i>
-                            <span key="t-crypto">Sozlamalar</span>
-                        </a>
-                        <ul class="sub-menu" aria-expanded="false">
-                            <li><a href="tizim-sozlamalari.html" key="t-wallet">Tizim sozlamalari</a></li>
-                            <li><a href="elektron-pochta-sozlamalari.html" key="t-exchange">Elektron pochta sozlamalari</a></li>
-                        </ul>
-                    </li>
-                    
-                    <li>
-                        <a href="baholash-indikator.html" class="waves-effect">
-                            <i class="bx bx-file"></i>
-                            <span key="t-file-manager">Baholash indikatorlari</span>
-                        </a>
-                    </li>
-                </ul>
+                        <li>
+                            <a href="javascript: void(0);" class="has-arrow waves-effect">
+                                <i class='bx bx-cog'></i>
+                                <span key="t-crypto">Sozlamalar</span>
+                            </a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li><a href="tizim-sozlamalari.html" key="t-wallet">Tizim sozlamalari</a></li>
+                                <li><a href="elektron-pochta-sozlamalari.html" key="t-exchange">Elektron pochta sozlamalari</a></li>
+                            </ul>
+                        </li>
+                        
+                        <li>
+                            <a href="baholash-indikator.html" class="waves-effect">
+                                <i class="bx bx-file"></i>
+                                <span key="t-file-manager">Baholash indikatorlari</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Sidebar -->
             </div>
-            <!-- Sidebar -->
         </div>
-    </div>
-    <!-- Left Sidebar End -->
+        <!-- Left Sidebar End -->
 
 
 
