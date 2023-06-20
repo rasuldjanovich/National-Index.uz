@@ -4,21 +4,12 @@
 <head>
 
     <meta charset="utf-8" />
-    <title>Data Tables | Skote - Admin & Dashboard Template</title>
+    <title>National Index</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
     <meta content="Themesbrand" name="author" />
     <!-- App favicon -->
-    <link rel="shortcut icon" href="assets/images/favicon.ico">
-
-    <!-- DataTables -->
-    <link href="assets/libs/datatables.net-bs4/css/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css" />
-    <link href="assets/libs/datatables.net-buttons-bs4/css/buttons.bootstrap4.min.css" rel="stylesheet"
-        type="text/css" />
-
-    <!-- Responsive datatable examples -->
-    <link href="assets/libs/datatables.net-responsive-bs4/css/responsive.bootstrap4.min.css" rel="stylesheet"
-        type="text/css" />
+    <link rel="shortcut icon" href="assets/images/Untitled-2.png">
 
     <!-- Bootstrap Css -->
     <link href="assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
@@ -26,6 +17,19 @@
     <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
     <!-- App Css-->
     <link href="assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+
+    <script>
+        tinymce.init({
+            selector: '#mytextarea'
+        });
+
+    </script>
 
 </head>
 
@@ -328,7 +332,7 @@
 
                         <li>
                             <a href="javascript: void(0);" class="has-arrow waves-effect">
-                                <i class="fa-light fa-sitemap"></i>
+                                <i class="fa-solid fa-building-un"></i>
                                 <span key="t-dashboards">Tashkilotlar</span>
                             </a>
                             <ul class="sub-menu" aria-expanded="false">
@@ -339,39 +343,25 @@
 
                         <li>
                             <a href="viloyat.html" class="waves-effect">
-                                <i class="bx bx-file"></i>
+                                <i class="fa-solid fa-location-dot"></i>
                                 <span key="t-file-manager">Viloyat</span>
                             </a>
                         </li>
-
-                        <!-- <li>
-                            <a href="javascript: void(0);" class="has-arrow waves-effect">
-                                <i class='bx bx-user'></i>
-                                <span key="t-dashboards">Эксперты</span>
-                            </a>
-                            <ul class="sub-menu" aria-expanded="false">
-                                <li><a href="experts-table.html">Команды</a></li>
-                                <li><a href="expert-members.html">Члены-эксперты</a></li>
-                            </ul>
-                        </li> -->
-
+                        
                         <li>
                             <a href="javascript: void(0);" class="has-arrow waves-effect">
-                                <i class='bx bx-file-blank'></i>
+                                <i class="fa-sharp fa-solid fa-star"></i>
                                 <span key="t-dashboards">Baholar reestri</span>
                             </a>
                             <ul class="sub-menu" aria-expanded="false">
                                 <li><a href="reytinglar-royxati.html">Reytinglar ro'yxati</a></li>
-                                <li><a href="reyting-qoshish.html">Yangi reyting qo'shish</a></li>
-                                <li><a href="indikator.html">Indikatorlar</a></li>
-                                <li><a href="foydalanuvchi-reyting.html">Foydalanuvchilar uchun reytinglar reestr</a></li>
                                 <li><a href="baholar-indikatori.html">Baholash indikatorlari</a></li>
                             </ul>
                         </li>
 
                         <li>
                             <a href="javascript: void(0);" class="has-arrow waves-effect">
-                                <i class='bx bx-file-blank'></i>
+                                <i class="fa-sharp fa-regular fa-newspaper"></i>
                                 <span key="t-dashboards">Yangiliklar</span>
                             </a>
                             <ul class="sub-menu" aria-expanded="false">
@@ -382,31 +372,12 @@
 
                         <li>
                             <a href="javascript: void(0);" class="has-arrow waves-effect">
-                                <i class="bx bx-calendar"></i>
-                                <span key="t-dashboards">Ilovalar</span>
-                            </a>
-                            <ul class="sub-menu" aria-expanded="false">
-                                <li><a href="#" key="t-tui-calendar">Baholash uchun ariza</a></li>
-                                <li><a href="#" key="t-full-calendar">Ekspert baholash</a></li>
-                                <li><a href="#" key="t-full-calendar">Talablar</a></li>
-                                <li><a href="#" key="t-full-calendar">Moderatsiya</a></li>
-                                <li><a href="#" key="t-full-calendar">Moderatsiyadan o'tganlar</a></li>
-                                <li><a href="#" key="t-full-calendar">Moderatsiyadan qaytarilganlar</a>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li>
-                            <a href="javascript: void(0);" class="has-arrow waves-effect">
                                 <i class="bx bxs-user-detail"></i>
                                 <span key="t-ecommerce">Foydalanuvchilar</span>
                             </a>
                             <ul class="sub-menu" aria-expanded="false">
-                                <li><a href="royxat-azolari.html" key="t-products">Roʼyxat aʼzolari</a></li>
-                                <li><a href="masul-shaxslarr.html" key="t-products">Masʼul shaxslar</a></li>
-                                <li><a href="#" key="t-product-detail">Mutaxassislar roʼyxati</a>
-                                </li>
-                                <li><a href="#" key="t-orders">Ro'yxat koordinatori</a></li>
+                                <li><a href="masul-shaxslar.html" key="t-products">Masʼul shaxslar</a></li>
+                                <li><a href="foydalanuvchilar.html" key="t-product-detail">Foydalanuvchilar roʼyxati</a></li>
                             </ul>
                         </li>
 
@@ -420,20 +391,12 @@
                                 <li><a href="elektron-pochta-sozlamalari.html" key="t-exchange">Elektron pochta sozlamalari</a></li>
                             </ul>
                         </li>
-                        
-                        <li>
-                            <a href="baholash-indikator.html" class="waves-effect">
-                                <i class="bx bx-file"></i>
-                                <span key="t-file-manager">Baholash indikatorlari</span>
-                            </a>
-                        </li>
                     </ul>
                 </div>
                 <!-- Sidebar -->
             </div>
         </div>
         <!-- Left Sidebar End -->
-
 
 
         <!-- ============================================================== -->
@@ -443,15 +406,13 @@
 
             <div class="page-content">
                 <div class="container-fluid">
-
                     <!-- start page title -->
                     <div class="row">
                         <div class="col-12">
                             <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                                <h4 class="mb-sm-3 font-size-18">Mas'ul shaxslar</h4>
-
-                                <a href="masul-shaxss-qoshish.html">
-                                    <button class="btn btn-success mb-3"><i class='bx bx-plus'></i> Qo'shish</button>
+                                <h4 class="mb-sm-3 font-size-18">Yangi tashkilot qo'shish</h4>
+                                <a class="mb-sm-3" href="tashkillot-royxati.html">
+                                    <button class="btn btn-primary"><i class='bx bx-left-arrow-alt font-size-16 me-1'></i> Ortga qaytish</button>
                                 </a>
                             </div>
                         </div>
@@ -459,127 +420,240 @@
                     <!-- end page title -->
 
                     <div class="row">
-                        <div class="col-12">
+                        <div class="col-xl-12">
                             <div class="card">
                                 <div class="card-body">
 
-                                    <table id="datatable"
-                                        class="table table-bordered dt-responsive  nowrap w-100 table-striped">
-                                        <thead>
-                                            <tr class="bg-secondary text-white">
-                                                <th>#</th>
-                                                <th>F.I.O.</th>
-                                                <th></th>
-                                                <th>Role</th>
-                                                <th>Holati</th>
-                                                <th>Amallar</th>
-                                            </tr>
-                                        </thead>
+                                    <form action="">
+                                        <div class="form-floating mb-3">
+                                            <input type="number" class="form-control" id="floatingnameInput"
+                                                placeholder="Tartib raqamini ni kiriting..." required>
+                                            <label for="floatingnameInput">Tartib raqam kiriting...</label>
+                                        </div>
 
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-floating mb-3">
+                                                    <select class="form-select" id="floatingSelectGrid"
+                                                        aria-label="Floating label select example">
+                                                        <option selected>select</option>
+                                                        <option value="1">O'zbekiston Respublikasi Oliy Ta'lim Fan va
+                                                            Innovatsiyalar Vazirligi</option>
+                                                    </select>
+                                                    <label for="floatingSelectGrid">Tur kiriting</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-floating mb-3">
+                                                    <select class="form-select" id="floatingSelectGrid"
+                                                        aria-label="Floating label select example">
+                                                        <option selected>select</option>
+                                                        <option value="1">Toshkent shahri</option>
+                                                        <option value="1">Andijon viloyati</option>
+                                                        <option value="1">Samarqand viloyati</option>
+                                                        <option value="1">Farg'ona viloyati</option>
+                                                    </select>
+                                                    <label for="floatingSelectGrid">Viloyat kiriting</label>
+                                                </div>
+                                            </div>
+                                        </div>
 
-                                        <tbody>
-                                            <tr>
-                                                <td>1</td>
-                                                <td>FIO</td>
-                                                <td></td>
-                                                <td>Admin</td>
-                                                <td>
-                                                    <span
-                                                        class="badge badge-pill badge-soft-success font-size-11">faol</span>
-                                                </td>
-                                                <td class="d-flex">
-                                                    <a href="#" class="mx-2"><i
-                                                            class="mdi mdi-pencil font-size-16 text-success me-1"></i></a>
-                                                    </li>
-                                                    <a href="#" class="dropdown-item"><i
-                                                            class="mdi mdi-trash-can font-size-16 text-danger me-1"></i></a>
-                                                    </li>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>2</td>
-                                                <td>FIO</td>
-                                                <td></td>
-                                                <td>User</td>
-                                                <td>
-                                                    <span
-                                                        class="badge badge-pill badge-soft-danger font-size-11">faol emas</span>
-                                                </td>
-                                                <td class="d-flex">
-                                                    <a href="#" class="mx-2"><i
-                                                            class="mdi mdi-pencil font-size-16 text-success me-1"></i></a>
-                                                    </li>
-                                                    <a href="#" class="dropdown-item"><i
-                                                            class="mdi mdi-trash-can font-size-16 text-danger me-1"></i></a>
-                                                    </li>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>3</td>
-                                                <td>FIO</td>
-                                                <td></td>
-                                                <td>Admin</td>
-                                                <td>
-                                                    <span
-                                                        class="badge badge-pill badge-soft-success font-size-11">faol</span>
-                                                </td>
-                                                <td class="d-flex">
-                                                    <a href="#" class="mx-2"><i
-                                                            class="mdi mdi-pencil font-size-16 text-success me-1"></i></a>
-                                                    </li>
-                                                    <a href="#" class="dropdown-item"><i
-                                                            class="mdi mdi-trash-can font-size-16 text-danger me-1"></i></a>
-                                                    </li>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>4</td>
-                                                <td>FIO</td>
-                                                <td></td>
-                                                <td>User</td>
-                                                <td>
-                                                    <span
-                                                        class="badge badge-pill badge-soft-danger font-size-11">faol emas</span>
-                                                </td>
-                                                <td class="d-flex">
-                                                    <a href="#" class="mx-2"><i
-                                                            class="mdi mdi-pencil font-size-16 text-success me-1"></i></a>
-                                                    </li>
-                                                    <a href="#" class="dropdown-item"><i
-                                                            class="mdi mdi-trash-can font-size-16 text-danger me-1"></i></a>
-                                                    </li>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>5</td>
-                                                <td>FIO</td>
-                                                <td></td>
-                                                <td>Admin</td>
-                                                <td>
-                                                    <span
-                                                        class="badge badge-pill badge-soft-success font-size-11">faol</span>
-                                                </td>
-                                                <td class="d-flex">
-                                                    <a href="#" class="mx-2"><i
-                                                            class="mdi mdi-pencil font-size-16 text-success me-1"></i></a>
-                                                    </li>
-                                                    <a href="#" class="dropdown-item"><i
-                                                            class="mdi mdi-trash-can font-size-16 text-danger me-1"></i></a>
-                                                    </li>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
+                                        <div class="mb-3">
+                                            <label for="">Logotip kiriting</label>
+                                            <input class="form-control" type="file" id="formFile">
+                                        </div>
+                                        
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <div class="form-floating mb-3">
+                                                    <input type="text" class="form-control" id="floatingnameInput"
+                                                        placeholder="Web site kiriting..." required>
+                                                    <label for="floatingnameInput">Web site kiriting...</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="mb-3 row">
+                                                    <div class="form-floating input-group-prepend col-md-2">
+                                                        <span class="input-group-text py-3">+998</span>
+                                                        <label for="example-text-input" class="col-md-2 col-form-label"></label>
+                                                    </div>
+                                                    <div class="form-floating col-md-10">
+                                                        <input class="form-control" type="number"
+                                                            placeholder="Telefon raqam kiriting..." id="example-text-input"
+                                                            required>
+                                                        <label class="mx-3" for="floatingnameInput">Telefon raqam
+                                                            kiriting...</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="form-floating mb-3">
+                                                    <input type="number" class="form-control" id="floatingnameInput"
+                                                        placeholder="Tashkil topgan yili" required>
+                                                    <label for="floatingnameInput">Tashkil topgan yili</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <!-- Nav tabs -->
+                                        <ul class="nav nav-tabs mt-4" role="tablist">
+                                            <li class="nav-item">
+                                                <a class="nav-link active" data-bs-toggle="tab" href="#home" role="tab">
+                                                    <span class="d-block d-sm-none"><i class="fas fa-home"></i></span>
+                                                    <span class="d-none d-sm-block">O'zbek tili</span>
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" data-bs-toggle="tab" href="#profile" role="tab">
+                                                    <span class="d-block d-sm-none"><i class="far fa-user"></i></span>
+                                                    <span class="d-none d-sm-block">Русский</span>
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" data-bs-toggle="tab" href="#messages" role="tab">
+                                                    <span class="d-block d-sm-none"><i
+                                                            class="far fa-envelope"></i></span>
+                                                    <span class="d-none d-sm-block">English</span>
+                                                </a>
+                                            </li>
+                                        </ul>
 
+                                        <!-- Tab panes -->
+                                        <div class="tab-content p-3 text-muted">
+                                            <div class="tab-pane active" id="home" role="tabpanel">
+                                                <div class="form-floating mb-3">
+                                                    <input type="text" class="form-control" id="floatingnameInput"
+                                                        placeholder="Tartib raqamini ni kiriting..." required>
+                                                    <label for="floatingnameInput">Nom kiriting...</label>
+                                                </div>
+                                                <textarea id="mytextarea"></textarea>
+                                            </div>
+                                            <div class="tab-pane" id="profile" role="tabpanel">
+                                                <div class="form-floating mb-3">
+                                                    <input type="text" class="form-control" id="floatingnameInput"
+                                                        placeholder="Tartib raqamini ni kiriting..." required>
+                                                    <label for="floatingnameInput">Nom kiriting...</label>
+                                                </div>
+                                                <textarea id="mytextarea"></textarea>
+                                            </div>
+                                            <div class="tab-pane" id="messages" role="tabpanel">
+                                                <div class="form-floating mb-3">
+                                                    <input type="text" class="form-control" id="floatingnameInput"
+                                                        placeholder="Tartib raqamini ni kiriting..." required>
+                                                    <label for="floatingnameInput">Nom kiriting...</label>
+                                                </div>
+                                                <textarea id="mytextarea"></textarea>
+                                            </div>
+                                        </div>
+
+                                        <div class="mb-3 px-1 row status">
+                                            <label class="col-lg-1 col-form-label mt-2" for="validationCustom01">Holati:</label>
+                                            <div class="col-lg-2 col-form-label mt-1">
+                                                <p>
+                                                    <input id="toggle-1" class="checkbox-toggle checkbox-toggle-round"
+                                                        type="checkbox" />
+                                                    <label for="toggle-1" data-on="faol" data-off="faol emas"></label>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <button class="btn btn-success mt-3">Ma'lumotlarni saqlash</button>
+                                    </form>
                                 </div>
                             </div>
-                        </div> <!-- end col -->
-                    </div> <!-- end row -->
-
-                </div> <!-- container-fluid -->
+                        </div>
+                    </div>
+                </div>
+                <!-- container-fluid -->
             </div>
             <!-- End Page-content -->
 
+            <!-- Transaction Modal -->
+            <div class="modal fade transaction-detailModal" tabindex="-1" role="dialog"
+                aria-labelledby="transaction-detailModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="transaction-detailModalLabel">Order Details</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p class="mb-2">Product id: <span class="text-primary">#SK2540</span></p>
+                            <p class="mb-4">Billing Name: <span class="text-primary">Neal Matthews</span></p>
+
+                            <div class="table-responsive">
+                                <table class="table align-middle table-nowrap">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Product</th>
+                                            <th scope="col">Product Name</th>
+                                            <th scope="col">Price</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">
+                                                <div>
+                                                    <img src="assets/images/product/img-7.png" alt="" class="avatar-sm">
+                                                </div>
+                                            </th>
+                                            <td>
+                                                <div>
+                                                    <h5 class="text-truncate font-size-14">Wireless Headphone (Black)
+                                                    </h5>
+                                                    <p class="text-muted mb-0">$ 225 x 1</p>
+                                                </div>
+                                            </td>
+                                            <td>$ 255</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">
+                                                <div>
+                                                    <img src="assets/images/product/img-4.png" alt="" class="avatar-sm">
+                                                </div>
+                                            </th>
+                                            <td>
+                                                <div>
+                                                    <h5 class="text-truncate font-size-14">Phone patterned cases</h5>
+                                                    <p class="text-muted mb-0">$ 145 x 1</p>
+                                                </div>
+                                            </td>
+                                            <td>$ 145</td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2">
+                                                <h6 class="m-0 text-right">Sub Total:</h6>
+                                            </td>
+                                            <td>
+                                                $ 400
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2">
+                                                <h6 class="m-0 text-right">Shipping:</h6>
+                                            </td>
+                                            <td>
+                                                Free
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2">
+                                                <h6 class="m-0 text-right">Total:</h6>
+                                            </td>
+                                            <td>
+                                                $ 400
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end modal -->
 
             <footer class="footer">
                 <div class="container-fluid">
@@ -672,29 +746,14 @@
     <script src="assets/libs/simplebar/simplebar.min.js"></script>
     <script src="assets/libs/node-waves/waves.min.js"></script>
 
-    <!-- Required datatable js -->
-    <script src="assets/libs/datatables.net/js/jquery.dataTables.min.js"></script>
-    <script src="assets/libs/datatables.net-bs4/js/dataTables.bootstrap4.min.js"></script>
-    <!-- Buttons examples -->
-    <script src="assets/libs/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
-    <script src="assets/libs/datatables.net-buttons-bs4/js/buttons.bootstrap4.min.js"></script>
-    <script src="assets/libs/jszip/jszip.min.js"></script>
-    <script src="assets/libs/pdfmake/build/pdfmake.min.js"></script>
-    <script src="assets/libs/pdfmake/build/vfs_fonts.js"></script>
-    <script src="assets/libs/datatables.net-buttons/js/buttons.html5.min.js"></script>
-    <script src="assets/libs/datatables.net-buttons/js/buttons.print.min.js"></script>
-    <script src="assets/libs/datatables.net-buttons/js/buttons.colVis.min.js"></script>
+    <!-- apexcharts -->
+    <script src="assets/libs/apexcharts/apexcharts.min.js"></script>
 
-    <!-- Responsive examples -->
-    <script src="assets/libs/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
-    <script src="assets/libs/datatables.net-responsive-bs4/js/responsive.bootstrap4.min.js"></script>
+    <!-- dashboard init -->
+    <script src="assets/js/pages/dashboard.init.js"></script>
 
-    <!-- Datatable init js -->
-    <script src="assets/js/pages/datatables.init.js"></script>
-
+    <!-- App js -->
     <script src="assets/js/app.js"></script>
-    
-
 </body>
 
 </html>

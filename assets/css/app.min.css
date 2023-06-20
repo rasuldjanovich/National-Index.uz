@@ -197,17 +197,17 @@
 }
 
 .navbar-brand-box {
-    padding: 0 1.5rem;
+    padding: 0;
     text-align: center;
     width: 250px
 }
 
 .logo {
-    line-height: 70px
+    line-height: 70px;
 }
 
 .logo .logo-sm {
-    display: none
+    display: none;
 }
 
 .logo-light {

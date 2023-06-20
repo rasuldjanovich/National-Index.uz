@@ -9,7 +9,9 @@
     <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
     <meta content="Themesbrand" name="author" />
     <!-- App favicon -->
-    <link rel="shortcut icon" href="assets/images/minin.png">
+    <link rel="shortcut icon" href="assets/images/Untitled-2.png">
+
+    <link href="assets/libs/select2/css/select2.min.css" rel="stylesheet" type="text/css" />
 
     <!-- Bootstrap Css -->
     <link href="assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
@@ -17,6 +19,10 @@
     <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
     <!-- App Css-->
     <link href="assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
 
@@ -46,7 +52,7 @@
                         id="vertical-menu-btn">
                         <i class="fa fa-fw fa-bars"></i>
                     </button>
-                    
+
                     <a class="mt-4" href="https://phd.mininnovation.uz/" target="blank">Asosiy saytga o'tish</a>
 
                     <!-- App Search-->
@@ -271,7 +277,7 @@
                                 <p class="mx-1 mt-1">O'ktam Yaqubov</p>
                                 <i class="mt-1 mdi mdi-chevron-down d-none d-xl-inline-block"></i>
                             </div>
-                            
+
                         </button>
                         <div class="dropdown-menu dropdown-menu-end">
                             <!-- item-->
@@ -317,7 +323,7 @@
 
                         <li>
                             <a href="javascript: void(0);" class="has-arrow waves-effect">
-                                <i class="fa-light fa-sitemap"></i>
+                                <i class="fa-solid fa-building-un"></i>
                                 <span key="t-dashboards">Tashkilotlar</span>
                             </a>
                             <ul class="sub-menu" aria-expanded="false">
@@ -328,39 +334,25 @@
 
                         <li>
                             <a href="viloyat.html" class="waves-effect">
-                                <i class="bx bx-file"></i>
+                                <i class="fa-solid fa-location-dot"></i>
                                 <span key="t-file-manager">Viloyat</span>
                             </a>
                         </li>
-
-                        <!-- <li>
-                            <a href="javascript: void(0);" class="has-arrow waves-effect">
-                                <i class='bx bx-user'></i>
-                                <span key="t-dashboards">Эксперты</span>
-                            </a>
-                            <ul class="sub-menu" aria-expanded="false">
-                                <li><a href="experts-table.html">Команды</a></li>
-                                <li><a href="expert-members.html">Члены-эксперты</a></li>
-                            </ul>
-                        </li> -->
-
+                        
                         <li>
                             <a href="javascript: void(0);" class="has-arrow waves-effect">
-                                <i class='bx bx-file-blank'></i>
+                                <i class="fa-sharp fa-solid fa-star"></i>
                                 <span key="t-dashboards">Baholar reestri</span>
                             </a>
                             <ul class="sub-menu" aria-expanded="false">
                                 <li><a href="reytinglar-royxati.html">Reytinglar ro'yxati</a></li>
-                                <li><a href="reyting-qoshish.html">Yangi reyting qo'shish</a></li>
-                                <li><a href="indikator.html">Indikatorlar</a></li>
-                                <li><a href="foydalanuvchi-reyting.html">Foydalanuvchilar uchun reytinglar reestr</a></li>
                                 <li><a href="baholar-indikatori.html">Baholash indikatorlari</a></li>
                             </ul>
                         </li>
 
                         <li>
                             <a href="javascript: void(0);" class="has-arrow waves-effect">
-                                <i class='bx bx-file-blank'></i>
+                                <i class="fa-sharp fa-regular fa-newspaper"></i>
                                 <span key="t-dashboards">Yangiliklar</span>
                             </a>
                             <ul class="sub-menu" aria-expanded="false">
@@ -371,31 +363,12 @@
 
                         <li>
                             <a href="javascript: void(0);" class="has-arrow waves-effect">
-                                <i class="bx bx-calendar"></i>
-                                <span key="t-dashboards">Ilovalar</span>
-                            </a>
-                            <ul class="sub-menu" aria-expanded="false">
-                                <li><a href="#" key="t-tui-calendar">Baholash uchun ariza</a></li>
-                                <li><a href="#" key="t-full-calendar">Ekspert baholash</a></li>
-                                <li><a href="#" key="t-full-calendar">Talablar</a></li>
-                                <li><a href="#" key="t-full-calendar">Moderatsiya</a></li>
-                                <li><a href="#" key="t-full-calendar">Moderatsiyadan o'tganlar</a></li>
-                                <li><a href="#" key="t-full-calendar">Moderatsiyadan qaytarilganlar</a>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li>
-                            <a href="javascript: void(0);" class="has-arrow waves-effect">
                                 <i class="bx bxs-user-detail"></i>
                                 <span key="t-ecommerce">Foydalanuvchilar</span>
                             </a>
                             <ul class="sub-menu" aria-expanded="false">
-                                <li><a href="royxat-azolari.html" key="t-products">Roʼyxat aʼzolari</a></li>
-                                <li><a href="masul-shaxslarr.html" key="t-products">Masʼul shaxslar</a></li>
-                                <li><a href="#" key="t-product-detail">Mutaxassislar roʼyxati</a>
-                                </li>
-                                <li><a href="#" key="t-orders">Ro'yxat koordinatori</a></li>
+                                <li><a href="masul-shaxslar.html" key="t-products">Masʼul shaxslar</a></li>
+                                <li><a href="foydalanuvchilar.html" key="t-product-detail">Foydalanuvchilar roʼyxati</a></li>
                             </ul>
                         </li>
 
@@ -408,13 +381,6 @@
                                 <li><a href="tizim-sozlamalari.html" key="t-wallet">Tizim sozlamalari</a></li>
                                 <li><a href="elektron-pochta-sozlamalari.html" key="t-exchange">Elektron pochta sozlamalari</a></li>
                             </ul>
-                        </li>
-                        
-                        <li>
-                            <a href="baholash-indikator.html" class="waves-effect">
-                                <i class="bx bx-file"></i>
-                                <span key="t-file-manager">Baholash indikatorlari</span>
-                            </a>
                         </li>
                     </ul>
                 </div>
@@ -436,6 +402,9 @@
                         <div class="col-12">
                             <div class="page-title-box d-sm-flex align-items-center justify-content-between">
                                 <h4 class="mb-sm-3 font-size-18">Mas'ul shaxs qo'shish</h4>
+                                <a class="mb-sm-3" href="masul-shaxslar.html">
+                                    <button class="btn btn-primary"><i class='bx bx-left-arrow-alt font-size-16 me-1'></i> Ortga qaytish</button>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -446,52 +415,73 @@
                             <div class="card">
                                 <div class="card-body">
                                     <form action="">
+                                        <div class="templating-select pt-3 mb-3">
+                                            <select class="form-select select2-templating" id="validationCustom03"
+                                                required>
+                                                <option selected disabled value="">Tashkilot nomi</option>
+                                                <option>O'zbekiston Milliy Universiteti</option>
+                                                <option>Samarqand Arxitektura-Qurilish instituti</option>
+                                                <option>Andijon Mashinasozlik instituti</option>
+                                                <option>Farg'ona Davlat Universiteti</option>
+                                                <option>Samarqand Davlat Chet El Tillar instituti</option>
+                                            </select>
+                                        </div>
 
                                         <div class="form-floating mb-3">
-                                            <input type="text" class="form-control" id="floatingnameInput" placeholder="Role ni kiriting..." required>
+                                            <input type="text" class="form-control" id="floatingnameInput"
+                                                placeholder="Role ni kiriting..." required>
                                             <label for="floatingnameInput">Role kiriting...</label>
                                         </div>
                                         <div class="form-floating mb-3">
-                                            <input type="text" class="form-control" id="floatingnameInput" placeholder="Familiya ni kiriting..." required>
+                                            <input type="text" class="form-control" id="floatingnameInput"
+                                                placeholder="Familiya ni kiriting..." required>
                                             <label for="floatingnameInput">Familiya kiriting...</label>
                                         </div>
                                         <div class="form-floating mb-3">
-                                            <input type="text" class="form-control" id="floatingnameInput" placeholder="Ism ni kiriting..." required>
+                                            <input type="text" class="form-control" id="floatingnameInput"
+                                                placeholder="Ism ni kiriting..." required>
                                             <label for="floatingnameInput">Ism kiriting...</label>
                                         </div>
                                         <div class="form-floating mb-3">
-                                            <input type="text" class="form-control" id="floatingnameInput" placeholder="STIR ni kiriting..." required>
+                                            <input type="text" class="form-control" id="floatingnameInput"
+                                                placeholder="STIR ni kiriting..." required>
                                             <label for="floatingnameInput">Otasining ismini kiriting...</label>
                                         </div>
                                         <div class="form-floating mb-3">
-                                            <input type="text" class="form-control" id="floatingnameInput" placeholder="STIR ni kiriting..." required>
+                                            <input type="text" class="form-control" id="floatingnameInput"
+                                                placeholder="STIR ni kiriting..." required>
                                             <label for="floatingnameInput">STIR kiriting...</label>
                                         </div>
                                         <div class="form-floating mb-3">
-                                            <input type="text" class="form-control" id="floatingnameInput" placeholder="To'liq ismingizni kiriting..." required>
+                                            <input type="text" class="form-control" id="floatingnameInput"
+                                                placeholder="To'liq ismingizni kiriting..." required>
                                             <label for="floatingnameInput">To'liq ism kiriting...</label>
                                         </div>
-                                        
+
                                         <div class="form-floating mb-3">
-                                            <input type="email" class="form-control" id="floatingnameInput" placeholder="Elektron pochtangizni kiriting..." required>
+                                            <input type="email" class="form-control" id="floatingnameInput"
+                                                placeholder="Elektron pochtangizni kiriting..." required>
                                             <label for="floatingnameInput">Elektron pochta kiriting...</label>
                                         </div>
 
                                         <div class="form-floating mb-3">
-                                            <input type="date" class="form-control" id="floatingnameInput" placeholder="Elektron pochtangizni kiriting..." required>
+                                            <input type="date" class="form-control" id="floatingnameInput"
+                                                placeholder="Elektron pochtangizni kiriting..." required>
                                             <label for="floatingnameInput">Tug'ilgan kun, yil, kiriting...</label>
                                         </div>
 
                                         <div class="form-floating mb-3">
-                                            <input type="text" class="form-control" id="floatingnameInput" placeholder="Kompaniya kiriting..." required>
+                                            <input type="text" class="form-control" id="floatingnameInput"
+                                                placeholder="Kompaniya kiriting..." required>
                                             <label for="floatingnameInput">Kompaniya kiriting...</label>
                                         </div>
 
                                         <div class="form-floating mb-3">
-                                            <input type="text" class="form-control" id="floatingnameInput" placeholder="PNFL kiriting..." required>
+                                            <input type="text" class="form-control" id="floatingnameInput"
+                                                placeholder="PNFL kiriting..." required>
                                             <label for="floatingnameInput">PNFL kiriting...</label>
                                         </div>
-                                        
+
                                         <div class="mb-3 row">
                                             <div class="form-floating col-md-1">
                                                 <input class="form-control" type="text" placeholder="AA"
@@ -501,7 +491,8 @@
                                             <div class="form-floating col-md-11">
                                                 <input class="form-control" type="text" placeholder="AA"
                                                     id="example-text-input" required>
-                                                <label class="mx-3" for="floatingnameInput">Pasport seriya kiriting...</label>
+                                                <label class="mx-3" for="floatingnameInput">Pasport seriya
+                                                    kiriting...</label>
                                             </div>
                                         </div>
 
@@ -513,7 +504,8 @@
                                             <div class="form-floating col-md-11">
                                                 <input class="form-control" type="number" placeholder="AA"
                                                     id="example-text-input" required>
-                                                <label class="mx-3" for="floatingnameInput">Telefon raqam kiriting...</label>
+                                                <label class="mx-3" for="floatingnameInput">Telefon raqam
+                                                    kiriting...</label>
                                             </div>
                                         </div>
 
@@ -721,6 +713,10 @@
     <script src="assets/libs/simplebar/simplebar.min.js"></script>
     <script src="assets/libs/node-waves/waves.min.js"></script>
 
+    <script src="assets/libs/parsleyjs/parsley.min.js"></script>
+    <script src="assets/js/pages/form-validation.init.js"></script>
+    <script src="assets/libs/select2/js/select2.min.js"></script>
+
     <!-- apexcharts -->
     <script src="assets/libs/apexcharts/apexcharts.min.js"></script>
 
@@ -729,6 +725,9 @@
 
     <!-- App js -->
     <script src="assets/js/app.js"></script>
+
+    <!-- form advanced init -->
+    <script src="assets/js/pages/form-advanced.init.js"></script>
 </body>
 
 </html>
