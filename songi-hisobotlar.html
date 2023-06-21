@@ -4,25 +4,12 @@
 <head>
 
     <meta charset="utf-8" />
-    <title>Data Tables | Skote - Admin & Dashboard Template</title>
+    <title>National Index</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
     <meta content="Themesbrand" name="author" />
     <!-- App favicon -->
     <link rel="shortcut icon" href="assets/images/Untitled-2.png">
-
-    <!-- DataTables -->
-    <link href="assets/libs/datatables.net-bs4/css/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css" />
-    <link href="assets/libs/datatables.net-buttons-bs4/css/buttons.bootstrap4.min.css" rel="stylesheet"
-        type="text/css" />
-
-    <!-- Responsive datatable examples -->
-    <link href="assets/libs/datatables.net-responsive-bs4/css/responsive.bootstrap4.min.css" rel="stylesheet"
-        type="text/css" />
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- Bootstrap Css -->
     <link href="assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
@@ -30,6 +17,10 @@
     <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
     <!-- App Css-->
     <link href="assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
 
@@ -321,7 +312,7 @@
                                 <span key="t-file-manager">Boshqaruv paneli</span>
                             </a>
                         </li>
-                        
+
                         <li>
                             <a href="vazirlik.html" class="waves-effect">
                                 <i class="fa-solid fa-building"></i>
@@ -347,7 +338,7 @@
                                 <span key="t-file-manager">Viloyat</span>
                             </a>
                         </li>
-                        
+
                         <li>
                             <a href="javascript: void(0);" class="has-arrow waves-effect">
                                 <i class="fa-sharp fa-solid fa-star"></i>
@@ -377,7 +368,8 @@
                             </a>
                             <ul class="sub-menu" aria-expanded="false">
                                 <li><a href="masul-shaxslar.html" key="t-products">Masʼul shaxslar</a></li>
-                                <li><a href="foydalanuvchilar.html" key="t-product-detail">Foydalanuvchilar roʼyxati</a></li>
+                                <li><a href="foydalanuvchilar.html" key="t-product-detail">Foydalanuvchilar roʼyxati</a>
+                                </li>
                             </ul>
                         </li>
 
@@ -388,7 +380,8 @@
                             </a>
                             <ul class="sub-menu" aria-expanded="false">
                                 <li><a href="tizim-sozlamalari.html" key="t-wallet">Tizim sozlamalari</a></li>
-                                <li><a href="elektron-pochta-sozlamalari.html" key="t-exchange">Elektron pochta sozlamalari</a></li>
+                                <li><a href="elektron-pochta-sozlamalari.html" key="t-exchange">Elektron pochta
+                                        sozlamalari</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -412,11 +405,7 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                                <h4 class="mb-sm-3 font-size-18">Hisobotlar ro'yxati</h4>
-
-                                <a href="yangi-tashkilot-qoshish2.html">
-                                    <button class="btn btn-success mb-3"><i class='bx bx-plus'></i> Qo'shish</button>
-                                </a>
+                                <h4 class="mb-sm-3 font-size-18">So'ngi hisobortlar</h4>
                             </div>
                         </div>
                     </div>
@@ -426,76 +415,201 @@
                         <div class="col-12">
                             <div class="card">
                                 <div class="card-body">
+                                    <div class="row mb-2">
+                                        <div class="col-sm-4">
+                                            <div class="search-box me-2 mb-2 d-inline-block">
+                                                <div class="position-relative">
+                                                    <input type="text" class="form-control" placeholder="Qidiruv...">
+                                                    <i class="bx bx-search-alt search-icon"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
 
-                                    <table id="datatable"
-                                        class="table table-bordered dt-responsive w-100 table-striped">
-                                        <thead>
-                                            <tr class="bg-secondary text-white">
-                                                <th>ID</th>
-                                                <th>Reyting nomi</th>
-                                                <th>Holati</th>
-                                                <th>Amallar</th>
-                                            </tr>
-                                        </thead>
-                                        
-                                        <tbody>
-                                            <tr>
-                                                <td>1</td>
-                                                <td>Илмий ташкилотлар ва олий таълим муассасаларининг илмий-инновацион фаолиятини баҳолаш</td>
-                                                <td> <span class="badge badge-pill badge-soft-success font-size-11">Tasdiqlangan</span> </td>
-                                                <td>
-                                                    <a href="hisobotlar-tarixi.html" class="mx-2">
-                                                        <i class="bx bx-time-five font-size-16 me-1"></i>
-                                                    </a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>2</td>
-                                                <td>Илмий-тадқиқот фаолиятининг самарадорлигини синаш ва ишлаб чиқаришга жорий этиш бўйича ташкил этилган инфратузилма</td>
-                                                <td> <span class="badge badge-pill badge-soft-danger font-size-11">Tasdiqlanmagan</span> </td>
-                                                <td>
-                                                    <a href="hisobotlar-tarixi.html" class="mx-2">
-                                                        <i class="bx bx-time-five font-size-16 me-1"></i>
-                                                    </a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>3</td>
-                                                <td>Илмий ташкилотлар ва олий таълим муассасаларининг илмий-инновацион фаолиятини баҳолаш</td>
-                                                <td> <span class="badge badge-pill badge-soft-success font-size-11">Tasdiqlangan</span> </td>
-                                                <td>
-                                                    <a href="hisobotlar-tarixi.html" class="mx-2">
-                                                        <i class="bx bx-time-five font-size-16 me-1"></i>
-                                                    </a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>4</td>
-                                                <td>Илмий-тадқиқот фаолиятининг самарадорлигини синаш ва ишлаб чиқаришга жорий этиш бўйича ташкил этилган инфратузилма</td>
-                                                <td> <span class="badge badge-pill badge-soft-danger font-size-11">Tasdiqlanmagan</span> </td>
-                                                <td>
-                                                    <a href="hisobotlar-tarixi.html" class="mx-2">
-                                                        <i class="bx bx-time-five font-size-16 me-1"></i>
-                                                    </a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>5</td>
-                                                <td>Илмий ташкилотлар ва олий таълим муассасаларининг илмий-инновацион фаолиятини баҳолаш</td>
-                                                <td> <span class="badge badge-pill badge-soft-success font-size-11">Tasdiqlangan</span> </td>
-                                                <td>
-                                                    <a href="hisobotlar-tarixi.html" class="mx-2">
-                                                        <i class="bx bx-time-five font-size-16 me-1"></i>
-                                                    </a>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-
+                                    <div class="table-responsive">
+                                        <table class="table align-middle">
+                                            <thead>
+                                                <tr>
+                                                    <th>#</th>
+                                                    <th>Tashkilot nomi</th>
+                                                    <th>Reyting nomi</th>
+                                                    <th>Yuborilgan sanasi</th>
+                                                    <th>Holati</th>
+                                                    <th>Amallar</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>O'zbekiston Milliy Universiteti</td>
+                                                    <td>Илмий ташкилотлар ва олий таълим муассасаларининг илмий-инновацион фаолиятини баҳолаш</td>
+                                                    <td>24 Iyul, 2024</td>
+                                                    <td> <span class="badge badge-pill badge-soft-success font-size-11">Yangi</span> </td>
+                                                    <td>
+                                                        <div class="dropdown">
+                                                            <a href="#" class="dropdown-toggle card-drop"
+                                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                                <i class="mdi mdi-dots-horizontal font-size-18"></i>
+                                                            </a>
+                                                            <ul class="dropdown-menu dropdown-menu-end">
+                                                                <li><a href="indikatorlar.html"
+                                                                        class="dropdown-item">
+                                                                        <i
+                                                                            class="mdi mdi-eye font-size-16 text-success me-1"></i>
+                                                                        Batafsil ma'lumot</a></li>
+                                                                <li><a href="#" class="dropdown-item"><i
+                                                                            class="mdi mdi-exclamation-thick font-size-16 text-warning me-1"></i>
+                                                                        Statusni o'zgartirish</a></li>
+                                                                <li><a href="hisobotlar-tarixi.html" class="dropdown-item"><i
+                                                                            class="bx bx-time-five font-size-16 text-success me-1"></i>
+                                                                        Harakatlar tarixi</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2</td>
+                                                    <td>Samarqand Arxitektura-Qurilish instituti</td>
+                                                    <td>Илмий-тадқиқот фаолиятининг самарадорлигини синаш ва ишлаб чиқаришга жорий этиш бўйича ташкил этилган инфратузилма </td>
+                                                    <td>25 Iyul, 2024</td>
+                                                    <td> <span class="badge badge-pill badge-soft-danger font-size-11">Qayta yuborilgan</span> </td>
+                                                    <td>
+                                                        <div class="dropdown">
+                                                            <a href="#" class="dropdown-toggle card-drop"
+                                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                                <i class="mdi mdi-dots-horizontal font-size-18"></i>
+                                                            </a>
+                                                            <ul class="dropdown-menu dropdown-menu-end">
+                                                                <li><a href="indikatorlar.html"
+                                                                        class="dropdown-item">
+                                                                        <i
+                                                                            class="mdi mdi-eye font-size-16 text-success me-1"></i>
+                                                                        Batafsil ma'lumot</a></li>
+                                                                <li><a href="#" class="dropdown-item"><i
+                                                                            class="mdi mdi-exclamation-thick font-size-16 text-warning me-1"></i>
+                                                                        Statusni o'zgartirish</a></li>
+                                                                <li><a href="hisobotlar-tarixi.html" class="dropdown-item"><i
+                                                                            class="bx bx-time-five font-size-16 text-success me-1"></i>
+                                                                        Harakatlar tarixi</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>3</td>
+                                                    <td>Andijon Mashinasozlik instituti</td>
+                                                    <td>Илмий ташкилотлар ва олий таълим муассасаларининг илмий-инновацион фаолиятини баҳолаш</td>
+                                                    <td>26 Iyul, 2024</td>
+                                                    <td> <span class="badge badge-pill badge-soft-success font-size-11">Yangi</span> </td>
+                                                    <td>
+                                                        <div class="dropdown">
+                                                            <a href="#" class="dropdown-toggle card-drop"
+                                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                                <i class="mdi mdi-dots-horizontal font-size-18"></i>
+                                                            </a>
+                                                            <ul class="dropdown-menu dropdown-menu-end">
+                                                                <li><a href="indikatorlar.html"
+                                                                        class="dropdown-item">
+                                                                        <i
+                                                                            class="mdi mdi-eye font-size-16 text-success me-1"></i>
+                                                                        Batafsil ma'lumot</a></li>
+                                                                <li><a href="#" class="dropdown-item"><i
+                                                                            class="mdi mdi-exclamation-thick font-size-16 text-warning me-1"></i>
+                                                                        Statusni o'zgartirish</a></li>
+                                                                <li><a href="hisobotlar-tarixi.html" class="dropdown-item"><i
+                                                                            class="bx bx-time-five font-size-16 text-success me-1"></i>
+                                                                        Harakatlar tarixi</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>4</td>
+                                                    <td>Farg'ona Davlat Universiteti</td>
+                                                    <td>Илмий-тадқиқот фаолиятининг самарадорлигини синаш ва ишлаб чиқаришга жорий этиш бўйича ташкил этилган инфратузилма</td>
+                                                    <td>27 Iyul, 2024</td>
+                                                    <td> <span class="badge badge-pill badge-soft-danger font-size-11">Qayta yubotilgan</span> </td>
+                                                    <td>
+                                                        <div class="dropdown">
+                                                            <a href="#" class="dropdown-toggle card-drop"
+                                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                                <i class="mdi mdi-dots-horizontal font-size-18"></i>
+                                                            </a>
+                                                            <ul class="dropdown-menu dropdown-menu-end">
+                                                                <li><a href="indikatorlar.html"
+                                                                        class="dropdown-item">
+                                                                        <i
+                                                                            class="mdi mdi-eye font-size-16 text-success me-1"></i>
+                                                                        Batafsil ma'lumot</a></li>
+                                                                <li><a href="#" class="dropdown-item"><i
+                                                                            class="mdi mdi-exclamation-thick font-size-16 text-warning me-1"></i>
+                                                                        Statusni o'zgartirish</a></li>
+                                                                <li><a href="hisobotlar-tarixi.html" class="dropdown-item"><i
+                                                                            class="bx bx-time-five font-size-16 text-success me-1"></i>
+                                                                        Harakatlar tarixi</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>5</td>
+                                                    <td>Samarqand Davlat Chet El Tillar instituti</td>
+                                                    <td>Илмий ташкилотлар ва олий таълим муассасаларининг илмий-инновацион фаолиятини баҳолаш
+                                                    </td>
+                                                    <td>28 Iyul, 2024</td>
+                                                    <td> <span class="badge badge-pill badge-soft-success font-size-11">Yangi</span> </td>
+                                                    <td>
+                                                        <div class="dropdown">
+                                                            <a href="#" class="dropdown-toggle card-drop"
+                                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                                <i class="mdi mdi-dots-horizontal font-size-18"></i>
+                                                            </a>
+                                                            <ul class="dropdown-menu dropdown-menu-end">
+                                                                <li><a href="indikatorlar.html"
+                                                                        class="dropdown-item">
+                                                                        <i
+                                                                            class="mdi mdi-eye font-size-16 text-success me-1"></i>
+                                                                        Batafsil ma'lumot</a></li>
+                                                                <li><a href="#" class="dropdown-item"><i
+                                                                            class="mdi mdi-exclamation-thick font-size-16 text-warning me-1"></i>
+                                                                        Statusni o'zgartirish</a></li>
+                                                                <li><a href="hisobotlar-tarixi.html" class="dropdown-item"><i
+                                                                            class="bx bx-time-five font-size-16 text-success me-1"></i>
+                                                                        Harakatlar tarixi</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <ul class="pagination pagination-rounded justify-content-end mb-2">
+                                        <li class="page-item disabled">
+                                            <a class="page-link" href="javascript: void(0);" aria-label="Previous">
+                                                <i class="mdi mdi-chevron-left"></i>
+                                            </a>
+                                        </li>
+                                        <li class="page-item active"><a class="page-link"
+                                                href="javascript: void(0);">1</a></li>
+                                        <li class="page-item"><a class="page-link" href="javascript: void(0);">2</a>
+                                        </li>
+                                        <li class="page-item"><a class="page-link" href="javascript: void(0);">3</a>
+                                        </li>
+                                        <li class="page-item"><a class="page-link" href="javascript: void(0);">4</a>
+                                        </li>
+                                        <li class="page-item"><a class="page-link" href="javascript: void(0);">5</a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="javascript: void(0);" aria-label="Next">
+                                                <i class="mdi mdi-chevron-right"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
-                        </div> <!-- end col -->
-                    </div> <!-- end row -->
+                        </div>
+                    </div>
+                    <!-- end row -->
 
                 </div> <!-- container-fluid -->
             </div>
@@ -593,69 +707,9 @@
     <script src="assets/libs/simplebar/simplebar.min.js"></script>
     <script src="assets/libs/node-waves/waves.min.js"></script>
 
-    <!-- Required datatable js -->
-    <script src="assets/libs/datatables.net/js/jquery.dataTables.min.js"></script>
-    <script src="assets/libs/datatables.net-bs4/js/dataTables.bootstrap4.min.js"></script>
-    <!-- Buttons examples -->
-    <script src="assets/libs/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
-    <script src="assets/libs/datatables.net-buttons-bs4/js/buttons.bootstrap4.min.js"></script>
-    <script src="assets/libs/jszip/jszip.min.js"></script>
-    <script src="assets/libs/pdfmake/build/pdfmake.min.js"></script>
-    <script src="assets/libs/pdfmake/build/vfs_fonts.js"></script>
-    <script src="assets/libs/datatables.net-buttons/js/buttons.html5.min.js"></script>
-    <script src="assets/libs/datatables.net-buttons/js/buttons.print.min.js"></script>
-    <script src="assets/libs/datatables.net-buttons/js/buttons.colVis.min.js"></script>
-
-    <!-- Responsive examples -->
-    <script src="assets/libs/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
-    <script src="assets/libs/datatables.net-responsive-bs4/js/responsive.bootstrap4.min.js"></script>
-
-    <!-- Datatable init js -->
-    <script src="assets/js/pages/datatables.init.js"></script>
-
+    <!-- App js -->
     <script src="assets/js/app.js"></script>
 
-
-    <!-- Code injected by live-server -->
-    <script>
-        // <![CDATA[  <-- For SVG support
-        if ('WebSocket' in window) {
-            (function () {
-                function refreshCSS() {
-                    var sheets = [].slice.call(document.getElementsByTagName("link"));
-                    var head = document.getElementsByTagName("head")[0];
-                    for (var i = 0; i < sheets.length; ++i) {
-                        var elem = sheets[i];
-                        var parent = elem.parentElement || head;
-                        parent.removeChild(elem);
-                        var rel = elem.rel;
-                        if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() ==
-                            "stylesheet") {
-                            var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
-                            elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date()
-                                .valueOf());
-                        }
-                        parent.appendChild(elem);
-                    }
-                }
-                var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
-                var address = protocol + window.location.host + window.location.pathname + '/ws';
-                var socket = new WebSocket(address);
-                socket.onmessage = function (msg) {
-                    if (msg.data == 'reload') window.location.reload();
-                    else if (msg.data == 'refreshcss') refreshCSS();
-                };
-                if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
-                    console.log('Live reload enabled.');
-                    sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
-                }
-            })();
-        } else {
-            console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
-        }
-        // ]]>
-
-    </script>
 </body>
 
 </html>
