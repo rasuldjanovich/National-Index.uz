@@ -22,6 +22,17 @@
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+
+    <!-- Tiny script-->
+    <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+
+    <script>
+        tinymce.init({
+            selector: '#mytextarea'
+        });
+
+    </script>
+
 </head>
 
 <body data-sidebar="dark" data-layout-mode="light">
@@ -357,7 +368,8 @@
                             </a>
                             <ul class="sub-menu" aria-expanded="false">
                                 <li><a href="songi-hisobotlar.html">So'ngi hisobotlar</a></li>
-                                <li><a href="korib-chiqilayotgan-hisobotlar.html">Ko'rib chiqilayotgan hisobotlar</a></li>
+                                <li><a href="korib-chiqilayotgan-hisobotlar.html">Ko'rib chiqilayotgan hisobotlar</a>
+                                </li>
                                 <li><a href="qaytarilgan-hisobotlar.html">Qaytarilgan hisobotlar</a></li>
                                 <li><a href="tasdiqlangan-hisobotlar.html">Tasdiqlangan hisobotlar</a></li>
                             </ul>
@@ -370,7 +382,8 @@
                             </a>
                             <ul class="sub-menu" aria-expanded="false">
                                 <li><a href="songi-shikoyatlar.html">So'ngi shikoyatlar</a></li>
-                                <li><a href="korib-chiqilayotgan-shikoyatlar.html">Ko'rib chiqilayotgan shikoyatlar</a></li>
+                                <li><a href="korib-chiqilayotgan-shikoyatlar.html">Ko'rib chiqilayotgan shikoyatlar</a>
+                                </li>
                                 <li><a href="korib-chiqilgan-shikoyatlar.html">Ko'rib chiqilgan shikoyatlar</a></li>
                             </ul>
                         </li>
@@ -430,7 +443,7 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                                <h4 class="mb-sm-3 font-size-18">So'ngi hisobortlar</h4>
+                                <h4 class="mb-sm-3 font-size-18">So'ngi hisobotlar</h4>
                             </div>
                         </div>
                     </div>
@@ -467,9 +480,12 @@
                                                 <tr>
                                                     <td>1</td>
                                                     <td>O'zbekiston Milliy Universiteti</td>
-                                                    <td>Илмий ташкилотлар ва олий таълим муассасаларининг илмий-инновацион фаолиятини баҳолаш</td>
+                                                    <td>Илмий ташкилотлар ва олий таълим муассасаларининг
+                                                        илмий-инновацион фаолиятини баҳолаш</td>
                                                     <td>24 Iyul, 2024</td>
-                                                    <td> <span class="badge badge-pill badge-soft-success font-size-11">Yangi</span> </td>
+                                                    <td> <span
+                                                            class="badge badge-pill badge-soft-success font-size-11">Yangi</span>
+                                                    </td>
                                                     <td>
                                                         <div class="dropdown">
                                                             <a href="#" class="dropdown-toggle card-drop"
@@ -477,15 +493,22 @@
                                                                 <i class="mdi mdi-dots-horizontal font-size-18"></i>
                                                             </a>
                                                             <ul class="dropdown-menu dropdown-menu-end">
-                                                                <li><a href="indikatorlar.html"
-                                                                        class="dropdown-item">
+                                                                <li><a href="indikatorlar.html" class="dropdown-item">
                                                                         <i
                                                                             class="mdi mdi-eye font-size-16 text-success me-1"></i>
                                                                         Batafsil ma'lumot</a></li>
-                                                                <li><a href="#" class="dropdown-item"><i
+                                                                <li>
+                                                                    <a href="#" class="dropdown-item"
+                                                                        data-bs-toggle="modal"
+                                                                        data-bs-target=".bs-example-modal-lg">
+                                                                        <i
                                                                             class="mdi mdi-exclamation-thick font-size-16 text-warning me-1"></i>
-                                                                        Statusni o'zgartirish</a></li>
-                                                                <li><a href="hisobotlar-tarixi.html" class="dropdown-item"><i
+                                                                        Statusni o'zgartirish
+                                                                    </a>
+                                                                </li>
+
+                                                                <li><a href="hisobotlar-tarixi.html"
+                                                                        class="dropdown-item"><i
                                                                             class="bx bx-time-five font-size-16 text-success me-1"></i>
                                                                         Harakatlar tarixi</a></li>
                                                             </ul>
@@ -495,9 +518,12 @@
                                                 <tr>
                                                     <td>2</td>
                                                     <td>Samarqand Arxitektura-Qurilish instituti</td>
-                                                    <td>Илмий-тадқиқот фаолиятининг самарадорлигини синаш ва ишлаб чиқаришга жорий этиш бўйича ташкил этилган инфратузилма </td>
+                                                    <td>Илмий-тадқиқот фаолиятининг самарадорлигини синаш ва ишлаб
+                                                        чиқаришга жорий этиш бўйича ташкил этилган инфратузилма </td>
                                                     <td>25 Iyul, 2024</td>
-                                                    <td> <span class="badge badge-pill badge-soft-danger font-size-11">Qayta yuborilgan</span> </td>
+                                                    <td> <span
+                                                            class="badge badge-pill badge-soft-danger font-size-11">Qayta
+                                                            yuborilgan</span> </td>
                                                     <td>
                                                         <div class="dropdown">
                                                             <a href="#" class="dropdown-toggle card-drop"
@@ -505,15 +531,21 @@
                                                                 <i class="mdi mdi-dots-horizontal font-size-18"></i>
                                                             </a>
                                                             <ul class="dropdown-menu dropdown-menu-end">
-                                                                <li><a href="indikatorlar.html"
-                                                                        class="dropdown-item">
+                                                                <li><a href="indikatorlar.html" class="dropdown-item">
                                                                         <i
                                                                             class="mdi mdi-eye font-size-16 text-success me-1"></i>
                                                                         Batafsil ma'lumot</a></li>
-                                                                <li><a href="#" class="dropdown-item"><i
-                                                                            class="mdi mdi-exclamation-thick font-size-16 text-warning me-1"></i>
-                                                                        Statusni o'zgartirish</a></li>
-                                                                <li><a href="hisobotlar-tarixi.html" class="dropdown-item"><i
+                                                                        <li>
+                                                                            <a href="#" class="dropdown-item"
+                                                                                data-bs-toggle="modal"
+                                                                                data-bs-target=".bs-example-modal-lg">
+                                                                                <i
+                                                                                    class="mdi mdi-exclamation-thick font-size-16 text-warning me-1"></i>
+                                                                                Statusni o'zgartirish
+                                                                            </a>
+                                                                        </li>
+                                                                <li><a href="hisobotlar-tarixi.html"
+                                                                        class="dropdown-item"><i
                                                                             class="bx bx-time-five font-size-16 text-success me-1"></i>
                                                                         Harakatlar tarixi</a></li>
                                                             </ul>
@@ -523,9 +555,12 @@
                                                 <tr>
                                                     <td>3</td>
                                                     <td>Andijon Mashinasozlik instituti</td>
-                                                    <td>Илмий ташкилотлар ва олий таълим муассасаларининг илмий-инновацион фаолиятини баҳолаш</td>
+                                                    <td>Илмий ташкилотлар ва олий таълим муассасаларининг
+                                                        илмий-инновацион фаолиятини баҳолаш</td>
                                                     <td>26 Iyul, 2024</td>
-                                                    <td> <span class="badge badge-pill badge-soft-success font-size-11">Yangi</span> </td>
+                                                    <td> <span
+                                                            class="badge badge-pill badge-soft-success font-size-11">Yangi</span>
+                                                    </td>
                                                     <td>
                                                         <div class="dropdown">
                                                             <a href="#" class="dropdown-toggle card-drop"
@@ -533,15 +568,21 @@
                                                                 <i class="mdi mdi-dots-horizontal font-size-18"></i>
                                                             </a>
                                                             <ul class="dropdown-menu dropdown-menu-end">
-                                                                <li><a href="indikatorlar.html"
-                                                                        class="dropdown-item">
+                                                                <li><a href="indikatorlar.html" class="dropdown-item">
                                                                         <i
                                                                             class="mdi mdi-eye font-size-16 text-success me-1"></i>
                                                                         Batafsil ma'lumot</a></li>
-                                                                <li><a href="#" class="dropdown-item"><i
-                                                                            class="mdi mdi-exclamation-thick font-size-16 text-warning me-1"></i>
-                                                                        Statusni o'zgartirish</a></li>
-                                                                <li><a href="hisobotlar-tarixi.html" class="dropdown-item"><i
+                                                                        <li>
+                                                                            <a href="#" class="dropdown-item"
+                                                                                data-bs-toggle="modal"
+                                                                                data-bs-target=".bs-example-modal-lg">
+                                                                                <i
+                                                                                    class="mdi mdi-exclamation-thick font-size-16 text-warning me-1"></i>
+                                                                                Statusni o'zgartirish
+                                                                            </a>
+                                                                        </li>
+                                                                <li><a href="hisobotlar-tarixi.html"
+                                                                        class="dropdown-item"><i
                                                                             class="bx bx-time-five font-size-16 text-success me-1"></i>
                                                                         Harakatlar tarixi</a></li>
                                                             </ul>
@@ -551,9 +592,12 @@
                                                 <tr>
                                                     <td>4</td>
                                                     <td>Farg'ona Davlat Universiteti</td>
-                                                    <td>Илмий-тадқиқот фаолиятининг самарадорлигини синаш ва ишлаб чиқаришга жорий этиш бўйича ташкил этилган инфратузилма</td>
+                                                    <td>Илмий-тадқиқот фаолиятининг самарадорлигини синаш ва ишлаб
+                                                        чиқаришга жорий этиш бўйича ташкил этилган инфратузилма</td>
                                                     <td>27 Iyul, 2024</td>
-                                                    <td> <span class="badge badge-pill badge-soft-danger font-size-11">Qayta yubotilgan</span> </td>
+                                                    <td> <span
+                                                            class="badge badge-pill badge-soft-danger font-size-11">Qayta
+                                                            yubotilgan</span> </td>
                                                     <td>
                                                         <div class="dropdown">
                                                             <a href="#" class="dropdown-toggle card-drop"
@@ -561,15 +605,21 @@
                                                                 <i class="mdi mdi-dots-horizontal font-size-18"></i>
                                                             </a>
                                                             <ul class="dropdown-menu dropdown-menu-end">
-                                                                <li><a href="indikatorlar.html"
-                                                                        class="dropdown-item">
+                                                                <li><a href="indikatorlar.html" class="dropdown-item">
                                                                         <i
                                                                             class="mdi mdi-eye font-size-16 text-success me-1"></i>
                                                                         Batafsil ma'lumot</a></li>
-                                                                <li><a href="#" class="dropdown-item"><i
-                                                                            class="mdi mdi-exclamation-thick font-size-16 text-warning me-1"></i>
-                                                                        Statusni o'zgartirish</a></li>
-                                                                <li><a href="hisobotlar-tarixi.html" class="dropdown-item"><i
+                                                                        <li>
+                                                                            <a href="#" class="dropdown-item"
+                                                                                data-bs-toggle="modal"
+                                                                                data-bs-target=".bs-example-modal-lg">
+                                                                                <i
+                                                                                    class="mdi mdi-exclamation-thick font-size-16 text-warning me-1"></i>
+                                                                                Statusni o'zgartirish
+                                                                            </a>
+                                                                        </li>
+                                                                <li><a href="hisobotlar-tarixi.html"
+                                                                        class="dropdown-item"><i
                                                                             class="bx bx-time-five font-size-16 text-success me-1"></i>
                                                                         Harakatlar tarixi</a></li>
                                                             </ul>
@@ -579,10 +629,13 @@
                                                 <tr>
                                                     <td>5</td>
                                                     <td>Samarqand Davlat Chet El Tillar instituti</td>
-                                                    <td>Илмий ташкилотлар ва олий таълим муассасаларининг илмий-инновацион фаолиятини баҳолаш
+                                                    <td>Илмий ташкилотлар ва олий таълим муассасаларининг
+                                                        илмий-инновацион фаолиятини баҳолаш
                                                     </td>
                                                     <td>28 Iyul, 2024</td>
-                                                    <td> <span class="badge badge-pill badge-soft-success font-size-11">Yangi</span> </td>
+                                                    <td> <span
+                                                            class="badge badge-pill badge-soft-success font-size-11">Yangi</span>
+                                                    </td>
                                                     <td>
                                                         <div class="dropdown">
                                                             <a href="#" class="dropdown-toggle card-drop"
@@ -590,15 +643,21 @@
                                                                 <i class="mdi mdi-dots-horizontal font-size-18"></i>
                                                             </a>
                                                             <ul class="dropdown-menu dropdown-menu-end">
-                                                                <li><a href="indikatorlar.html"
-                                                                        class="dropdown-item">
+                                                                <li><a href="indikatorlar.html" class="dropdown-item">
                                                                         <i
                                                                             class="mdi mdi-eye font-size-16 text-success me-1"></i>
                                                                         Batafsil ma'lumot</a></li>
-                                                                <li><a href="#" class="dropdown-item"><i
-                                                                            class="mdi mdi-exclamation-thick font-size-16 text-warning me-1"></i>
-                                                                        Statusni o'zgartirish</a></li>
-                                                                <li><a href="hisobotlar-tarixi.html" class="dropdown-item"><i
+                                                                        <li>
+                                                                            <a href="#" class="dropdown-item"
+                                                                                data-bs-toggle="modal"
+                                                                                data-bs-target=".bs-example-modal-lg">
+                                                                                <i
+                                                                                    class="mdi mdi-exclamation-thick font-size-16 text-warning me-1"></i>
+                                                                                Statusni o'zgartirish
+                                                                            </a>
+                                                                        </li>
+                                                                <li><a href="hisobotlar-tarixi.html"
+                                                                        class="dropdown-item"><i
                                                                             class="bx bx-time-five font-size-16 text-success me-1"></i>
                                                                         Harakatlar tarixi</a></li>
                                                             </ul>
@@ -635,6 +694,34 @@
                         </div>
                     </div>
                     <!-- end row -->
+
+                    <!--  Modal example -->
+                    <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog"
+                        aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="myLargeModalLabel">Hisobot holatini o'zgartirish</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <form action="" class="needs-validation" novalidate>
+                                    <div class="modal-body">
+                                        <label for="">Izoh qoldiring</label>
+                                        <textarea required id="mytextarea"></textarea>
+                                        <div class="invalid-feedback">
+                                            Majburiy maydon to'ldirilsin
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button class="btn btn-danger">Qaytarish</button>
+                                        <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Ko'rib chiqishga o'tkazish</button>
+                                        <button type="button" class="btn btn-success" data-bs-dismiss="modal">Tasdiqlash</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
 
                 </div> <!-- container-fluid -->
             </div>
@@ -731,6 +818,10 @@
     <script src="assets/libs/metismenu/metisMenu.min.js"></script>
     <script src="assets/libs/simplebar/simplebar.min.js"></script>
     <script src="assets/libs/node-waves/waves.min.js"></script>
+
+    <script src="assets/libs/parsleyjs/parsley.min.js"></script>
+    <script src="assets/js/pages/form-validation.init.js"></script>
+    <script src="assets/libs/select2/js/select2.min.js"></script>
 
     <!-- App js -->
     <script src="assets/js/app.js"></script>
