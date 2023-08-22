@@ -17,6 +17,8 @@
     <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
     <!-- App Css-->
     <link href="assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
+    <!-- Map CSS -->
+    <link rel="stylesheet" href="./assets/js/jqvmap/jquery.vmap.min.js">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
@@ -519,25 +521,49 @@
 
                             <div class="card">
                                 <div class="card-body">
-                                    <div class="d-sm-flex flex-wrap">
-                                        <h4 class="card-title mb-4">Email Sent</h4>
-                                        <div class="ms-auto">
-                                            <ul class="nav nav-pills">
-                                                <li class="nav-item">
-                                                    <a class="nav-link" href="#">Week</a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a class="nav-link" href="#">Month</a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a class="nav-link active" href="#">Year</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
 
-                                    <div id="stacked-column-chart" class="apex-charts"
-                                        data-colors='["--bs-primary", "--bs-warning", "--bs-success"]' dir="ltr"></div>
+                                    <!-- Map -->
+                                    <div class="d-flex justify-content-between education-text">
+                                        <div id="vmap" class="mt-20">
+                                            <h1 class="text-dark text-2xl text-end font-bold mb-1 mr-56 max-[480px]:w-[300px]">O'zbekiston
+                                                Respublikasi</h1>
+                                            <p class="text-dark text-end mr-56">Barcha OTM lar
+                                                soni: 450ta</p>
+                                        </div>
+                                        <span class="activeRegion mt-5 p-5 d-flex justify-content-between span-text">
+                                            <code>
+                                                <h1 class="text-dark text-xl font-bold mb-2" id="test">Toshkent shahri</h1>
+                                                <p class="text-dark mb-5" id="est">OTM lar soni: 30 ta</p>
+                                                <h1 class="text-dark mb-2">Toshkent viloyati</h1>
+                                                <p class="text-dark mb-5">OTM lar soni: 30 ta</p>
+                                                <h1 class="text-dark mb-2">Toshkent viloyati</h1>
+                                                <p class="text-dark mb-5">OTM lar soni: 30 ta</p>
+                                                <h1 class="text-dark mb-2">Toshkent viloyati</h1>
+                                                <p class="text-dark mb-5">OTM lar soni: 30 ta</p>
+                                                <h1 class="text-dark mb-2">Toshkent viloyati</h1>
+                                                <p class="text-dark mb-5">OTM lar soni: 30 ta</p>
+                                                <h1 class="text-dark mb-2">Toshkent viloyati</h1>
+                                                <p class="text-dark mb-5">OTM lar soni: 30 ta</p>
+                                                <h1 class="text-dark mb-2">Toshkent viloyati</h1>
+                                                <p class="text-dark mb-5">OTM lar soni: 30 ta</p>
+                                            </code>
+                        
+                                            <code class="mx-5">
+                                                <h1 class="text-dark mb-2">Toshkent viloyati</h1>
+                                                <p class="text-dark mb-5">OTM lar soni: 30 ta</p>
+                                                <h1 class="text-dark mb-2">Toshkent viloyati</h1>
+                                                <p class="text-dark mb-5">OTM lar soni: 30 ta</p>
+                                                <h1 class="text-dark mb-2">Toshkent viloyati</h1>
+                                                <p class="text-dark mb-5">OTM lar soni: 30 ta</p>
+                                                <h1 class="text-dark mb-2">Toshkent viloyati</h1>
+                                                <p class="text-dark mb-5">OTM lar soni: 30 ta</p>
+                                                <h1 class="text-dark mb-2">Toshkent viloyati</h1>
+                                                <p class="text-dark mb-5">OTM lar soni: 30 ta</p>
+                                                <h1 class="text-dark mb-2">Toshkent viloyati</h1>
+                                                <p class="text-dark mb-5">OTM lar soni: 30 ta</p>
+                                            </code>
+                                        </span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -970,7 +996,12 @@
     <div class="rightbar-overlay"></div>
 
     <!-- JAVASCRIPT -->
-    <script src="assets/libs/jquery/jquery.min.js"></script>
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <!-- Map -->
+    <script src="./assets/js/jqvmap/jquery.vmap.min.js"></script>
+    <script src="./assets/js/jqvmap/jquery.vmap.uzbekistan.js"></script>
+    <!-- <script src="assets/libs/jquery/jquery.min.js"></script> -->
     <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/libs/metismenu/metisMenu.min.js"></script>
     <script src="assets/libs/simplebar/simplebar.min.js"></script>
