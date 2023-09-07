@@ -5925,7 +5925,9 @@ label {
 }
 
 .cardd {
+    width: 800px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     height: 650px;
     overflow: hidden;
@@ -5941,7 +5943,7 @@ label {
 } */
 
 .left_side {
-    width: 100%;
+    width: 50%;
 }
 
 .right_side {
@@ -5987,6 +5989,7 @@ label {
     font-size: 14px;
     line-height: 15px;
     margin-left: 3px;
+    width: 300px;
 }
 
 #menu-icon {
@@ -5995,5 +5998,18 @@ label {
     cursor: pointer;
     z-index: 10001;
     display: none;
+}
+
+code h1 {
+    font-size: 28px;
+    color: #000;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+
+code p {
+    color: #000;
+    font-family: sans-serif;
+    font-size: 16px;
 }
 /*# sourceMappingURL=app.min.css.map */
